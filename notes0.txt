@@ -1,0 +1,322 @@
+
+The typical AI approach applies computational tricks like brute force search, branch-and-bound, and evaluation functions to a ‘‘problem space’’ that, because it has been abstracted from the world, no longer exhibits any of the latter’s inherent structure. As a result, the for- mal procedures deployed have little to do with the problem’s inherent semantics. 
+
+https://pyvideo.org/pycon-us-2014/exploring-machine-learning-with-scikit-learn.html
+
+ Machine learning
+► Applied machine learning
+► Artificial neural networks
+► Bayesian networks
+► Classification algorithms
+► Cluster analysis
+► Computational learning theory
+► Artificial intelligence conferences
+► Signal processing conferences
+► Data mining and machine learning software
+► Datasets in machine learning
+► Deep learning
+► Dimension reduction
+► Ensemble learning
+► Evolutionary algorithms
+► Genetic programming
+► Inductive logic programming
+► Kernel methods for machine learning
+► Latent variable models
+► Learning in computer vision
+► Log-linear models
+► Loss functions
+► Machine learning algorithms
+► Machine learning portal
+► Machine learning task
+► Markov models
+► Ontology learning (computer science)
+► Machine learning researchers
+► Semisupervised learning
+► Statistical natural language processing
+► Structured prediction
+► Supervised learning
+► Support vector machines
+► Unsupervised learning
+
+WEKA
+https://www.cs.waikato.ac.nz/~ml/weka/book.html
+https://www.youtube.com/user/WekaMOOC
+
+
+The Unreasonable Effectiveness of Deep Learning by Yann LeCun 2014 
+http://videolectures.net/sahd2014_lecun_deep_learning/ Famous lecture by Yannn LeCun, godfather of deep convolutional neural networks (CNN). Brief intro to DL, why it’s awesome, and then mainly focuses on CNNs. Very similar to above. Could probably be skipped if you watch the above video.
+
+Deep Learning RNNaissance by Juergen Schmidhuber @ NYC ML Meetup 2014 
+https://www.youtube.com/watch?v=6bOMf9zr7N8 
+
+An alternate history of DL from Jurgen Scmidhuber, another grandmaster of DL. He goes into more detailed history of the algorithms and where they come from, and then focuses on Recurrent Neural Networks (RNN), which his lab made many innovations on (including LSTM). Bit of an ad for his own research lab(s). This video is a bit more advanced than the above ones. Arguably more interesting too.
+
+Basics of Computational Reinforcement Learning by Michael Littman @ RLDM 2015 
+http://videolectures.net/rldm2015_littman_computational_reinforcement Kind of an overview intro to RL. Some experience with MDPs etc would be useful but not essential. Michael Littman is one of the old school stars of RL and a lot of fun.
+
+Deep Learning by Yann LeCun and Yohua Bengio @ NIPS 2015 
+http://research.microsoft.com/apps/video/?id=259574 
+DL is, how it works (at a very high level) 
+
+
+
+
+
+
+
+
+
+
+
+orange
+https://orange.biolab.si/download/
+
+Anaconda
+If you are using python provided by Anaconda distribution, you are almost ready to go. Add conda-forge to the list of channels you can install packages from
+
+conda config --add channels conda-forge
+and run
+
+conda install orange3
+Pip
+Orange can also be installed from the Python Package Index:
+
+pip install orange3
+
+https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g
+
+
+akten
+http://www.memo.tv/texts/
+https://medium.com/@memoakten/retune-2016-part-1-the-dawn-of-deep-learning-672b5490f5a2
+https://medium.com/@memoakten/retune-2016-part-2-algorithmic-decision-making-machine-bias-creativity-and-diversity-3c7cca21ba37
+https://medium.com/artists-and-machine-intelligence/selection-of-resources-to-learn-artificial-intelligence-machine-learning-statistical-inference-23bc56ba655
+
+
+
+----------
+
+https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+
+https://www.wikiwand.com/en/List_of_datasets_for_machine-learning_research
+
+https://www.wikiwand.com/en/Machine_learning
+https://www.wikiwand.com/en/Portal:Machine_learning
+
+
+https://www.wikiwand.com/en/List_of_important_publications_in_computer_science#/Machine_learning
+
+
+https://developers.google.com/machine-learning/crash-course/ml-intro
+
+
+https://www.reddit.com/r/MachineLearning/comments/4bg5yf/are_there_any_good_gui_editors_for_deep_neural/
+
+https://developer.nvidia.com/digits
+https://github.com/NVIDIA/DIGITS/tree/master/examples
+autoencoder
+binary-segmentation
+classification
+fine-tuning
+gan
+medical-imaging
+object-detection
+python-layer
+regression
+s3
+semantic-segmentation
+siamese
+text-classification 
+weight-init writing-plugins
+
+https://research.google.com/bigpicture/code.html
+
+
+https://github.com/tensorflow
+tensorboard
+----------
+
+
+Machine learning also has intimate ties to optimization: many learning problems are formulated as minimization of some loss function on a training set of examples. Loss functions express the discrepancy between the predictions of the model being trained and the actual problem instances (for example, in classification, one wants to assign a label to instances, and models are trained to correctly predict the pre-assigned labels of a set of examples). The difference between the two fields arises from the goal of generalization: while optimization algorithms can minimize the loss on a training set, machine learning is concerned with minimizing the loss on unseen samples.[12]
+
+
+Machine learning and statistics are closely related fields. According to Michael I. Jordan, the ideas of machine learning, from methodological principles to theoretical tools, have had a long pre-history in statistics.[13] He also suggested the term data science as a placeholder to call the overall field.[13]
+
+Leo Breiman distinguished two statistical modelling paradigms: data model and algorithmic model,[14] wherein "algorithmic model" means more or less the machine learning algorithms like Random forest.
+
+Some statisticians have adopted methods from machine learning, leading to a combined field that they call statistical learning.[15]
+
+
+
+00---------------
+
+Ray Solomonoff (July 25, 1926 – December 7, 2009)[1][2] was the inventor of algorithmic probability,[3] his General Theory of Inductive Inference (also known as Universal Inductive Inference),[4] and was a founder of algorithmic information theory.[5] He was an originator of the branch of artificial intelligence based on machine learning, prediction and probability. He circulated the first report on non-semantic machine learning in 1956.[6]
+
+Solomonoff first described algorithmic probability in 1960, publishing the theorem that launched Kolmogorov complexity and algorithmic information theory. He first described these results at a Conference at Caltech in 1960,[7] and in a report, Feb. 1960, "A Preliminary Report on a General Theory of Inductive Inference."[8] He clarified these ideas more fully in his 1964 publications, "A Formal Theory of Inductive Inference," Part I[9] and Part II.[10]
+
+Algorithmic probability is a mathematically formalized combination of Occam's razor,[11][12][13][14] and the Principle of Multiple Explanations.[15] It is a machine independent method of assigning a probability value to each hypothesis (algorithm/program) that explains a given observation, with the simplest hypothesis (the shortest program) having the highest probability and the increasingly complex hypotheses receiving increasingly small probabilities.
+
+Solomonoff founded the theory of universal inductive inference, which is based on solid philosophical foundations[4] and has its root in Kolmogorov complexity and algorithmic information theory. The theory uses algorithmic probability in a Bayesian framework. The universal prior is taken over the class of all computable measures; no hypothesis will have a zero probability. This enables Bayes' rule (of causation) to be used to predict the most likely next event in a series of events, and how likely it will be.[10]
+
+Although he is best known for algorithmic probability and his general theory of inductive inference, he made many other important discoveries throughout his life, most of them directed toward his goal in artificial intelligence: to develop a machine that could solve hard problems using probabilistic methods.
+
+
+
+
+-----------------
+
+https://www.wikiwand.com/en/Weka_(machine_learning)
+
+
+
+Supervised learning algorithms build a mathematical model of a set of data that contains both the inputs and the desired outputs.[18] The data is known as training data, and consists of a set of training examples. Each training example has one or more inputs and a desired output, also known as a supervisory signal. In the mathematical model, each training example is represented by an array or vector, sometimes called a feature vector, and the training data is represented by a matrix. Through iterative optimization of an objective function, supervised learning algorithms learn a function that can be used to predict the output associated with new inputs.[19] An optimal function will allow the algorithm to correctly determine the output for inputs that were not a part of the training data. An algorithm that improves the accuracy of its outputs or predictions over time is said to have learned to perform that task.[6]
+
+Supervised learning algorithms include classification and regression.[20] Classification algorithms are used when the outputs are restricted to a limited set of values, and regression algorithms are used when the outputs may have any numerical value within a range. Similarity learning is an area of supervised machine learning closely related to regression and classification, but the goal is to learn from examples using a similarity function that measures how similar or related two objects are. It has applications in ranking, recommendation systems, visual identity tracking, face verification, and speaker verification.
+
+In the case of semi-supervised learning algorithms, some of the training examples are missing training labels, but they can nevertheless be used to improve the quality of a model. In weakly supervised learning, the training labels are noisy, limited, or imprecise; however, these labels are often cheaper to obtain, resulting in larger effective training sets.[21]
+
+
+
+Unsupervised learning algorithms take a set of data that contains only inputs, and find structure in the data, like grouping or clustering of data points. The algorithms therefore learn from test data that has not been labeled, classified or categorized. Instead of responding to feedback, unsupervised learning algorithms identify commonalities in the data and react based on the presence or absence of such commonalities in each new piece of data. A central application of unsupervised learning is in the field of density estimation in statistics,[22] though unsupervised learning encompasses other domains involving summarizing and explaining data features.
+
+Cluster analysis is the assignment of a set of observations into subsets (called clusters) so that observations within the same cluster are similar according to one or more predesignated criteria, while observations drawn from different clusters are dissimilar. Different clustering techniques make different assumptions on the structure of the data, often defined by some similarity metric and evaluated, for example, by internal compactness, or the similarity between members of the same cluster, and separation, the difference between clusters. Other methods are based on estimated density and graph connectivity.
+
+Reinforcement learning
+Main article: Reinforcement learning
+
+Reinforcement learning is an area of machine learning concerned with how software agents ought to take actions in an environment so as to maximize some notion of cumulative reward. Due to its generality, the field is studied in many other disciplines, such as game theory, control theory, operations research, information theory, simulation-based optimization, multi-agent systems, swarm intelligence, statistics and genetic algorithms.[23][24] In machine learning, the environment is typically represented as a Markov Decision Process (MDP). Many reinforcement learning algorithms use dynamic programming techniques.[23][24][25] Reinforcement learning algorithms do not assume knowledge of an exact mathematical model of the MDP, and are used when exact models are infeasible.[23][24] Reinforcement learning algorithms are used in autonomous vehicles or in learning to play a game against a human opponent.
+
+Feature learning
+Main article: Feature learning
+
+Several learning algorithms aim at discovering better representations of the inputs provided during training.[26] Classic examples include principal components analysis and cluster analysis. Feature learning algorithms, also called representation learning algorithms, often attempt to preserve the information in their input but also transform it in a way that makes it useful, often as a pre-processing step before performing classification or predictions. This technique allows reconstruction of the inputs coming from the unknown data-generating distribution, while not being necessarily faithful to configurations that are implausible under that distribution. This replaces manual feature engineering, and allows a machine to both learn the features and use them to perform a specific task.
+
+Feature learning can be either supervised or unsupervised. In supervised feature learning, features are learned using labeled input data. Examples include artificial neural networks, multilayer perceptrons, and supervised dictionary learning. In unsupervised feature learning, features are learned with unlabeled input data. Examples include dictionary learning, independent component analysis, autoencoders, matrix factorization[27] and various forms of clustering.[28][29][30]
+
+Manifold learning algorithms attempt to do so under the constraint that the learned representation is low-dimensional. Sparse coding algorithms attempt to do so under the constraint that the learned representation is sparse, meaning that the mathematical model has many zeros. Multilinear subspace learning algorithms aim to learn low-dimensional representations directly from tensor representations for multidimensional data, without reshaping them into higher-dimensional vectors.[31] Deep learning algorithms discover multiple levels of representation, or a hierarchy of features, with higher-level, more abstract features defined in terms of (or generating) lower-level features. It has been argued that an intelligent machine is one that learns a representation that disentangles the underlying factors of variation that explain the observed data.[32]
+
+Feature learning is motivated by the fact that machine learning tasks such as classification often require input that is mathematically and computationally convenient to process. However, real-world data such as images, video, and sensory data has not yielded to attempts to algorithmically define specific features. An alternative is to discover such features or representations through examination, without relying on explicit algorithms.
+
+Sparse dictionary learning
+Main article: Sparse dictionary learning
+
+Sparse dictionary learning is a feature learning method where a training example is represented as a linear combination of basis functions, and is assumed to be a sparse matrix. The method is strongly NP-hard and difficult to solve approximately.[33] A popular heuristic method for sparse dictionary learning is the K-SVD algorithm. Sparse dictionary learning has been applied in several contexts. In classification, the problem is to determine to which classes a previously unseen training example belongs. For a dictionary where each class has already been built, a new training example is associated with the class that is best sparsely represented by the corresponding dictionary. Sparse dictionary learning has also been applied in image de-noising. The key idea is that a clean image patch can be sparsely represented by an image dictionary, but the noise cannot.[34]
+
+Anomaly detection
+Main article: Anomaly detection
+
+In data mining, anomaly detection, also known as outlier detection, is the identification of rare items, events or observations which raise suspicions by differing significantly from the majority of the data.[35] Typically, the anomalous items represent an issue such as bank fraud, a structural defect, medical problems or errors in a text. Anomalies are referred to as outliers, novelties, noise, deviations and exceptions.[36]
+
+In particular, in the context of abuse and network intrusion detection, the interesting objects are often not rare objects, but unexpected bursts in activity. This pattern does not adhere to the common statistical definition of an outlier as a rare object, and many outlier detection methods (in particular, unsupervised algorithms) will fail on such data, unless it has been aggregated appropriately. Instead, a cluster analysis algorithm may be able to detect the micro-clusters formed by these patterns.[37]
+
+Three broad categories of anomaly detection techniques exist.[38] Unsupervised anomaly detection techniques detect anomalies in an unlabeled test data set under the assumption that the majority of the instances in the data set are normal, by looking for instances that seem to fit least to the remainder of the data set. Supervised anomaly detection techniques require a data set that has been labeled as "normal" and "abnormal" and involves training a classifier (the key difference to many other statistical classification problems is the inherent unbalanced nature of outlier detection). Semi-supervised anomaly detection techniques construct a model representing normal behavior from a given normal training data set, and then test the likelihood of a test instance to be generated by the model.
+
+Association rules
+Main article: Association rule learning
+
+See also: Inductive logic programming
+
+Association rule learning is a rule-based machine learning method for discovering relationships between variables in large databases. It is intended to identify strong rules discovered in databases using some measure of "interestingness".[39]
+
+Rule-based machine learning is a general term for any machine learning method that identifies, learns, or evolves "rules" to store, manipulate or apply knowledge. The defining characteristic of a rule-based machine learning algorithm is the identification and utilization of a set of relational rules that collectively represent the knowledge captured by the system. This is in contrast to other machine learning algorithms that commonly identify a singular model that can be universally applied to any instance in order to make a prediction.[40] Rule-based machine learning approaches include learning classifier systems, association rule learning, and artificial immune systems.
+
+Based on the concept of strong rules, Rakesh Agrawal, Tomasz Imieliński and Arun Swami introduced association rules for discovering regularities between products in large-scale transaction data recorded by point-of-sale (POS) systems in supermarkets.[41] For example, the rule \((\mathrm  {onions,potatoes))\}\Rightarrow \((\mathrm  {burger))\} found in the sales data of a supermarket would indicate that if a customer buys onions and potatoes together, they are likely to also buy hamburger meat. Such information can be used as the basis for decisions about marketing activities such as promotional pricing or product placements. In addition to market basket analysis, association rules are employed today in application areas including Web usage mining, intrusion detection, continuous production, and bioinformatics. In contrast with sequence mining, association rule learning typically does not consider the order of items either within a transaction or across transactions.
+
+Learning classifier systems (LCS) are a family of rule-based machine learning algorithms that combine a discovery component, typically a genetic algorithm, with a learning component, performing either supervised learning, reinforcement learning, or unsupervised learning. They seek to identify a set of context-dependent rules that collectively store and apply knowledge in a piecewise manner in order to make predictions.[42]
+
+Inductive logic programming (ILP) is an approach to rule-learning using logic programming as a uniform representation for input examples, background knowledge, and hypotheses. Given an encoding of the known background knowledge and a set of examples represented as a logical database of facts, an ILP system will derive a hypothesized logic program that entails all positive and no negative examples. Inductive programming is a related field that considers any kind of programming languages for representing hypotheses (and not only logic programming), such as functional programs.
+
+Inductive logic programming is particularly useful in bioinformatics and natural language processing. Gordon Plotkin and Ehud Shapiro laid the initial theoretical foundation for inductive machine learning in a logical setting.[43][44][45] Shapiro built their first implementation (Model Inference System) in 1981: a Prolog program that inductively inferred logic programs from positive and negative examples.[46] The term inductive here refers to philosophical induction, suggesting a theory to explain observed facts, rather than mathematical induction, proving a property for all members of a well-ordered set.
+
+Models
+Performing machine learning involves creating a model, which is trained on some training data and then can process additional data to make predictions. Various types of models have been used and researched for machine learning systems.
+
+Artificial neural networks
+Main article: Artificial neural network
+
+See also: Deep learning
+
+An artificial neural network is an interconnected group of nodes, akin to the vast network of neurons in a brain. Here, each circular node represents an artificial neuron and an arrow represents a connection from the output of one artificial neuron to the input of another.
+An artificial neural network is an interconnected group of nodes, akin to the vast network of neurons in a brain. Here, each circular node represents an artificial neuron and an arrow represents a connection from the output of one artificial neuron to the input of another.
+Artificial neural networks (ANNs), or connectionist systems, are computing systems vaguely inspired by the biological neural networks that constitute animal brains. Such systems "learn" to perform tasks by considering examples, generally without being programmed with any task-specific rules.
+
+An ANN is a model based on a collection of connected units or nodes called "artificial neurons", which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit information, a "signal", from one artificial neuron to another. An artificial neuron that receives a signal can process it and then signal additional artificial neurons connected to it. In common ANN implementations, the signal at a connection between artificial neurons is a real number, and the output of each artificial neuron is computed by some non-linear function of the sum of its inputs. The connections between artificial neurons are called "edges". Artificial neurons and edges typically have a weight that adjusts as learning proceeds. The weight increases or decreases the strength of the signal at a connection. Artificial neurons may have a threshold such that the signal is only sent if the aggregate signal crosses that threshold. Typically, artificial neurons are aggregated into layers. Different layers may perform different kinds of transformations on their inputs. Signals travel from the first layer (the input layer), to the last layer (the output layer), possibly after traversing the layers multiple times.
+
+The original goal of the ANN approach was to solve problems in the same way that a human brain would. However, over time, attention moved to performing specific tasks, leading to deviations from biology. Artificial neural networks have been used on a variety of tasks, including computer vision, speech recognition, machine translation, social network filtering, playing board and video games and medical diagnosis.
+
+Deep learning consists of multiple hidden layers in an artificial neural network. This approach tries to model the way the human brain processes light and sound into vision and hearing. Some successful applications of deep learning are computer vision and speech recognition.[47]
+
+Decision trees
+Main article: Decision tree learning
+
+Decision tree learning uses a decision tree as a predictive model to go from observations about an item (represented in the branches) to conclusions about the item's target value (represented in the leaves). It is one of the predictive modeling approaches used in statistics, data mining and machine learning. Tree models where the target variable can take a discrete set of values are called classification trees; in these tree structures, leaves represent class labels and branches represent conjunctions of features that lead to those class labels. Decision trees where the target variable can take continuous values (typically real numbers) are called regression trees. In decision analysis, a decision tree can be used to visually and explicitly represent decisions and decision making. In data mining, a decision tree describes data, but the resulting classification tree can be an input for decision making.
+
+Support vector machines
+Main article: Support vector machines
+
+Support vector machines (SVMs), also known as support vector networks, are a set of related supervised learning methods used for classification and regression. Given a set of training examples, each marked as belonging to one of two categories, an SVM training algorithm builds a model that predicts whether a new example falls into one category or the other.[48] An SVM training algorithm is a non-probabilistic, binary, linear classifier, although methods such as Platt scaling exist to use SVM in a probabilistic classification setting. In addition to performing linear classification, SVMs can efficiently perform a non-linear classification using what is called the kernel trick, implicitly mapping their inputs into high-dimensional feature spaces.
+
+Bayesian networks
+Main article: Bayesian network
+
+A simple Bayesian network. Rain influences whether the sprinkler is activated, and both rain and the sprinkler influence whether the grass is wet.
+A simple Bayesian network. Rain influences whether the sprinkler is activated, and both rain and the sprinkler influence whether the grass is wet.
+A Bayesian network, belief network or directed acyclic graphical model is a probabilistic graphical model that represents a set of random variables and their conditional independence with a directed acyclic graph (DAG). For example, a Bayesian network could represent the probabilistic relationships between diseases and symptoms. Given symptoms, the network can be used to compute the probabilities of the presence of various diseases. Efficient algorithms exist that perform inference and learning. Bayesian networks that model sequences of variables, like speech signals or protein sequences, are called dynamic Bayesian networks. Generalizations of Bayesian networks that can represent and solve decision problems under uncertainty are called influence diagrams.
+
+Genetic algorithms
+Main article: Genetic algorithm
+
+A genetic algorithm (GA) is a search algorithm and heuristic technique that mimics the process of natural selection, using methods such as mutation and crossover to generate new genotypes in the hope of finding good solutions to a given problem. In machine learning, genetic algorithms were used in the 1980s and 1990s.[49][50] Conversely, machine learning techniques have been used to improve the performance of genetic and evolutionary algorithms.[51]
+
+Training models
+Usually, machine learning models require a lot of data in order for them to perform well. Usually, when training a machine learning model, one needs to collect a large, representative sample of data from a training set. Data from the training set can be as varied as a corpus of text, a collection of images, and data collected from individual users of a service. Overfitting is something to watch out for when training a machine learning model.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------
+bayesian learning
+enables encoding our initial perception of what a model should look like, regardless of what the data tells, useful when there’s a sparse amount of data to train a model properly
+
+bayesian network
+probabilistic graphical model representing a group of variables along with their conditional dependencies through a direct acyclic graph; it is also used to compute the probability distribution for a subset of network variables, provided the distributions or values of any subset of the remaining variables
+
+clustering
+grouping of data instances or objects with similar features and characteristics
+
+decision tree
+construct that uses a tree like graph or model of decisions and their possible consequences,including chance event outcomes,resource costs and utility.
+
+deductive learning
+from a known general rule to a new rule that is logically entailed (and thus nothing new), but is nevertheless useful because it allows more efficient processing
+
+inductive learning
+from a set of specific input-output pairs to a (possibly incorrect) general rule is called inductive learning.
+
+deep learning
+tries to map the working of the human brain in processing data and creating patterns to use in decision making.
+
+depth-first search
+traversal of a graph or a tree data structure; 
+starts from the root node and traverses as far as possible for each branch before backtracking
+
+hidden markov model
+HMM is a temporal probabilistic model in which the state of the process is described by a single discrete random variable
+
+softmax function
+mathematical function often used for classification
+calculates the probability distribution of one class, over all the available classes:
+F(X) = exp(X) / summation(exp(X)) (summation being over all the classes)
+
+validation set
+A part of the dataset that is used to tune the parameters of a machine learning model. It can also be used to determine a stopping point for the back-propagation algorithm
