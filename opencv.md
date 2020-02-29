@@ -2,13 +2,18 @@
 title: opencv
 description: on the Jetson Nano
 published: 1
-date: 2020-02-29T21:59:56.478Z
+date: 2020-02-29T22:19:21.477Z
 tags: jetson nano, opencv
 ---
 
-## how to track objects with the camera
+# tutorials
+- [basic openCV and object tracking](#how-to-track-objects-with-the-camera)
+- [Jetson Nano: Hello AI](#jetson-nano-tutorials)
+
+## basic openCV and object tracking
 
 In this tutorial we will work with a framework called openCV for Computer Vision. It allows us to capture images from the camera and display these in a window and do all kinds of operations on them.
+
 ### basic opencv camera setup
 The basic principle is to capture a frame, do some processing, and display it in a window. Operations can be anything from changing color information, grabbing a Region of Interest, drawing on top of the image important information, track color, motion, etc.
 
@@ -75,12 +80,21 @@ cam.release()
 cv2.destroyAllWindows()
 ```
 ### continue in your ~/code folder
+- openCV1 - camera basics
+- openCV2 - moving or positioning a window
 - openCV3 - save video to a file
 - openCV4 - draw lines or text on the video
 - openCV5 - animate a bouncing box
 - openCV6 - track mouse clicks and display a dot coordinate
 - openCV7 - animate a dot with trackbars (sliders)
 - openCV9 - Region of Interest (RoI) discolor it
+- openCV10 - bounce a ROI around
+- openCV11 - copy a ROI to a new window
+- openCV12 - add and substract images(masks) with bitwise operator
+- openCV13 - create masks with threshold
+- openCV14 - move a logo around the screen with masking
+- openCV15 - learn to work with color channels
+- openCV16 - learn about hsv to select a color with masking
 
 ### important openCV features
 #### coordinates
