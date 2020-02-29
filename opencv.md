@@ -2,7 +2,7 @@
 title: opencv
 description: on the Jetson Nano
 published: 1
-date: 2020-02-29T21:56:13.729Z
+date: 2020-02-29T21:59:56.478Z
 tags: jetson nano, opencv
 ---
 
@@ -93,5 +93,7 @@ NVidia has prepared a few cool tutorials on inferencing [here](https://github.co
 On your Nano we have done the installations, so if all is alright, you can use/experiment with the tuts.
 Our goal is to be able to train the Nano to do something you want. But first, just play around and see what happens.
 
+>Warning: don't update the base software on the Nano, it can ruin your day.
+{.is-warning}
 
 
