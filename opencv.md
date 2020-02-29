@@ -1,12 +1,12 @@
 ---
-title: opencv
+title: tutorials
 description: on the Jetson Nano
 published: 1
-date: 2020-02-29T22:19:21.477Z
+date: 2020-02-29T22:20:27.428Z
 tags: jetson nano, opencv
 ---
 
-# tutorials
+## contents
 - [basic openCV and object tracking](#how-to-track-objects-with-the-camera)
 - [Jetson Nano: Hello AI](#jetson-nano-tutorials)
 
