@@ -2,7 +2,7 @@
 title: tutorials
 description: on the Jetson Nano
 published: 1
-date: 2020-02-29T22:20:27.428Z
+date: 2020-03-01T10:38:01.325Z
 tags: jetson nano, opencv
 ---
 
@@ -110,4 +110,4 @@ Our goal is to be able to train the Nano to do something you want. But first, ju
 >Warning: don't update the base software on the Nano, it can ruin your day.
 {.is-warning}
 
-
+Check out [community examples](https://developer.nvidia.com/embedded/community/jetson-projects) using the Jetson Nano for a variety of projects like gesture recognition, robotics, drones, etc.
