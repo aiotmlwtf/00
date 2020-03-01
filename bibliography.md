@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-01T11:13:18.684Z
+date: 2020-03-01T11:14:14.591Z
 tags: books, references
 ---
 
@@ -13,7 +13,7 @@ A long good collection of critical, philosophical texts on AI/ML can be found at
 - [Boden, Margaret A.; Edmonds, Ernest A. (2009) What is Generative Art?](#boden-margaret-a-edmonds-ernest-a-2009-what-is-generative-art)
 - [Carvalhais, Miguel (2016) Artificial Aesthetics - Creative Practices in Computational Art and Design](#carvalhais-miguel-2016-artificial-aesthetics-creative-practices-in-computational-art-and-design)
 - [Dockray, Sean (2019) Performing Algorithms: Automation and Accident](#dockray-sean-2019-performing-algorithms-automation-and-accident)
-- [Flake, Gary William (1999) The Computational Beauty of Nature - Computer Explorations of Fractals, Chaos, Complex Systems, and Adaptation]()
+- [Flake, Gary William (1999) The Computational Beauty of Nature - Computer Explorations of Fractals, Chaos, Complex Systems, and Adaptation](#flake-gary-william-1999-the-computational-beauty-of-nature-computer-explorations-of-fractals-chaos-complex-systems-and-adaptation)
 - [Galanter, Philip (2016) What Is Generative Art? - Complexity Theory as a Context for Art Theory](#galanter_philip_-_what_is_generative_art_-_complexity_theory_as_a_context_for_art_theory.pdf)
 - [Gleick, James (2008) Chaos - Making a New Science](#gleick-james-2008-chaos-making-a-new-science)
 - [Magnusson, Thor (2019) Sonic Writing - Technologies of Material, Symbolic, and Signal Inscriptions](#magnusson-thor-2019-sonic-writing-technologies-of-material-symbolic-and-signal-inscriptions)
