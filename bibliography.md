@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-01T11:14:14.591Z
+date: 2020-03-01T12:34:26.558Z
 tags: books, references
 ---
 
@@ -10,6 +10,7 @@ tags: books, references
 A long good collection of critical, philosophical texts on AI/ML can be found at [aaaaarg.fail](https://aaaaarg.fail/collection/5aa935559ff37c54b1622bcf).
 
 ### Contents (alphabetical order)
+- [Benthall, Jonathan (1972) Science and Technology in Art Today]()
 - [Boden, Margaret A.; Edmonds, Ernest A. (2009) What is Generative Art?](#boden-margaret-a-edmonds-ernest-a-2009-what-is-generative-art)
 - [Carvalhais, Miguel (2016) Artificial Aesthetics - Creative Practices in Computational Art and Design](#carvalhais-miguel-2016-artificial-aesthetics-creative-practices-in-computational-art-and-design)
 - [Dockray, Sean (2019) Performing Algorithms: Automation and Accident](#dockray-sean-2019-performing-algorithms-automation-and-accident)
@@ -22,6 +23,21 @@ A long good collection of critical, philosophical texts on AI/ML can be found at
 - [Whitelaw, Mitchell (2004) Metacreation: Art and Artificial Life](#whitelaw-mitchell-2004-metacreation-art-and-artificial-life)
 
 ---
+### Benthall, Jonathan (1972) Science and Technology in Art Today
+
+Again a classic text on art and technology with a view from the late 1960's.
+
+|| blurp
+The relationship of science and technology to creativity is becoming increasingly important in an age when art in the traditional sense, and in the traditional media, seems to be in the midst of an identity crisis. Jonathan Benthall first looks at the exciting new media that the age of technology offers the artist, singling out for special attention the digital computer and the bewildering new technique of laser holography. Like painting and photography, these recent innovations act as extensions of man's capacity to organize and convey information.
+Benthall then goes on to explore the creative implications of the study of the interactions between organism and environment. The result of his observations is a new approach to kinetic art and to some relationships between art and language. Ecology is far more than a modish word: it involves a new way of seeing the world. And there are some men doing things we may not yet even identify as art, such as Hans Haacke, Sonfist and Negroponte, who are in a strong position to interpret and influence. The book's theme - art as organization of resources - is especially relevant and optimistic, at a time when gloomy prognostications of the ''death of art'' can be heard on every side.
+
+|| preface
+The subject of this book is complex. I have tried to avoid unsupported generalizations, inessential technical detail, and personal polemic. I have treated very lightly the historical background to the present 'art and technology' or 'science in art' movement -for instance, the Bauhaus, the early Soviet avant-garde, etc.; partly because this background has been amply documented by other authors (to whose works references are given), and partly because I feel the most urgent need is for a fresh approach.
+Chapters One to Four are largely concerned with the relationship between art and media, focusing on three media: photography, the computer, and laser holography. In Chapter Five, which is primarily a study of kinetic art and some of its repercussions, the emphasis shifts from media to expression. Chapters Six and Seven are devoted to some implications of ecology and linguistics, respectively, for art and culture. Chapter Eight reviews some aspects of the relationship between science and art, arguing that this relationship can best be understood if art is regarded primarily as a mode of enquiry.
+I considered adding a final chapter on 'Social Responsibility in Science and in Art', but decided that if my conception of social responsibility means anything it would be implicit in the texture of the whole book. I take as a starting-point the fact that many people in both science and art are trying to relate their work more tellingly to the problems of society as a whole. I sympathize with those who resort to political activism; but for me there are underlying issues of creativity and community which claim first attention.
+
+<a class="getLink" href="/benthall_jonathan_-_science_and_technology_in_art_today_(1972).pdf">get</a>
+
 ### Boden, Margaret A.; Edmonds, Ernest A. (2009) What is generative art?
 A much cited article in the journal Digital Creativity giving a good overview of artificial creativity, authorship and computational approaches in art generation.
 
