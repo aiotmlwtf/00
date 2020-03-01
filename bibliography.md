@@ -1,0 +1,225 @@
+---
+title: bibliography
+description: books and articles we recommend
+published: 1
+date: 2020-03-01T11:13:18.684Z
+tags: books, references
+---
+
+### Critical AI/ML texts
+A long good collection of critical, philosophical texts on AI/ML can be found at [aaaaarg.fail](https://aaaaarg.fail/collection/5aa935559ff37c54b1622bcf).
+
+### Contents (alphabetical order)
+- [Boden, Margaret A.; Edmonds, Ernest A. (2009) What is Generative Art?](#boden-margaret-a-edmonds-ernest-a-2009-what-is-generative-art)
+- [Carvalhais, Miguel (2016) Artificial Aesthetics - Creative Practices in Computational Art and Design](#carvalhais-miguel-2016-artificial-aesthetics-creative-practices-in-computational-art-and-design)
+- [Dockray, Sean (2019) Performing Algorithms: Automation and Accident](#dockray-sean-2019-performing-algorithms-automation-and-accident)
+- [Flake, Gary William (1999) The Computational Beauty of Nature - Computer Explorations of Fractals, Chaos, Complex Systems, and Adaptation]()
+- [Galanter, Philip (2016) What Is Generative Art? - Complexity Theory as a Context for Art Theory](#galanter_philip_-_what_is_generative_art_-_complexity_theory_as_a_context_for_art_theory.pdf)
+- [Gleick, James (2008) Chaos - Making a New Science](#gleick-james-2008-chaos-making-a-new-science)
+- [Magnusson, Thor (2019) Sonic Writing - Technologies of Material, Symbolic, and Signal Inscriptions](#magnusson-thor-2019-sonic-writing-technologies-of-material-symbolic-and-signal-inscriptions)
+- [Shanken, Edward A. (2015) Systems](#shanken-edward-a-2015-systems)
+- [Simon, Herbert A. (1996) The Sciences of the Artificial](#simon-herbert-a-1996-the-sciences-of-the-artificial)
+- [Whitelaw, Mitchell (2004) Metacreation: Art and Artificial Life](#whitelaw-mitchell-2004-metacreation-art-and-artificial-life)
+
+---
+### Boden, Margaret A.; Edmonds, Ernest A. (2009) What is generative art?
+A much cited article in the journal Digital Creativity giving a good overview of artificial creativity, authorship and computational approaches in art generation.
+
+<a class="getLink" href="/boden_margaret_a._edmonds_ernest_a._-_what_is_generative_art(2009).pdf">get</a>
+|| Abstract
+There are various forms of what’s sometimes called generative art, or computer art. This paper distinguishes the major categories and asks whether the appropriate aesthetic criteria—and the locus of creativity—are the same in each case.
+
+### Carvalhais, Miguel (2016) Artificial Aesthetics - Creative Practices in Computational Art and Design
+
+|| Review
+Carvalhais covers a lot of ground in the area of computational arts. He goes into depth on most relevant topics like the importance of randomness, complexity, chaos theory, Wolfram's cellular automata philosophy and offers a critical stance.
+> I highly recommend this book as a good thorough introduction in computational arts.
+{.is-danger}
+
+<a class="getLink" href="/carvalhais_miguel_-_artificial_aesthetics_-_creative_practices_in_computational_art_and_design.pdf">get</a>
+|| Contents
+Introduction 15
+1. Media and Computation 21
+Three Types of Computation 24
+The Computer as a Tool 27
+The Computer as a Medium 29
+The Computer as a Metamedium 31
+The Computer as a Simulator of Media 34
+Principles and Properties of New Media 37
+Universal Machines 43
+Abstract Machines (and Process Design) 45
+Descriptive and Generative Processes 50
+Grammars (Generative and Transformational) 53
+2. The Ubiquity of Computation 57
+The Principle of Computational Equivalence 59
+Computational Classes 60
+Determinism and Predictability 64
+Computational Irreducibility 70
+Randomness 71
+Three Mechanisms for Randomness 76
+3. Computation and Creativity 79
+Strong and Weak Artificial Intelligence and Creativity 84
+Artificial Aesthetics 88
+The Eliza Effect and Comtivity 90
+Randomness and Creativity 94
+Algorithmic Information Content 100
+Randomly Programming in a Cellular Automaton 101
+Zooming Out 106
+The Lovelace Questions and the Lovelace Test 111
+Creative Systems 115
+Creative Human-Machine Collaboration 118
+Procedural Authorship 123
+Ergodic Literature and Ergodic Media 129
+4. Procedural Practices 145
+Twentieth-Century Pre-Computational Procedural Practices 154
+Procedural Literacy 165
+What Makes Digital Media Unique? 169
+Epigenesis 173
+5. Processes and Systems 179
+Data-Driven Systems 180
+Rule-Based Systems 189
+Non-Generative Rule-Based Systems 190
+Generative Systems 195
+Errors and Glitches 209
+6. An Analytical Model for Procedural Systems 215
+Aarseth’s Textonomy 223
+On a Model for Procedural Media 227
+The Variables 229
+Going Beyond Aarseth 245
+Works Under Analysis 247
+Initial Analysis 249
+The New Variables 255
+Analysis 263
+Conclusion 273
+
+
+### Dockray, Sean (2019) Performing Algorithms: Automation and Accident
+<a class="getLink" href="/dockray_sean_-_performing_algorithms_-_automation_and_accident(2019).pdf">get</a>
+|| abstract
+Performing Algorithms: Automation and Accident investigates how artists might stage encounters with the algorithms driving our post-industrial, big-data-based, automatic society. Several important theories of this contemporary condition are discussed, including control societies, post-industrial societies, the automatic society, the cybernetic hypothesis, and algorithmic governmentality. These concepts are interwoven with histories of labour and automation, recent developments in machine learning and neural networks, and my own past work.
+
+Through a series of expanded lecture performances that describe our algorithmic condition while setting it into motion, this research seeks to discover ways in which to advance new critical positions within a totalizing technical apparatus whose very design preempts it. The included creative works have been performed, exhibited, and published between 2014 and 2018. They are made available online through an artificially intelligent chatbot, a frequent figure in the research, which here extends
+the concerns of that research through to how the work is framed and presented.
+
+The thesis focuses on both generative art and the lecture performance, which converge in performing algorithms but are generally not discussed in connection with one another. They emerged in parallel as artistic methods, however, at a time when management and computation were taking root in the workplace in the 1960s. Furthermore, as the Internet became widespread from the 1990s, generative art and the lecture performance each found renewed prominence.
+
+With human language and gesture increasingly modelling itself on the language of computation and work constantly reshaped by the innovations of capital, this project identifies “not working” both in terms of the technological breakdown and also as a condition of labour under automation. A discussion of the first fatal accident involving a self-driving vehicle illustrates this dual condition. Shifting from glitch art’s preoccupation with provoking errors to a consideration of not working, this research proposes artistic strategies that learn to occupy rather than display the accident.
+
+### Flake, Gary William (1999) The Computational Beauty of Nature - Computer Explorations of Fractals, Chaos, Complex Systems, and Adaptation
+
+Oft cited book with a friendly introduction to the topic listed in the title. It tries to be witty with the quotes at the start of each chapter:
+
+*The point of philosophy is to start with something so simple as not to seem worth stating, and to end with something so paradoxical that no one will believe it.*
+Bertrand Russell
+
+But then has a wealth of information. Check out page 7 for an association map of how topics around complexity relate to one another.
+
+<a class="getLink" href="/flake_gary_william_-_the_computational_beauty_of_nature_-_computer_explorations_of_fractals_chaos_complex_systems_and_adaptation.pdf">get</a>
+
+### Galanter, Philip (2016) What Is Generative Art? - Complexity Theory as a Context for Art Theory
+Galanter teaches at the (in)famous ITP program at NYU in New York. Home of such artists like Daniel Rosin and many others.
+
+<a class="getLink" href="/galanter_philip_-_what_is_generative_art_-_complexity_theory_as_a_context_for_art_theory.pdf">get</a>
+|| Abstract
+In this paper an attempt is made to offer a definition of generative art that is inclusive and provides fertile ground for both technical and art theoretical development. First the use of systems is identified as a key element in generative art. Various ideas from complexity theory are then introduced. It is noted that systems exist on a continuum from the highly ordered to the highly disordered. Citing examples from information theory and complexity science, it is noted that highly ordered and highly disordered systems are typically viewed as simple, and complex systems exhibit both order and disorder. This leads to the adoption of effective complexity, order, and disorder as organizing principles in the comparison of various generative art systems. This inclusive view leads to the somewhat surprising observation that generative art is as old as art itself. A number of specific artists and studies are discussed within this systems and complexity theory influenced paradigm. Finally a number of art theoretical questions are introduced to exercise the suggested generative art definition and implicit paradigm.
+
+|| Introduction
+I teach a course titled "Foundations of Generative Art Systems" and the most frequent question I am asked is "what is generative art?" Generative art often seems like a fuzzy notion, and most students don't seem to "get it" until very late in the semester. And indeed, in forums such as the eu-gene mailing list (http://www.generative.net) this very question has sparked considerable controversy. In opening this paper I would like to gratefully acknowledge the many discussions on this topic I've had with both my students and the eu-gene online community.
+Some might wonder whether the attempt to define generative art is an empty pedantic exercise. I hope that this paper will show that it is not. First clarity of language enhances any discussion, including those about art and specifically generative art. Additionally the discussion of what generative art is stimulates the discussion of other art critical concerns.
+
+### Gleick, James (2008) Chaos - Making a New Science
+
+*The sciences do not try to explain, they hardly even try to interpret, they mainly make models. By a model is meant a mathematical construct which, with the addition of certain verbal interpretations, describes observed phenomena. The justification of such a mathematical construct is solely and precisely that it is expected to work.*
+John Von Neumann
+
+> Chaos has become not just theory but also method, not just a canon of beliefs but also a way of doing science. Chaos has created its own technique of using computers, a technique that does not require the vast speed of Crays and Cybers but instead favors modest terminals that allow flexible interaction.
+
+> EVEN NOW, CHAOS THEORY sounds like a bit of an oxymoron. In the 1980s, “chaos” and “theory” were words that didn’t seem to belong in the same room, let alone the same sentence. When friends heard that I was researching a book about chaos—and that it was to do with science—there were quizzical looks and raised eyebrows. Much later, one told me she had thought I was writing about “gas.” As it says in the subtitle, chaos was a new science—strange and alien-sounding, exciting and hard to accept.
+
+A classic worth reading.
+<a class="getLink" href="/gleick_james_-_chaos_-_making_a_new_science_(2008).epub">get</a>
+
+
+### Magnusson, Thor (2019) Sonic Writing - Technologies of Material, Symbolic, and Signal Inscriptions
+
+<a class="getLink" href="/magnusson_thor_-_sonic_writing_-_technologies_of_material_symbolic_and_signal_inscriptions.pdf">get</a>
+|| Contents
+List of Figures
+Preface
+Acknowledgements
+Introduction: On Objects, Humans, and Machines
+
+Part I Material Inscriptions
+1  Instrumentality
+2  New Instruments
+3  Epistemic Tools
+4  Digital Organology
+
+Part II Symbolic Inscriptions
+5  Writing Music
+6  Printing Music
+7  New Languages
+8  Machine Notation
+
+Part III Signal Inscriptions
+9  Inscribing Sound
+10 Recording
+11 Analysing
+12 Machine Listening
+
+Part IV Digital Writing
+13 Transductions
+14 New Notations
+15 Machine Writing
+16 Music in Multimedia
+
+Part V Conclusion
+17 A Future of Music Tech
+18 Transformation of Tradition
+19 New Education for New Music
+
+Notes
+Bibliography
+Index
+
+### Shanken, Edward A. (2015) Systems
+Edward Shanken did a great job assembling this publication on a range of topics relating to 'systems'; cybernetics, systems theory, generative art, etc. For a full listing of contents, see below.
+
+<a class="getLink" href="/shanken_edward_a._(ed.)_-_systems-split.pdf">get</a>
+|| Contents
+Visit [aaaaarg](https://aaaaarg.fail/thing/5721b19d9ff37c05dd61dddd) for a listing of contents.
+
+
+### Simon, Herbert A. (1996) The Sciences of the Artificial
+
+<a class="getLink" href="/simon_herbert_a._-_the_sciences_of_the_artificial_3rd_edition_-the_mit_press_(1996).pdf">get</a>
+|| Review
+A classic text in its third edition --first published in 1969-- on the notion of the artificial and different ways of approaching complexity that you'll find referenced over and over.
+
+*“In the computer field, the moment of truth is a
+running program; all else is prophecy.”*
+Herbert Simon
+
+|| Contents
+1. Understanding the Natural and Artificial Worlds 1
+2. Economic Rationality: Adaptive Artifice 25
+3. The Psychology of Thinking: Embedding Artifice in Nature 51
+4. Remembering and Learning: Memory As Environment for Thought 85
+5. The Science of Design: Creating the Artificial 111
+6. Social Planning: Designing the Evolving Artifact 139
+7. Alternative Views of Complexity 169
+8. The Architecture of Complexity: Hierarchic Systems 183
+
+
+### Whitelaw, Mitchell (2004) Metacreation: Art and Artificial Life
+<a class="getLink" href="/whitelaw_mitchell_-_metacreation_-_art_and_artificial_life.pdf">get</a>
+|| Contents
+1 Introduction
+2 Breeders
+3 Cybernatures
+4 Hardware
+5 Abstract machines
+6 Theorizing A-Life, Art, and Culture
+7 Emergence
+Appendix: On-line Resources
+Notes
