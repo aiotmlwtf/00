@@ -2,7 +2,7 @@
 title: ae-notes
 description: 
 published: 1
-date: 2020-03-01T19:02:47.011Z
+date: 2020-03-01T19:44:05.129Z
 tags: 
 ---
 
@@ -34,21 +34,21 @@ Clearly <kbd>/dev/disk1</kbd> is my 8GB SD card, the Linux partition name is als
 
 However, instead of using <kbd>/dev/disk1</kbd> with <kbd>dd</kbd>, you should use <kbd>/dev/rdisk1</kbd>, like so:
 
-<kbd>sudo dd if=/dev/rdisk1 of=/path/to/backup.img bs=1m</kbd>
+<kbd>sudo dd if=/dev/rdiskX of=/path/to/backup.img bs=1m</kbd>
 
 And to restore it, just swap the if (input file), and of (output file) parameters:
 
 But unmount first:
 <kbd>diskutil unmountDisk /dev/diskX</kbd>
-<kbd>sudo dd if=/path/to/backup.img of=/dev/rdisk1 bs=1m conv=sync</kbd> 
+<kbd>sudo dd if=/path/to/backup.img of=/dev/rdiskX bs=1m conv=sync</kbd> 
 
 Or, with gzip, to save a substantial amount of space:
 
-<kbd>sudo dd if=/dev/rdisk1 bs=1m | gzip > /path/to/backup.gz</kbd>
+<kbd>sudo dd if=/dev/rdiskX bs=1m | gzip > /path/to/backup.gz</kbd>
 
 And, to copy the image back onto the SD:
 
-<kbd>gzip -dc /path/to/backup.gz | sudo dd of=/dev/rdisk1 bs=1m</kbd>
+<kbd>gzip -dc /path/to/backup.gz | sudo dd of=/dev/rdiskX bs=1m</kbd>
 
 Note
 This takes long, use Ctrl-T to see progress.
