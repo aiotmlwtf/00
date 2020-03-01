@@ -2,7 +2,7 @@
 title: tutorials
 description: on the Jetson Nano
 published: 1
-date: 2020-03-01T10:38:01.325Z
+date: 2020-03-01T20:12:06.721Z
 tags: jetson nano, opencv
 ---
 
@@ -111,3 +111,9 @@ Our goal is to be able to train the Nano to do something you want. But first, ju
 {.is-warning}
 
 Check out [community examples](https://developer.nvidia.com/embedded/community/jetson-projects) using the Jetson Nano for a variety of projects like gesture recognition, robotics, drones, etc.
+
+To start a camera inference test, type the following in the terminal:
+
+<kbd>cd jetson-inference/build/aa??/bin/</kbd>
+<kbd>./imagenet-camera.py</kbd>
+
