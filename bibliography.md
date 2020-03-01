@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-01T14:02:46.961Z
+date: 2020-03-01T14:41:44.768Z
 tags: books, references
 ---
 
@@ -123,7 +123,7 @@ With human language and gesture increasingly modelling itself on the language of
 
 ### Flake, Gary William (1999) The Computational Beauty of Nature - Computer Explorations of Fractals, Chaos, Complex Systems, and Adaptation
 
-Oft cited book with a friendly introduction to the topic listed in the title. It tries to be witty with the quotes at the start of each chapter:
+Oft cited book with a friendly introduction to the topics listed in the title. It tries to be witty with the quotes at the start of each chapter:
 
 *The point of philosophy is to start with something so simple as not to seem worth stating, and to end with something so paradoxical that no one will believe it.*
 Bertrand Russell
