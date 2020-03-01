@@ -2,7 +2,7 @@
 title: tutorials
 description: on the Jetson Nano
 published: 1
-date: 2020-03-01T20:12:06.721Z
+date: 2020-03-01T20:17:30.919Z
 tags: jetson nano, opencv
 ---
 
@@ -114,6 +114,6 @@ Check out [community examples](https://developer.nvidia.com/embedded/community/j
 
 To start a camera inference test, type the following in the terminal:
 
-<kbd>cd jetson-inference/build/aa??/bin/</kbd>
+<kbd>cd jetson-inference/build/aarch64/bin</kbd>
 <kbd>./imagenet-camera.py</kbd>
 
