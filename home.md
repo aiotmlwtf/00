@@ -2,7 +2,7 @@
 title: AIOTMLWTF 0.1a
 description: Computational Approaches in Art
 published: 1
-date: 2020-03-02T10:30:56.801Z
+date: 2020-03-02T13:04:38.661Z
 tags: home
 ---
 
@@ -61,8 +61,4 @@ _
 
 ##
 
-https://colab.research.google.com/drive/1dz4FfYBv8o1vcveq3hKvozDDkuUMnZp_#scrollTo=0MXhOh689IkI
-
-
-
-https://colab.research.google.com/drive/1dz4FfYBv8o1vcveq3hKvozDDkuUMnZp_
+[collab links](/collab_links)
