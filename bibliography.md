@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-01T14:41:44.768Z
+date: 2020-03-02T20:00:09.940Z
 tags: books, references
 ---
 
@@ -20,6 +20,7 @@ A long good collection of critical, philosophical texts on AI/ML can be found at
 - [Magnusson, Thor (2019) Sonic Writing - Technologies of Material, Symbolic, and Signal Inscriptions](#magnusson-thor-2019-sonic-writing-technologies-of-material-symbolic-and-signal-inscriptions)
 - [Shanken, Edward A. (2015) Systems](#shanken-edward-a-2015-systems)
 - [Simon, Herbert A. (1996) The Sciences of the Artificial](#simon-herbert-a-1996-the-sciences-of-the-artificial)
+- [Toffoli, Tommaso; Margolus, Norman (1987) Cellular Automata Machines - A New Environment for Modeling]()
 - [Whitelaw, Mitchell (2004) Metacreation: Art and Artificial Life](#whitelaw-mitchell-2004-metacreation-art-and-artificial-life)
 
 ---
@@ -226,6 +227,15 @@ Herbert Simon
 7. Alternative Views of Complexity 169
 8. The Architecture of Complexity: Hierarchic Systems 183
 
+### Toffoli, Tommaso; Margolus, Norman (1987) Cellular Automata Machines - A New Environment for Modeling
+
+The classic text on celluar automata, now a click away.
+
+|| from the introduction
+A cellular automata machine is a universe synthesizer. Like an organ, it has keys and stops by which the resources of the instrument can be called into action, combined, and reconfigured. Its color screen is a window through which one can watch the universe that is being "played." 
+This book, then, is an introductory harmony and orchestration manual for "composer" of celluar-automaton universe.
+
+<a class="getLink" href="/whitelaw_mitchell_-_metacreation_-_art_and_artificial_life.pdf">get</a>
 
 ### Whitelaw, Mitchell (2004) Metacreation: Art and Artificial Life
 <a class="getLink" href="/whitelaw_mitchell_-_metacreation_-_art_and_artificial_life.pdf">get</a>
