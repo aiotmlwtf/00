@@ -2,7 +2,7 @@
 title: AIOTMLWTF 0.1a
 description: Computational Approaches in Art
 published: 1
-date: 2020-03-01T22:50:04.064Z
+date: 2020-03-02T10:09:11.080Z
 tags: home
 ---
 
@@ -58,3 +58,7 @@ _
 * artificial / natural / synthetic
 * formal aesthetics
 * computer assisted creativity
+
+##
+
+https://colab.research.google.com/drive/1dz4FfYBv8o1vcveq3hKvozDDkuUMnZp_#scrollTo=0MXhOh689IkI
