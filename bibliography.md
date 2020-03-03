@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-03T12:24:59.961Z
+date: 2020-03-03T15:04:01.389Z
 tags: books, references
 ---
 
@@ -22,6 +22,8 @@ A long good collection of critical, philosophical texts on AI/ML can be found at
 - [Simon, Herbert A. (1996) The Sciences of the Artificial](#simon-herbert-a-1996-the-sciences-of-the-artificial)
 - [Toffoli, Tommaso; Margolus, Norman (1987) Cellular Automata Machines - A New Environment for Modeling](#toffoli-tommaso-margolus-norman-1987-cellular-automata-machines-a-new-environment-for-modeling)
 - [Whitelaw, Mitchell (2004) Metacreation: Art and Artificial Life](#whitelaw-mitchell-2004-metacreation-art-and-artificial-life)
+- [Capra, Fritjof (1996) Web of Life: A New Scientific Understanding of Living Systems](#Capra-Web-of-Life_-A-New-Scientific-Understanding-of -Living-Systems)
+
 
 ---
 ### Benthall, Jonathan (1972) Science and Technology in Art Today
@@ -52,6 +54,12 @@ There are various forms of what’s sometimes called generative art, or computer
 Carvalhais covers a lot of ground in the area of computational arts. He goes into depth on most relevant topics like the importance of randomness, complexity, chaos theory, Wolfram's cellular automata philosophy and offers a critical stance.
 > I highly recommend this book as a good thorough introduction in computational arts.
 {.is-danger}
+
+
+<a class="getLink" href="/Capra-Web_of_Life_-_a_new_scientific_understanding_of_living_systems.pdf">get</a>
+
+<a class="getLink" href="/carvalhais_miguel_-_artificial_aesthetics_-_creative_practices_in_computational_art_and_design.pdf">get</a>
+
 
 <a class="getLink" href="/carvalhais_miguel_-_artificial_aesthetics_-_creative_practices_in_computational_art_and_design.pdf">get</a>
 || Contents
