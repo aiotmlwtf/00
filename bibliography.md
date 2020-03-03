@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-03T15:04:01.389Z
+date: 2020-03-03T15:06:03.695Z
 tags: books, references
 ---
 
