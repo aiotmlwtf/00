@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-03T15:11:47.165Z
+date: 2020-03-03T15:11:54.306Z
 tags: books, references
 ---
 
@@ -256,4 +256,5 @@ Appendix: On-line Resources
 Notes
 
 ### Capra, Fritjof (1994) Web of Life: A New Scientific Understanding of Living Systems
+
 <a class="getLink" href="/Capra-Web_of_Life_-_a_new_scientific_understanding_of_living_systems.pdf">get</a>
