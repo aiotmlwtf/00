@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-03T15:11:54.306Z
+date: 2020-03-03T15:18:07.350Z
 tags: books, references
 ---
 
@@ -24,6 +24,7 @@ A long good collection of critical, philosophical texts on AI/ML can be found at
 - [Whitelaw, Mitchell (2004) Metacreation: Art and Artificial Life](#whitelaw-mitchell-2004-metacreation-art-and-artificial-life)
 - [Capra, Fritjof (1996) Web of Life: A New Scientific Understanding of Living Systems](#Capra-Web-of-Life_-A-New-Scientific-Understanding-of-Living-Systems)
 
+[capra-web-of-life_-a-new-scientific-understanding-of_-living-systems.pdf](/capra-web-of-life_-a-new-scientific-understanding-of_-living-systems.pdf)
 
 ---
 ### Benthall, Jonathan (1972) Science and Technology in Art Today
@@ -58,7 +59,6 @@ Carvalhais covers a lot of ground in the area of computational arts. He goes int
 <a class="getLink" href="/carvalhais_miguel_-_artificial_aesthetics_-_creative_practices_in_computational_art_and_design.pdf">get</a>
 
 
-<a class="getLink" href="/carvalhais_miguel_-_artificial_aesthetics_-_creative_practices_in_computational_art_and_design.pdf">get</a>
 || Contents
 Introduction 15
 1. Media and Computation 21
@@ -257,4 +257,3 @@ Notes
 
 ### Capra, Fritjof (1994) Web of Life: A New Scientific Understanding of Living Systems
 
-<a class="getLink" href="/Capra-Web_of_Life_-_a_new_scientific_understanding_of_living_systems.pdf">get</a>
