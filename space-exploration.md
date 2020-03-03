@@ -2,7 +2,7 @@
 title: space exploration
 description: Strategies exploring space of possibilities
 published: 1
-date: 2020-03-02T23:20:02.070Z
+date: 2020-03-03T09:27:23.421Z
 tags: 
 ---
 
@@ -47,6 +47,11 @@ Given the space use randomness or chance operations to explore the space. Cage, 
 “Intuition is not something that is given. I’ve trained my intuition to accept as obvious shapes which were initially rejected as absurd, and I find everyone else can do the same.”
 Benoit Mandelbrot, p.xi
 In science (AI/ML) statistics is used to bypass intuition as it is seen as limiting (bias, etc.)
+
+Paul Brown
+He recalls his interest at the time in “removing myself from the work and objectifying the
+art making process.”
+(Whitelaw, p.149)
 
 ### face space as example
 all approach
