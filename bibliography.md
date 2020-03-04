@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-04T18:30:11.670Z
+date: 2020-03-04T19:04:12.048Z
 tags: books, references
 ---
 
@@ -51,7 +51,8 @@ There are various forms of what’s sometimes called generative art, or computer
 
 ### Capra, Fritjof (1996) The Web of Life: A New Scientific Understanding of Living Systems
 
-<a class="getLink" href="/capra-web-of-life_-a-new-scientific-understanding-of_-living-systems.pdf">get</a>
+<a class="getLink" href="/capra_fritjof_-_the_web_of_life_-_a_new_scientific_understanding_of_living_systems_(1996).pdf">get</a>
+
 
 ### Carvalhais, Miguel (2016) Artificial Aesthetics - Creative Practices in Computational Art and Design
 
