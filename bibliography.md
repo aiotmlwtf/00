@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-04T19:04:12.048Z
+date: 2020-03-04T19:22:06.745Z
 tags: books, references
 ---
 
@@ -19,6 +19,7 @@ A long good collection of critical, philosophical texts on AI/ML can be found at
 - [Galanter, Philip (2016) What Is Generative Art? - Complexity Theory as a Context for Art Theory](#galanter-philip-2016-what-is-generative-art-complexity-theory-as-a-context-for-art-theory)
 - [Gleick, James (2008) Chaos - Making a New Science](#gleick-james-2008-chaos-making-a-new-science)
 - [Magnusson, Thor (2019) Sonic Writing - Technologies of Material, Symbolic, and Signal Inscriptions](#magnusson-thor-2019-sonic-writing-technologies-of-material-symbolic-and-signal-inscriptions)
+- [Plummer-Fernandez, Matthew (2018) The art of bots: A practice-based study of the multiplicity, entanglements and figuration of sociocomputational assemblages]()
 - [Shanken, Edward A. (2015) Systems](#shanken-edward-a-2015-systems)
 - [Simon, Herbert A. (1996) The Sciences of the Artificial](#simon-herbert-a-1996-the-sciences-of-the-artificial)
 - [Toffoli, Tommaso; Margolus, Norman (1987) Cellular Automata Machines - A New Environment for Modeling](#toffoli-tommaso-margolus-norman-1987-cellular-automata-machines-a-new-environment-for-modeling)
@@ -208,6 +209,14 @@ Part V Conclusion
 Notes
 Bibliography
 Index
+
+### Plummer-Fernandez, Matthew (2018) The art of bots: A practice-based study of the multiplicity, entanglements and figuration of sociocomputational assemblages
+
+|| Abstract
+This thesis examines and analyses an emerging art practice known as artbots. Artbots are internet-based software applications that are imbued with character and configured to engage and entertain online audiences. This form of practice, and the community of practice leading it, was found to be underrepresented and misunderstood. I argue that this artform is original and warrants a more thorough understanding. This thesis develops a conceptual framework for understanding artbots that focuses on and enables questioning around pertinent aspects of the practice. A wide range of literature was reviewed to provide theoretical underpinnings towards this framework, including literature on algorithm studies, science and technology studies, and software architecture. The devised framework examines artbot case studies through the notions of multiplicity, entanglement, and figuration, having understood artbots as heterogenous sociocomputational assemblages comprised of software components and human intra-activity. The research followed a varied methodology that encompassed participant observation and my own practice-based experiments in producing artbots. The study resulted in several original works. In addition, a showcase titled Art of Bots brought together key proponents and artbots, further providing material that is analysed in this thesis. The study helped identify and discuss artbots with attention to how they utilise modular software components in novel arrangements, how normative human and nonhuman relations of interaction are being eschewed in favour of entangled interrelations, and how artbots challenge common narratives dictating technological constructs by inventing unique characters and figurations.
+
+<a class="getLink" href="/plummer-fernandez_matthew_-_the_art_of_bots_-_a_practice-based_study_of_the_multiplicity_entanglements_and_figuration_of_sociocomputational_assemblages_(2018).pdf">get</a>
+
 
 ### Shanken, Edward A. (2015) Systems
 Edward Shanken did a great job assembling this publication on a range of topics relating to 'systems'; cybernetics, systems theory, generative art, etc. For a full listing of contents, see below.
