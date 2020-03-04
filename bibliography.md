@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-04T20:01:33.902Z
+date: 2020-03-04T20:02:09.236Z
 tags: books, references
 ---
 
@@ -14,6 +14,7 @@ A long good collection of critical, philosophical texts on AI/ML can be found at
 - [Boden, Margaret A.; Edmonds, Ernest A. (2009) What is Generative Art?](#boden-margaret-a-edmonds-ernest-a-2009-what-is-generative-art)
 - [Capra, Fritjof (1996) The Web of Life: A New Scientific Understanding of Living Systems](#Capra-Web-of-Life_-A-New-Scientific-Understanding-of-Living-Systems)
 - [Carvalhais, Miguel (2016) Artificial Aesthetics - Creative Practices in Computational Art and Design](#carvalhais-miguel-2016-artificial-aesthetics-creative-practices-in-computational-art-and-design)
+- [Colakides, Yiannis; Garrett, Marc; Gloerich, Inte (eds.) (2019) State Machines Reflections and Actions at the Edge of Digital Citizenship Finance and Art]()
 - [Dockray, Sean (2019) Performing Algorithms: Automation and Accident](#dockray-sean-2019-performing-algorithms-automation-and-accident)
 - [Flake, Gary William (1999) The Computational Beauty of Nature - Computer Explorations of Fractals, Chaos, Complex Systems, and Adaptation](#flake-gary-william-1999-the-computational-beauty-of-nature-computer-explorations-of-fractals-chaos-complex-systems-and-adaptation)
 - [Galanter, Philip (2016) What Is Generative Art? - Complexity Theory as a Context for Art Theory](#galanter-philip-2016-what-is-generative-art-complexity-theory-as-a-context-for-art-theory)
