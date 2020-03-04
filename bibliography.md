@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-04T18:28:34.953Z
+date: 2020-03-04T18:30:11.670Z
 tags: books, references
 ---
 
@@ -12,7 +12,7 @@ A long good collection of critical, philosophical texts on AI/ML can be found at
 ### Contents (alphabetical order)
 - [Benthall, Jonathan (1972) Science and Technology in Art Today](#benthall-jonathan-1972-science-and-technology-in-art-today)
 - [Boden, Margaret A.; Edmonds, Ernest A. (2009) What is Generative Art?](#boden-margaret-a-edmonds-ernest-a-2009-what-is-generative-art)
-- [Capra, Fritjof (1996) Web of Life: A New Scientific Understanding of Living Systems](#Capra-Web-of-Life_-A-New-Scientific-Understanding-of-Living-Systems)
+- [Capra, Fritjof (1996) The Web of Life: A New Scientific Understanding of Living Systems](#Capra-Web-of-Life_-A-New-Scientific-Understanding-of-Living-Systems)
 - [Carvalhais, Miguel (2016) Artificial Aesthetics - Creative Practices in Computational Art and Design](#carvalhais-miguel-2016-artificial-aesthetics-creative-practices-in-computational-art-and-design)
 - [Dockray, Sean (2019) Performing Algorithms: Automation and Accident](#dockray-sean-2019-performing-algorithms-automation-and-accident)
 - [Flake, Gary William (1999) The Computational Beauty of Nature - Computer Explorations of Fractals, Chaos, Complex Systems, and Adaptation](#flake-gary-william-1999-the-computational-beauty-of-nature-computer-explorations-of-fractals-chaos-complex-systems-and-adaptation)
@@ -49,7 +49,7 @@ A much cited article in the journal Digital Creativity giving a good overview of
 || Abstract
 There are various forms of what’s sometimes called generative art, or computer art. This paper distinguishes the major categories and asks whether the appropriate aesthetic criteria—and the locus of creativity—are the same in each case.
 
-### Capra, Fritjof (1996) Web of Life: A New Scientific Understanding of Living Systems
+### Capra, Fritjof (1996) The Web of Life: A New Scientific Understanding of Living Systems
 
 <a class="getLink" href="/capra-web-of-life_-a-new-scientific-understanding-of_-living-systems.pdf">get</a>
 
