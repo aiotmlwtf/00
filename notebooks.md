@@ -2,10 +2,15 @@
 title: notebooks
 description: 
 published: 1
-date: 2020-03-03T12:54:32.238Z
+date: 2020-03-04T20:04:31.034Z
 tags: 
 ---
 
-# collab links 
-
-https://colab.research.google.com/drive/1sGN0DJSlKNzfi7-FYYwG42rcDu0PgaYN
+<div style="background-color:#0a0;padding:0">
+  
+  [collab](https://colab.research.google.com/drive/1sGN0DJSlKNzfi7-FYYwG42rcDu0PgaYN)
+	
+  
+  
+  
+</div>
