@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-05T11:01:25.751Z
+date: 2020-03-05T11:19:20.403Z
 tags: books, references
 ---
 
@@ -287,12 +287,14 @@ from the introduction:
 
 *In 1944 the Austrian physicist Erwin Schrodinger wrote a short book entitled What Is Life? in which he advanced clear and com­ pelling hypotheses about the molecular structure of genes. This book stimulated biologists to think about genetics in a novel way and in so doing opened a new frontier of science, molecular biol­ ogy. 
 During subsequent decades, this new field generated a series of triumphant discoveries, culminating in the unraveling of the ge­ netic code. However, these spectacular advances did not bring biologists any closer to answering the question posed in the title of Schrodinger's book. Nor were they able to answer the many asso­ ciated questions that have puzzled scientists and philosophers for hundreds of years: How did complex structures evolve out of a random collection of molecules? What is the relationship between mind and brain? What is consciousness? 
-*
 
 
-*Different scientists call it by different names-"dynamical systems theory," "the theory of complexity," "nonlinear dynamics," "network dynamics," and so on. Chaotic attractors, fractals, dissipative structures, self-organization, and autopoietic networks are some of its key concepts. 
+and...
+
+Different scientists call it by different names-"dynamical systems theory," "the theory of complexity," "nonlinear dynamics," "network dynamics," and so on. Chaotic attractors, fractals, dissipative structures, self-organization, and autopoietic networks are some of its key concepts. 
 This approach to understanding life is pursued by outstanding researchers and their teams around the worid-llya Prigogine at the University of Brussels, Humberto Maturana at the University of Chile in Santiago, Francisco Varela at the Ecole Polytechnique in Paris, Lynn Margulis at the University of Massachusetts, Benoit Mandelbrot at Yale University, and Stuart Kauffman at the Santa Fe Institute, to name just a few. Several key discoveries of these scientists, published in technical papers and books, have been hailed as revolutionary. 
-However, to date nobody has proposed an overall synthesis that integrates the new discoveries into a single context and thus allows lay readers to understand them in a coherent way. This is the challenge and the promise of The Web ofLife. *
+However, to date nobody has proposed an overall synthesis that integrates the new discoveries into a single context and thus allows lay readers to understand them in a coherent way. This is the challenge and the promise of The Web ofLife.
+*
 
 || PART ONE / THE CULTURAL CONTEXT
 
