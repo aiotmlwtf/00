@@ -2,12 +2,13 @@
 title: chance
 description: randomness and related concepts
 published: 1
-date: 2020-03-05T13:29:39.971Z
+date: 2020-03-05T13:39:47.232Z
 tags: 
 ---
 
+tod:
 perlin noise (harmonic, self-similar relationship)
-white/red/violet
+spectra:blue/black/brown/grey/pink/white/red/violet (different colours in sound/math domains!)
 brownian motion
 stochastic
 1/f
