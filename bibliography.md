@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-05T11:31:17.057Z
+date: 2020-03-05T11:34:45.519Z
 tags: books, references
 ---
 
@@ -13,6 +13,8 @@ A long good collection of critical, philosophical texts on AI/ML can be found at
 - [Benthall, Jonathan (1972) Science and Technology in Art Today](#benthall-jonathan-1972-science-and-technology-in-art-today)
 - [Boden, Margaret A.; Edmonds, Ernest A. (2009) What is Generative Art?](#boden-margaret-a-edmonds-ernest-a-2009-what-is-generative-art)
 - [Capra, Fritjof; (1996) The Web of Life: A New Scientific Understanding of Living Systems](#Capra-Web-of-Life_-A-New-Scientific-Understanding-of-Living-Systems)
+(#capra-Fritjof (1996) The Web of Life: A New Scientific Understanding of Living Systems
+
 - [Carvalhais, Miguel (2016) Artificial Aesthetics - Creative Practices in Computational Art and Design](#carvalhais-miguel-2016-artificial-aesthetics-creative-practices-in-computational-art-and-design)
 - [Colakides, Yiannis; Garrett, Marc; Gloerich, Inte (eds.) (2019) State Machines Reflections and Actions at the Edge of Digital Citizenship Finance and Art](https://aiotmlwtf.xyz/bibliography#colakides-yiannis-garrett-marc-gloerich-inte-eds-2019-state-machines-reflections-and-actions-at-the-edge-of-digital-citizenship-finance-and-art)
 - [Dockray, Sean (2019) Performing Algorithms: Automation and Accident](#dockray-sean-2019-performing-algorithms-automation-and-accident)
