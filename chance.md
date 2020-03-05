@@ -2,11 +2,11 @@
 title: chance
 description: randomness and related concepts
 published: 1
-date: 2020-03-05T13:28:03.762Z
+date: 2020-03-05T13:29:39.971Z
 tags: 
 ---
 
-perlin noise (harmonic relationship)
+perlin noise (harmonic, self-similar relationship)
 white/red/violet
 brownian motion
 stochastic
