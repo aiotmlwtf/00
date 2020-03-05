@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-04T23:42:10.468Z
+date: 2020-03-05T10:58:21.029Z
 tags: books, references
 ---
 
@@ -283,3 +283,36 @@ Notes
 
 ### Capra, Fritjof (1994) Web of Life: A New Scientific Understanding of Living Systems
 
+PART ONE / THE CULTURAL CONTEXT
+
+CHAPTER 1 Deep Ecology-A New Paradigm 3 
+PART Two / THE RISE OF SYSTEMS THINKING 
+CHAPTER 2 CHAPTER 3 CHAPTER 4 
+From the Parts to the Whole 17 Systems Theories 36 The Logic of the Mind 5 1 
+
+PART THREE / THE PIECES OF THE PUZZLE 
+CHAPTER 5 Models of Self-Organization 75 
+CHAPTER 6 The Mathematics of Complexity 112 
+PART FOUR / THE NATURE OF LIFE
+CHAPTER 7 A New Synthesis 157 
+CHAPTER 8 Dissipative Structures 177
+CHAPTER 9 Self-Making 194
+CHAPTER 10 The Unfolding of Life 222
+ CHAPTER 11  Bringing Forth a World 264
+CHAPTER 12 Knowing That We Know 286 
+Epilogue: Ecological Literacy 297
+Appendix: Bateson Revisited 305
+Notes 309 Bibliography 325 
+Index 335 
+
+"
+In 1944 the Austrian physicist Erwin Schrodinger wrote a short book entitled What Is Life? in which he advanced clear and com­ pelling hypotheses about the molecular structure of genes. This book stimulated biologists to think about genetics in a novel way and in so doing opened a new frontier of science, molecular biol­ ogy. 
+During subsequent decades, this new field generated a series of triumphant discoveries, culminating in the unraveling of the ge­ netic code. However, these spectacular advances did not bring biologists any closer to answering the question posed in the title of Schrodinger's book. Nor were they able to answer the many asso­ ciated questions that have puzzled scientists and philosophers for hundreds of years: How did complex structures evolve out of a random collection of molecules? What is the relationship between mind and brain? What is consciousness? 
+"
+
+
+"
+Different scientists call it by different names-"dynamical systems theory," "the theory of complexity," "nonlinear dynamics," "network dynamics," and so on. Chaotic attractors, fractals, dissipative structures, self-organization, and autopoietic networks are some of its key concepts. 
+This approach to understanding life is pursued by outstanding researchers and their teams around the worid-llya Prigogine at the University of Brussels, Humberto Maturana at the University of Chile in Santiago, Francisco Varela at the Ecole Polytechnique in Paris, Lynn Margulis at the University of Massachusetts, Benoit Mandelbrot at Yale University, and Stuart Kauffman at the Santa Fe Institute, to name just a few. Several key discoveries of these scientists, published in technical papers and books, have been hailed as revolutionary. 
+However, to date nobody has proposed an overall synthesis that integrates the new discoveries into a single context and thus allows lay readers to understand them in a coherent way. This is the challenge and the promise of The Web ofLife. 
+"
