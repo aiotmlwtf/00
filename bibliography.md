@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-05T11:23:09.661Z
+date: 2020-03-05T11:28:37.530Z
 tags: books, references
 ---
 
@@ -51,6 +51,41 @@ A much cited article in the journal Digital Creativity giving a good overview of
 || Abstract
 There are various forms of what’s sometimes called generative art, or computer art. This paper distinguishes the major categories and asks whether the appropriate aesthetic criteria—and the locus of creativity—are the same in each case.
 
+
+### Capra, Fritjof (1996) The Web of Life: A New Scientific Understanding of Living Systems
+
+<a class="getLink" href="/capra_fritjof_-_the_web_of_life_-_a_new_scientific_understanding_of_living_systems_(1996).pdf">get</a>
+
+|| from the introduction:
+
+*In 1944 the Austrian physicist Erwin Schrodinger wrote a short book entitled What Is Life? in which he advanced clear and com­ pelling hypotheses about the molecular structure of genes. This book stimulated biologists to think about genetics in a novel way and in so doing opened a new frontier of science, molecular biology. During subsequent decades, this new field generated a series of triumphant discoveries, culminating in the unraveling of the genetic code. However, these spectacular advances did not bring biologists any closer to answering the question posed in the title of Schrodinger's book. Nor were they able to answer the many associated questions that have puzzled scientists and philosophers for hundreds of years: How did complex structures evolve out of a random collection of molecules? What is the relationship between mind and brain? What is consciousness?*
+
+...
+
+*Different scientists call it by different names-"dynamical systems theory," "the theory of complexity," "nonlinear dynamics," "network dynamics," and so on. Chaotic attractors, fractals, dissipative structures, self-organization, and autopoietic networks are some of its key concepts. This approach to understanding life is pursued by outstanding researchers and their teams around the worid-llya Prigogine at the University of Brussels, Humberto Maturana at the University of Chile in Santiago, Francisco Varela at the Ecole Polytechnique in Paris, Lynn Margulis at the University of Massachusetts, Benoit Mandelbrot at Yale University, and Stuart Kauffman at the Santa Fe Institute, to name just a few. Several key discoveries of these scientists, published in technical papers and books, have been hailed as revolutionary. However, to date nobody has proposed an overall synthesis that integrates the new discoveries into a single context and thus allows lay readers to understand them in a coherent way. This is the challenge and the promise of The Web ofLife.*
+
+|| Chapters
+**PART ONE / THE CULTURAL CONTEXT**
+1 Deep Ecology-A New Paradigm 3
+**PART Two / THE RISE OF SYSTEMS THINKING **
+2 From the Parts to the Whole 17 
+3 Systems Theories 36
+4  The Logic of the Mind 51
+**PART THREE / THE PIECES OF THE PUZZLE**
+5 Models of Self-Organization 75 
+6 The Mathematics of Complexity 112 
+**PART FOUR / THE NATURE OF LIFE**
+7 A New Synthesis 157 
+8 Dissipative Structures 177
+9 Self-Making 194
+10 The Unfolding of Life 222
+11  Bringing Forth a World 264
+12 Knowing That We Know 286 
+Epilogue: Ecological Literacy 297
+Appendix: Bateson Revisited 305
+Notes 309 
+Bibliography 325 
+Index 335
 
 ### Carvalhais, Miguel (2016) Artificial Aesthetics - Creative Practices in Computational Art and Design
 
@@ -277,47 +312,3 @@ This book, then, is an introductory harmony and orchestration manual for "compos
 7 Emergence
 Appendix: On-line Resources
 Notes
-
-### Capra, Fritjof (1996) The Web of Life: A New Scientific Understanding of Living Systems
-
-<a class="getLink" href="/capra_fritjof_-_the_web_of_life_-_a_new_scientific_understanding_of_living_systems_(1996).pdf">get</a>
-
-from the introduction:
-
-*In 1944 the Austrian physicist Erwin Schrodinger wrote a short book entitled What Is Life? in which he advanced clear and com­ pelling hypotheses about the molecular structure of genes. This book stimulated biologists to think about genetics in a novel way and in so doing opened a new frontier of science, molecular biology. During subsequent decades, this new field generated a series of triumphant discoveries, culminating in the unraveling of the genetic code. However, these spectacular advances did not bring biologists any closer to answering the question posed in the title of Schrodinger's book. Nor were they able to answer the many associated questions that have puzzled scientists and philosophers for hundreds of years: How did complex structures evolve out of a random collection of molecules? What is the relationship between mind and brain? What is consciousness? 
-
-...
-
-Different scientists call it by different names-"dynamical systems theory," "the theory of complexity," "nonlinear dynamics," "network dynamics," and so on. Chaotic attractors, fractals, dissipative structures, self-organization, and autopoietic networks are some of its key concepts. This approach to understanding life is pursued by outstanding researchers and their teams around the worid-llya Prigogine at the University of Brussels, Humberto Maturana at the University of Chile in Santiago, Francisco Varela at the Ecole Polytechnique in Paris, Lynn Margulis at the University of Massachusetts, Benoit Mandelbrot at Yale University, and Stuart Kauffman at the Santa Fe Institute, to name just a few. Several key discoveries of these scientists, published in technical papers and books, have been hailed as revolutionary. However, to date nobody has proposed an overall synthesis that integrates the new discoveries into a single context and thus allows lay readers to understand them in a coherent way. This is the challenge and the promise of The Web ofLife.
-*
-
-|| PART ONE / THE CULTURAL CONTEXT
-
-1 Deep Ecology-A New Paradigm 3
-
-PART Two / THE RISE OF SYSTEMS THINKING 
-2 From the Parts to the Whole 17 
-3 Systems Theories 36
-4  The Logic of the Mind 51 
-
-PART THREE / THE PIECES OF THE PUZZLE 
-
-5 Models of Self-Organization 75 
-6 The Mathematics of Complexity 112 
-
-PART FOUR / THE NATURE OF LIFE
-
-7 A New Synthesis 157 
-8 Dissipative Structures 177
-9 Self-Making 194
-10 The Unfolding of Life 222
-11  Bringing Forth a World 264
-12 Knowing That We Know 286 
-
-Epilogue: Ecological Literacy 297
-Appendix: Bateson Revisited 305
-Notes 309 
-Bibliography 325 
-Index 335 
-
-
