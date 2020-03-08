@@ -2,7 +2,7 @@
 title: Utility
 description: bits of handy something
 published: 1
-date: 2020-03-08T23:01:48.034Z
+date: 2020-03-08T23:02:29.829Z
 tags: 
 ---
 
@@ -13,11 +13,11 @@ https://grep.app
 ## get a terminal on the jetson
 
 ```bash
-# first set hostname on nano
-hostname ai01
+# first set unique hostname on nano
+hostname ai0x
 
 # on laptop
-ssh -Y ai@ai01.local -C xterm
+ssh -Y ai@ai0x.local -C xterm
 
 ```
 
