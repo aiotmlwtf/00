@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-09T12:11:02.197Z
+date: 2020-03-09T12:20:14.844Z
 tags: books, references
 ---
 
@@ -15,6 +15,7 @@ A long good collection of critical, philosophical texts on AI/ML can be found at
 - [Capra, Fritjof (1996) The Web of Life: A New Scientific Understanding of Living Systems](#Capra-Web-of-Life_-A-New-Scientific-Understanding-of-Living-Systems)
 - [Carvalhais, Miguel (2016) Artificial Aesthetics - Creative Practices in Computational Art and Design](#carvalhais-miguel-2016-artificial-aesthetics-creative-practices-in-computational-art-and-design)
 - [Colakides, Yiannis; Garrett, Marc; Gloerich, Inte (eds.) (2019) State Machines Reflections and Actions at the Edge of Digital Citizenship Finance and Art](https://aiotmlwtf.xyz/bibliography#colakides-yiannis-garrett-marc-gloerich-inte-eds-2019-state-machines-reflections-and-actions-at-the-edge-of-digital-citizenship-finance-and-art)
+- Cybernetic Serendipity Reimagined - AISB2018
 - [Dockray, Sean (2019) Performing Algorithms: Automation and Accident](#dockray-sean-2019-performing-algorithms-automation-and-accident)
 - [Flake, Gary William (1999) The Computational Beauty of Nature - Computer Explorations of Fractals, Chaos, Complex Systems, and Adaptation](#flake-gary-william-1999-the-computational-beauty-of-nature-computer-explorations-of-fractals-chaos-complex-systems-and-adaptation)
 - [Galanter, Philip (2016) What Is Generative Art? - Complexity Theory as a Context for Art Theory](#galanter-philip-2016-what-is-generative-art-complexity-theory-as-a-context-for-art-theory)
@@ -132,6 +133,11 @@ The use of digital technology to reinforce state ideology is not restricted to m
 
 
 Download for free at [statemachines.eu](http://www.statemachines.eu/books/state-machines-reflections-and-actions-at-the-edge-of-digital-citizenship-finance-and-art/)
+
+### Cybernetic Serendipity Reimagined - AISB2018
+Symposium articles on the recap of the seminal Cybernetic Serendipity exhibition at ICA London in 1969. Favorite article, an original paper by Edward Ihnatowicz where he describes in detail the technical implementation and his motivation for creating SAM, the Sound Activated Mobile. Thanks Aleksandar Zivanovic for digging up all this important information about Ihnatowicz' work!
+
+<a class="getLink" href="/cybernetic_serendipity_reimagined_-_aisb2018.pdf">get</a>
 
 ### Dockray, Sean (2019) Performing Algorithms: Automation and Accident
 <a class="getLink" href="/dockray_sean_-_performing_algorithms_-_automation_and_accident(2019).pdf">get</a>
