@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-09T12:20:14.844Z
+date: 2020-03-09T12:22:27.915Z
 tags: books, references
 ---
 
@@ -15,7 +15,7 @@ A long good collection of critical, philosophical texts on AI/ML can be found at
 - [Capra, Fritjof (1996) The Web of Life: A New Scientific Understanding of Living Systems](#Capra-Web-of-Life_-A-New-Scientific-Understanding-of-Living-Systems)
 - [Carvalhais, Miguel (2016) Artificial Aesthetics - Creative Practices in Computational Art and Design](#carvalhais-miguel-2016-artificial-aesthetics-creative-practices-in-computational-art-and-design)
 - [Colakides, Yiannis; Garrett, Marc; Gloerich, Inte (eds.) (2019) State Machines Reflections and Actions at the Edge of Digital Citizenship Finance and Art](https://aiotmlwtf.xyz/bibliography#colakides-yiannis-garrett-marc-gloerich-inte-eds-2019-state-machines-reflections-and-actions-at-the-edge-of-digital-citizenship-finance-and-art)
-- Cybernetic Serendipity Reimagined - AISB2018
+- [Cybernetic Serendipity Reimagined - AISB2018](#cybernetic-serendipity-reimagined-aisb2018)
 - [Dockray, Sean (2019) Performing Algorithms: Automation and Accident](#dockray-sean-2019-performing-algorithms-automation-and-accident)
 - [Flake, Gary William (1999) The Computational Beauty of Nature - Computer Explorations of Fractals, Chaos, Complex Systems, and Adaptation](#flake-gary-william-1999-the-computational-beauty-of-nature-computer-explorations-of-fractals-chaos-complex-systems-and-adaptation)
 - [Galanter, Philip (2016) What Is Generative Art? - Complexity Theory as a Context for Art Theory](#galanter-philip-2016-what-is-generative-art-complexity-theory-as-a-context-for-art-theory)
@@ -240,6 +240,7 @@ This thesis examines and analyses an emerging art practice known as artbots. Art
 ### Reichardt, Jasia (1969) Cybernetic Serendipity - The Computer and the Arts
 
 The breakthrough exhibition of the late 1960s about cybernetics, computers and art.
+Also check out [Cybernetic Serendipity Reimagined - AISB2018](#cybernetic-serendipity-reimagined-aisb2018)
 
 <a class="getLink" href="/reichardt_jasia_(ed)_-_cybernetic_serendipidity_-_the_computer_and_the_arts_(1969).pdf">get</a>
 
