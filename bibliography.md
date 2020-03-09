@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-09T12:49:54.571Z
+date: 2020-03-09T14:23:57.903Z
 tags: books, references
 ---
 
@@ -307,4 +307,11 @@ Appendix: On-line Resources
 Notes
 
 ### Capra, Fritjof (1994) Web of Life: A New Scientific Understanding of Living Systems
+
+
+### Code Bending: A New Creative Coding Practice
+
+A nice article with examples of "Code Bending", which is about repurposing softwares to communicate with other ones.
+
+<a class="getLink" href="https://www.researchgate.net/publication/271190788_Code_Bending_A_New_Creative_Coding_Practice">get</a>
 
