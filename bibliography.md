@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-09T14:23:57.903Z
+date: 2020-03-09T14:25:43.113Z
 tags: books, references
 ---
 
@@ -313,5 +313,6 @@ Notes
 
 A nice article with examples of "Code Bending", which is about repurposing softwares to communicate with other ones.
 
-<a class="getLink" href="https://www.researchgate.net/publication/271190788_Code_Bending_A_New_Creative_Coding_Practice">get</a>
+<a class="getLink" href="https://www.researchgate.net/publication/271190788_Code_Bending_A_New_Creative_Coding_Practice">Article link</a>
+<a class="getLink" href="http://www.illucia.com/">Example work "illusia" by Chris Novello</a>
 
