@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-09T12:47:04.865Z
+date: 2020-03-09T12:49:54.571Z
 tags: books, references
 ---
 
@@ -11,7 +11,7 @@ A long good collection of critical, philosophical texts on AI/ML can be found at
 
 ### Contents (alphabetical order)
 - [Benthall, Jonathan (1972) Science and Technology in Art Today](#benthall-jonathan-1972-science-and-technology-in-art-today)
-- [Boden, Margaret (2008) Mind as Machine - A History of Cognitive Science]()
+- [Boden, Margaret (2008) Mind as Machine - A History of Cognitive Science](#boden-margaret-2008-mind-as-machine-a-history-of-cognitive-science)
 - [Boden, Margaret A.; Edmonds, Ernest A. (2009) What is Generative Art?](#boden-margaret-a-edmonds-ernest-a-2009-what-is-generative-art)
 - [Capra, Fritjof (1996) The Web of Life: A New Scientific Understanding of Living Systems](#Capra-Web-of-Life_-A-New-Scientific-Understanding-of-Living-Systems)
 - [Carvalhais, Miguel (2016) Artificial Aesthetics - Creative Practices in Computational Art and Design](#carvalhais-miguel-2016-artificial-aesthetics-creative-practices-in-computational-art-and-design)
@@ -50,7 +50,7 @@ I considered adding a final chapter on 'Social Responsibility in Science and in 
 ### Boden, Margaret (2008) Mind as Machine - A History of Cognitive Science
 Two volumes or more than 1600 pages of Margaret Boden's computational take on cognitive science.
 
-<a class="getLink" href="">get</a>
+<a class="getLink" href="/boden_margaret_-_mind_as_machine_-_a_history_of_cognitive_science.pdf">get</a>
 
 Also check out [this interview](/boden_margeret_-interview_a_polymath_at_play.pdf) with Margaret Boden.
 
