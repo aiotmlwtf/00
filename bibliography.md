@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-09T12:22:27.915Z
+date: 2020-03-09T12:25:21.969Z
 tags: books, references
 ---
 
@@ -135,7 +135,7 @@ The use of digital technology to reinforce state ideology is not restricted to m
 Download for free at [statemachines.eu](http://www.statemachines.eu/books/state-machines-reflections-and-actions-at-the-edge-of-digital-citizenship-finance-and-art/)
 
 ### Cybernetic Serendipity Reimagined - AISB2018
-Symposium articles on the recap of the seminal Cybernetic Serendipity exhibition at ICA London in 1969. Favorite article, an original paper by Edward Ihnatowicz where he describes in detail the technical implementation and his motivation for creating SAM, the Sound Activated Mobile. Thanks Aleksandar Zivanovic for digging up all this important information about Ihnatowicz' work!
+Symposium articles on the recap of the seminal Cybernetic Serendipity exhibition at ICA London in 1969. Favorite article, an original paper by Edward Ihnatowicz where he describes in detail the technical implementation and his motivation for creating SAM, the Sound Activated Mobile. Thanks Aleksandar Zivanovic for digging up all this important information about [Ihnatowicz' work](http://www.senster.com/ihnatowicz/senster/index.htm)!
 
 <a class="getLink" href="/cybernetic_serendipity_reimagined_-_aisb2018.pdf">get</a>
 
