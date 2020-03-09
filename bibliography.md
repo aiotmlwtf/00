@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-06T21:46:04.137Z
+date: 2020-03-09T12:09:55.197Z
 tags: books, references
 ---
 
@@ -21,6 +21,7 @@ A long good collection of critical, philosophical texts on AI/ML can be found at
 - [Gleick, James (2008) Chaos - Making a New Science](#gleick-james-2008-chaos-making-a-new-science)
 - [Magnusson, Thor (2019) Sonic Writing - Technologies of Material, Symbolic, and Signal Inscriptions](#magnusson-thor-2019-sonic-writing-technologies-of-material-symbolic-and-signal-inscriptions)
 - [Plummer-Fernandez, Matthew (2018) The art of bots: A practice-based study of the multiplicity, entanglements and figuration of sociocomputational assemblages](#plummer-fernandez-matthew-2018-the-art-of-bots-a-practice-based-study-of-the-multiplicity-entanglements-and-figuration-of-sociocomputational-assemblages)
+- [Reichardt, Jasia (1969) Cybernetic Serendipity - The Computer and the Arts]()
 - [Shanken, Edward A. (2015) Systems](#shanken-edward-a-2015-systems)
 - [Simon, Herbert A. (1996) The Sciences of the Artificial](#simon-herbert-a-1996-the-sciences-of-the-artificial)
 - [Toffoli, Tommaso; Margolus, Norman (1987) Cellular Automata Machines - A New Environment for Modeling](#toffoli-tommaso-margolus-norman-1987-cellular-automata-machines-a-new-environment-for-modeling)
@@ -230,6 +231,11 @@ This thesis examines and analyses an emerging art practice known as artbots. Art
 
 <a class="getLink" href="/plummer-fernandez_matthew_-_the_art_of_bots_-_a_practice-based_study_of_the_multiplicity_entanglements_and_figuration_of_sociocomputational_assemblages_(2018).pdf">get</a>
 
+### Reichardt, Jasia (1969) Cybernetic Serendipity - The Computer and the Arts
+
+The breakthrough exhibition of the late 1960s about cybernetics, computers and art.
+
+<a class="getLink" href="/reichardt_jasia_(ed)_-_cybernetic_serendipidity_-_the_computer_and_the_arts_(1969).pdf">get</a>
 
 ### Shanken, Edward A. (2015) Systems
 Edward Shanken did a great job assembling this publication on a range of topics relating to 'systems'; cybernetics, systems theory, generative art, etc. For a full listing of contents, see below.
