@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-09T12:38:29.348Z
+date: 2020-03-09T12:47:04.865Z
 tags: books, references
 ---
 
@@ -11,6 +11,7 @@ A long good collection of critical, philosophical texts on AI/ML can be found at
 
 ### Contents (alphabetical order)
 - [Benthall, Jonathan (1972) Science and Technology in Art Today](#benthall-jonathan-1972-science-and-technology-in-art-today)
+- [Boden, Margaret (2008) Mind as Machine - A History of Cognitive Science]()
 - [Boden, Margaret A.; Edmonds, Ernest A. (2009) What is Generative Art?](#boden-margaret-a-edmonds-ernest-a-2009-what-is-generative-art)
 - [Capra, Fritjof (1996) The Web of Life: A New Scientific Understanding of Living Systems](#Capra-Web-of-Life_-A-New-Scientific-Understanding-of-Living-Systems)
 - [Carvalhais, Miguel (2016) Artificial Aesthetics - Creative Practices in Computational Art and Design](#carvalhais-miguel-2016-artificial-aesthetics-creative-practices-in-computational-art-and-design)
@@ -45,6 +46,13 @@ Chapters One to Four are largely concerned with the relationship between art and
 I considered adding a final chapter on 'Social Responsibility in Science and in Art', but decided that if my conception of social responsibility means anything it would be implicit in the texture of the whole book. I take as a starting-point the fact that many people in both science and art are trying to relate their work more tellingly to the problems of society as a whole. I sympathize with those who resort to political activism; but for me there are underlying issues of creativity and community which claim first attention.
 
 <a class="getLink" href="/benthall_jonathan_-_science_and_technology_in_art_today_(1972).pdf">get</a>
+
+### Boden, Margaret (2008) Mind as Machine - A History of Cognitive Science
+Two volumes or more than 1600 pages of Margaret Boden's computational take on cognitive science.
+
+<a class="getLink" href="">get</a>
+
+Also check out [this interview](/boden_margeret_-interview_a_polymath_at_play.pdf) with Margaret Boden.
 
 ### Boden, Margaret A.; Edmonds, Ernest A. (2009) What is generative art?
 A much cited article in the journal Digital Creativity giving a good overview of artificial creativity, authorship and computational approaches in art generation.
