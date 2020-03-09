@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-09T12:25:21.969Z
+date: 2020-03-09T12:38:29.348Z
 tags: books, references
 ---
 
@@ -50,6 +50,9 @@ I considered adding a final chapter on 'Social Responsibility in Science and in 
 A much cited article in the journal Digital Creativity giving a good overview of artificial creativity, authorship and computational approaches in art generation.
 
 <a class="getLink" href="/boden_margaret_a._edmonds_ernest_a._-_what_is_generative_art(2009).pdf">get</a>
+
+Also check out [this interview](/boden_margeret_-interview_a_polymath_at_play.pdf) with Margaret Boden.
+
 || Abstract
 There are various forms of what’s sometimes called generative art, or computer art. This paper distinguishes the major categories and asks whether the appropriate aesthetic criteria—and the locus of creativity—are the same in each case.
 
