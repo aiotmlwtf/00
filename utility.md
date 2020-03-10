@@ -2,7 +2,7 @@
 title: Utility
 description: bits of handy something
 published: 1
-date: 2020-03-10T14:05:27.032Z
+date: 2020-03-10T14:06:18.533Z
 tags: 
 ---
 
@@ -18,15 +18,10 @@ https://mathurls.com
 https://www.commandlinefu.com/commands/browse
 https://onlinelinuxtools.com
 
-
 ### convert/parse/encode/decode
-https://www.browserling.com/tools/
 https://www.browserling.com/tools/html-to-markdown
 https://onlineunicodetools.com/?msg11
-
-### generate
-https://onlinefractaltools.com/
-
+(xml/html/yaml/csv/bin etc.)
 
 ### curl cookbook
 https://catonmat.net/cookbooks/curl
