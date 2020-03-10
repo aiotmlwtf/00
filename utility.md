@@ -2,13 +2,34 @@
 title: Utility
 description: bits of handy something
 published: 1
-date: 2020-03-09T03:03:05.166Z
+date: 2020-03-10T14:05:27.032Z
 tags: 
 ---
 
-
 ### search in git repositories
 https://grep.app
+
+### news (ml/dev/math)
+[hackernews](https://hn.algolia.com/?dateRange=all&page=0&prefix=false&query=machine%20learning&sort=byDate&type=story)
+https://devurls.com
+https://mathurls.com
+
+### cmdline
+https://www.commandlinefu.com/commands/browse
+https://onlinelinuxtools.com
+
+
+### convert/parse/encode/decode
+https://www.browserling.com/tools/
+https://www.browserling.com/tools/html-to-markdown
+https://onlineunicodetools.com/?msg11
+
+### generate
+https://onlinefractaltools.com/
+
+
+### curl cookbook
+https://catonmat.net/cookbooks/curl
 
 ### get a terminal on the jetson
 
