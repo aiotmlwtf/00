@@ -2,28 +2,28 @@
 title: algorithms02
 description: specific ML-related functions/models/algorithms/networks
 published: 1
-date: 2020-03-10T11:20:07.213Z
+date: 2020-03-10T11:56:35.882Z
 tags: 
 ---
 
-Here are specific implementations/functions.
+links:
 
-For a general overview, look [here](/algorithms01)
-For an overview of **deep learning algorithms**, look [here](/algorithms-dl)
+[**types of learning**](/algorithms01)
+[**deep learning algorithms**](/algorithms-dl)
 
-### Backpropagation
+## Neural Networks
 
-Neural Networks are able to learn the desired function using big amounts of data and an iterative algorithm called [backpropagation](https://brilliant.org/wiki/backpropagation/). We feed the network with data, it produces an output, we compare that output with a desired one (using a loss function) and we readjust the weights based on the difference.
+Like the human brain, [Neural Networks](http://karpathy.github.io/neuralnets/) consist of Neurons. Each Neuron receives signals as an input, multiplies them by weights, sums them up and applies a non-linear function. These neurons are stacked next to each other and organized in layers.
 
-And repeat. And repeat. The adjustment of weights is performed using a non-linear optimization technique called [stochastic gradient descent](https://ruder.io/optimizing-gradient-descent/).
+![neuron](https://theaisummer.com/assets/img/posts/neuron.jpg)
 
+Every behavior and every system can ultimately be represented as a mathematical function (sometimes a very complex one). Finding that function leads to a better understanding of the system. Finding that function is very difficult. Neural Networks are good at **function approximation** and so can help *estimate* the function.
+
+
+## Backpropagation
+
+Neural Networks are able to learn the desired function using big amounts of data and an iterative algorithm called [backpropagation](https://brilliant.org/wiki/backpropagation/). We feed the network with data, it produces an output, we compare that output with a desired one (using a loss function) and we readjust the weights based on the difference. The adjustment of weights is performed using a non-linear optimization technique called [stochastic gradient descent](https://ruder.io/optimizing-gradient-descent/).
 After a while, the network will become really good at producing the output. Hence, the training is over. Hence, we manage to approximate our function. And if we pass an input with an unknown output to the network, it will give us an answer based on the approximated function.
-
-Let’s use an example to make this clearer. Let’s say that for some reason we want to identify images with a tree. We feed the network with any kind of images and it produces an output. Since we know if the image has actually a tree or not, we can compare the output with our truth and adjust the network.
-
-As we pass more and more images, the network will make fewer and fewer mistakes. Now we can feed it with an unknown image, and it will tell us if the image contains a tree.
-
-Over the years researchers came up with amazing improvements on the original idea. Each new architecture was targeted on a specific problem and one achieved better accuracy and speed. We can classify all those new models in specific categories:
 
 ## Feedforward Neural Networks (FNN)
 
@@ -31,20 +31,21 @@ Feedforward Neural Networks are usually [fully connected](https://theaisummer.co
 
 ![neural-network](https://theaisummer.com/assets/img/posts/neural-network.png)
 
-They are exceptionally well on tasks like classification and regression. Contrary to other machine learning algorithms, they don’t converge so easily. The more data they have, the higher their accuracy.
+Used for tasks like classification and regression. Contrary to other machine learning algorithms, they don’t converge so easily. The more data they have, the higher their accuracy.
 
-## functions
+---
 
-fitness function (GA)
-activation function (NN)
-sigmoid
-[softmax](/softmax)
-back-propagation 
-converging
+If we want to identify tree images. We feed the network with any kind of images and it produces an output. Since we know if the image has actually a tree or not, we can compare the output with our truth and adjust the network.
+
+As we pass more and more images, the network will make fewer and fewer mistakes. Now we can feed it with an unknown image, and it will tell us if the image contains a tree.
+
+---
+
+fitness function (GA) / activation function (NN)
+sigmoid / [softmax](/softmax)
+relu
 over-fitting
 inference
-
-## networks/models
 
 **clustering**
 grouping of data instances or objects with similar features and characteristics
