@@ -2,7 +2,7 @@
 title: Utility
 description: bits of handy something
 published: 1
-date: 2020-03-11T16:18:51.030Z
+date: 2020-03-11T16:39:48.986Z
 tags: 
 ---
 
