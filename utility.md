@@ -2,7 +2,7 @@
 title: Utility
 description: bits of handy something
 published: 1
-date: 2020-03-11T16:39:48.986Z
+date: 2020-03-11T16:41:53.685Z
 tags: 
 ---
 
@@ -10,9 +10,9 @@ tags:
 https://grep.app
 
 
-### access jetson (xterm/code-oss/notebook) from your laptop
+### access jetson's jupyter and code-editor from another computer
 
-**access jetson's jupyter notebook**
+**jupyter notebook**
 - prepare
 ```bash
 # generate jupyter config file (/home/ai/.jupyter/jupyter_notebook_config.py)
@@ -29,15 +29,16 @@ jupyter notebook password # set a password
 
 jupyter notebook 				 		# start jupyter
 jupyter notebook xxx.ipynb 	# idem with a notebook
-
-[connect]
+```
+- connect
+```
 http://ai0x.local:8888/login?
 
-[file tree]
+# file tree
 http://ai0x.local:8888/tree
 ```
 
-**access jetson's code-oss (code editor)**
+**code-oss (code editor)**
 - prepare
 ```bash
 
