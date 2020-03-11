@@ -2,7 +2,7 @@
 title: Utility
 description: bits of handy something
 published: 1
-date: 2020-03-11T16:41:53.685Z
+date: 2020-03-11T16:50:12.229Z
 tags: 
 ---
 
@@ -10,57 +10,6 @@ tags:
 https://grep.app
 
 
-### access jetson's jupyter and code-editor from another computer
-
-**jupyter notebook**
-- prepare
-```bash
-# generate jupyter config file (/home/ai/.jupyter/jupyter_notebook_config.py)
-jupyter notebook --generate-config
-
-# at the end of the config file, add:
-c.NotebookApp.allow_origin = '*' 	#	allow all origins
-c.NotebookApp.ip = '0.0.0.0' 			# listen to all IPs
-
-# you *may need to open the default jupyter port on the firewall: tcp:8888, eg, ufw
-sudo ufw allow 8888 
-
-jupyter notebook password # set a password
-
-jupyter notebook 				 		# start jupyter
-jupyter notebook xxx.ipynb 	# idem with a notebook
-```
-- connect
-```
-http://ai0x.local:8888/login?
-
-# file tree
-http://ai0x.local:8888/tree
-```
-
-**code-oss (code editor)**
-- prepare
-```bash
-
-# server side (on the jetson)
-nano /etc/ssh/sshd_config
-
-# add at end of file (or find parameters with Ctrl-W)
-X11Forwarding yes
-# I also set these, not sure if they're all needed here
-AllowAgentForwarding yes
-AllowTcpForwarding yes
-X11Forwarding yes
-TCPKeepAlive yes
-
-# set unique hostname on jetson
-hostname ai0x
-```
-- connect and open code-oss
-```bash
-ssh -Y ai@ai0x.local -C code-oss -n
-# -n : force new window
-```
 
 ### news (ml/dev/math)
 [hackernews](https://hn.algolia.com/?dateRange=all&page=0&prefix=false&query=machine%20learning&sort=byDate&type=story)
