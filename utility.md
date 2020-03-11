@@ -2,7 +2,7 @@
 title: Utility
 description: bits of handy something
 published: 1
-date: 2020-03-11T16:11:43.787Z
+date: 2020-03-11T16:18:51.030Z
 tags: 
 ---
 
@@ -29,11 +29,13 @@ jupyter notebook password # set a password
 
 jupyter notebook 				 		# start jupyter
 jupyter notebook xxx.ipynb 	# idem with a notebook
+
+[connect]
+http://ai0x.local:8888/login?
+
+[file tree]
+http://ai0x.local:8888/tree
 ```
-- connect: http://ai0x.local:8888/login?
-
-- file tree: http://ai0x.local:8888/tree
-
 
 **access jetson's code-oss (code editor)**
 - prepare
