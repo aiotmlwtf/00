@@ -2,16 +2,18 @@
 title: notebooks
 description: 
 published: 1
-date: 2020-03-11T16:57:31.012Z
+date: 2020-03-11T17:00:49.426Z
 tags: 
 ---
 
+
+--- 
 <span style="background-color:#0c0; font-size: 16px;">
-
-  [aiotmlwtf collab file](https://colab.research.google.com/drive/1sGN0DJSlKNzfi7-FYYwG42rcDu0PgaYN)
-
+  
+  [aiotmlwtf collab file](https://colab.research.google.com/drive/1sGN0DJSlKNzfi7-FYYwG42rcDu0PgaYN) 
 </span>
 
+---
 
 # jetson access
 
@@ -20,7 +22,7 @@ tags:
 </span>
 
 ### prepare
-```
+```bash
 #set jetson's unique hostname
 sudo hostname ai0x
 
@@ -47,7 +49,7 @@ jupyter notebook 				 		# start jupyter
 jupyter notebook xxx.ipynb 	# idem with a notebook
 ```
 ### connect to jupyter
-```
+```bash
 http://ai0x.local:8888/login?
 
 # file tree
@@ -57,11 +59,9 @@ http://ai0x.local:8888/tree
 ## **code-oss (code editor)**
 ### prepare
 ```bash
-
-# server side (on the jetson)
+# on the jetson, at the end of
 nano /etc/ssh/sshd_config
-
-# add these lines at the end, or find the parameters in the file and change to:
+# add these lines (or find the parameters in the file and change to):
 X11Forwarding yes
 TCPKeepAlive yes
 # possibly not needed
