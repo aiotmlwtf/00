@@ -2,12 +2,13 @@
 title: Utility
 description: bits of handy something
 published: 1
-date: 2020-03-11T16:50:12.229Z
+date: 2020-03-12T19:47:35.778Z
 tags: 
 ---
 
 ### search in git repositories
 https://grep.app
+
 
 
 
