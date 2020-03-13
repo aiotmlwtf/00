@@ -2,7 +2,7 @@
 title: AIOTMLWTF 0.1a
 description: Computational Approaches in Art
 published: 1
-date: 2020-03-02T13:04:38.661Z
+date: 2020-03-13T23:43:46.049Z
 tags: home
 ---
 
@@ -11,7 +11,7 @@ running program; all else is prophecy.”*
  Herbert Simon
 
 ## introduction
-AIOTMLWTF 0.1a is an eight day course/workshop at the ArtScience Interfaculty of the Royal Academy of Art and Royal Conservatory in The Hague Netherlands exploring current and historic aspects of Artificial Intelligence and Machine Learning and more in general an introduction in computational arts.
+AIOTMLWTF 0.1a was an eight day course/workshop at the ArtScience Interfaculty of the Royal Academy of Art and Royal Conservatory in The Hague Netherlands exploring current and historic aspects of Artificial Intelligence and Machine Learning and more in general an introduction in computational arts.
 
 The educational model is collaborative learning. By this we mean all participants and teachers share their knowledge with the group in short seminars taking from 01 minutes to an hour or more.
 
