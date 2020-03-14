@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-14T20:25:57.013Z
+date: 2020-03-14T21:50:57.010Z
 tags: 
 ---
 
@@ -19,47 +19,47 @@ sudo apt-get update
 sudo apt-get install nano screen curl apt-utils
 cp -r /usr/local/cuda/bin/cuda-install-samples-10.0.sh /home/ai
 ```
-
-ai@ai0x:~$ docker version
-Version:           18.09.7 
-update docker to 19.03
-
+update docker 18.09 to 19.03
 ```bash
 curl -sSL https://get.docker.com/ | sh
 sudo usermod -aG docker ai
 ```
 
+
+https://github.com/Tony607/jetson_nvidia_dockers
+https://www.dlology.com/blog/how-to-run-keras-model-on-jetson-nano-in-nvidia-docker-container/
 ```
-sudo docker pull nvcr.io/nvidia/nemo:v0.9
+sudo docker pull docker.io/zcw607/jetson:r1.0.1
+sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix zcw607/jetson:r1.0.1
 ```
 
-```
-sudo docker pull nvcr.io/nvidia/pytorch:20.02-py3
-```
-
-```
-sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix nvcr.io/nvidia/l4t-base:r32.3.1
-```
-
-**Pytorch**
-apex extension: https://github.com/NVIDIA/apex
 
 **Neural Modules Toolkit**
+
 Neural Modules toolkit for conversational AI, speech and NLP networks, collections of ASR, NLP and TTS modules. Modules represent data layers, encoders, decoders, language models, loss functions, or methods of combining activations. NeMo provides the combinination and re-use of building blocks while providing a level of semantic correctness checking via its neural type system. 
 - pretrained models: **Jasper, Quartznet, Transformer(attention is all you need), Tacotron2, Waveglow**
-
-
-
-```
-sudo docker run --runtime=nvidia -it --rm -v --shm-size=8g -p 8888:8888 -p 6006:6006 --ulimit memlock=-1 --ulimit stack=67108864 nvcr.io/nvidia/nemo:v0.9
-sudo docker run --runtime=nvidia -it --rm -v <nemo_github_folder>:/NeMo --shm-size=8g -p 8888:8888 -p 6006:6006 --ulimit memlock=-1 --ulimit stack=67108864 nvcr.io/nvidia/nemo:v0.9
-```
-
 
 ```
 docker pull nvcr.io/nemo/nemo_asr_app_img:v1.0
 wget https://ngc.nvidia.com/catalog/models/nvidia:quartznet15x5
 wget https://ngc.nvidia.com/catalog/models/nvidia:wsj_quartznet_15x5
+```
+
+https://ngc.nvidia.com/catalog/containers/nvidia:nemo
+```
+sudo docker pull nvcr.io/nvidia/nemo:v0.9
+sudo docker run --runtime=nvidia -it --rm -v --shm-size=8g -p 8888:8888 -p 6006:6006 --ulimit memlock=-1 --ulimit stack=67108864 nvcr.io/nvidia/nemo:v0.9
+
+sudo docker run --runtime=nvidia -it --rm -v <nemo_github_folder>:/NeMo --shm-size=8g -p 8888:8888 -p 6006:6006 --ulimit memlock=-1 --ulimit stack=67108864 nvcr.io/nvidia/nemo:v0.9
+```
+
+
+**Pytorch**
+apex extension: https://github.com/NVIDIA/apex
+
+```
+sudo docker pull nvcr.io/nvidia/pytorch:20.02-py3
+sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix nvcr.io/nvidia/l4t-base:r32.3.1
 ```
 
 
