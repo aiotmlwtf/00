@@ -2,18 +2,21 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-14T16:43:07.043Z
+date: 2020-03-14T16:45:40.012Z
 tags: 
 ---
 
 Surface area
 
-In order to perform optimized machine learning tasks, the jetson nano needs to be populated with drivers and libraries, which also have to co-operate with python libraries like numpy, scipy, pycuda, pytorch etc. etc. 
+In order to perform optimized machine learning tasks, the jetson nano needs to be populated with drivers and libraries, which also have to co-operate with python libraries like numpy, scipy, pycuda, pytorch etc. etc.
 This (anno20200314) proved to be cumbersome here (ymmv) using just gcc, apt-get and pip
 
 Goal is to obtain a (docker) setup to experiment with **nvidia-docker, tf, pytorch, cuda, opencl, nemo-asr, jupyter, python3 and other things DL**
 
----
+--- 
+
+### NVIDIA SDK Manager
+
 video: [installing NVIDIA Jetson SDK Manager, JetPack 2.2](https://www.youtube.com/watch?v=s1QDsa6SzuQ)
 
 notes:
@@ -31,6 +34,7 @@ notes:
 - NVIDIA container runtime - docker integration 0.9.0
 - Multimedia API - high-level (gstreamer) and lower-level media apis
 - DeepStream SDK - streaming analytics toolkit for situational awareness through computer vision, intelligent video analysis (IVA) and multi-sensor processing
+
 
 ---
 
