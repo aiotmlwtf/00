@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-14T12:32:07.506Z
+date: 2020-03-14T12:40:08.063Z
 tags: 
 ---
 
@@ -25,3 +25,8 @@ find sources_sync.sh in the install path in a subfolder called 'Linux for tegra'
 
 
 ---
+NVIDIA Jetson SDK Manager (JetPack)
+https://www.youtube.com/watch?v=s1QDsa6SzuQ
+
+nvidia-docker
+https://www.youtube.com/watch?v=-Y4T71UDcMY
