@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-14T21:50:57.010Z
+date: 2020-03-14T21:51:53.500Z
 tags: 
 ---
 
@@ -64,6 +64,7 @@ sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/
 
 
 ---
+
 jetson headless: disable ubuntu desktop
 
 ```bash
@@ -76,6 +77,7 @@ log in via ssh
 sudo systemctl set-default multi-user.target
 ```
 
+---
 
 ### NVIDIA SDK Manager
 
