@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-14T17:26:05.104Z
+date: 2020-03-14T18:23:52.373Z
 tags: 
 ---
 
@@ -42,7 +42,7 @@ notes:
 ```
 
 ```
-sudo apt-get install nano screen curl
+sudo apt-get install nano screen curl apt-utils
 ```
 
 ---
