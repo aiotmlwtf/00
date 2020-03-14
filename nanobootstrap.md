@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-14T16:45:40.012Z
+date: 2020-03-14T17:12:44.916Z
 tags: 
 ---
 
@@ -35,11 +35,18 @@ notes:
 - Multimedia API - high-level (gstreamer) and lower-level media apis
 - DeepStream SDK - streaming analytics toolkit for situational awareness through computer vision, intelligent video analysis (IVA) and multi-sensor processing
 
+---
+
+```
+sudo apt-get install nano screen
+```
 
 ---
 
+nvidia-docker 
 
-nvidia-docker https://www.youtube.com/watch?v=-Y4T71UDcMY
+https://www.youtube.com/watch?v=-Y4T71UDcMY
+
 
 
 ---
