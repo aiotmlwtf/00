@@ -2,34 +2,29 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-14T20:07:18.140Z
+date: 2020-03-14T20:10:07.434Z
 tags: 
 ---
 
-Surface area
 
 nvidia-docker  https://www.youtube.com/watch?v=-Y4T71UDcMY
 sdk manager [installing NVIDIA Jetson SDK Manager, JetPack 2.2](https://www.youtube.com/watch?v=s1QDsa6SzuQ)
 
 ---
-
-Goal is to obtain a (docker) setup to experiment with **nvidia-docker, tf, pytorch, cuda, opencl, nemo-asr, jupyter, python3 and other things DL**
+obtain a (docker) setup to experiment with **nvidia-docker, tf, pytorch, cuda, opencl, nemo-asr, jupyter, python3 and other things DL**
 
 ---
-
 ```bash
 sudo apt-get install nano screen curl apt-utils
 cp -r /usr/local/cuda/bin/cuda-install-samples-10.0.sh /home/ai
-# update to 19.03
+# update docker to 19.03
 curl -sSL https://get.docker.com/ | sh
 sudo usermod -aG docker ai
 ```
 
----
 ```
 sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix nvcr.io/nvidia/l4t-base:r32.3.1
 ```
-
 
 **Pytorch**
 apex extension: https://github.com/NVIDIA/apex
@@ -37,19 +32,8 @@ apex extension: https://github.com/NVIDIA/apex
 docker pull nvcr.io/nvidia/pytorch:20.02-py3
 ```
 **Neural Modules Toolkit**
-Neural Modules toolkit for conversational AI
-speech and NLP networks
-
-Modules represent data layers, encoders, decoders, language models, loss functions, or methods of combining activations. NeMo makes it easy to combine and re-use these building blocks while providing a level of semantic correctness checking via its neural type system. 
-
-collections of ASR, NLP and TTS modules
-
-pretrained models:
-- Jasper
-- Quartznet
-- Transformer(Attention is all you need)
-- Tacotron2
-- Waveglow
+Neural Modules toolkit for conversational AI, speech and NLP networks, collections of ASR, NLP and TTS modules. Modules represent data layers, encoders, decoders, language models, loss functions, or methods of combining activations. NeMo provides the combinination and re-use of building blocks while providing a level of semantic correctness checking via its neural type system. 
+- pretrained models: **Jasper, Quartznet, Transformer(attention is all you need), Tacotron2, Waveglow**
 
 
 ```
