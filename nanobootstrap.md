@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-14T12:40:08.063Z
+date: 2020-03-14T13:30:45.112Z
 tags: 
 ---
 
@@ -18,6 +18,10 @@ Goal is to obtain a (docker) setup to experiment with **nvidia-docker, tf, pytor
 
 Let's dedicate a [ubuntu installation](https://ubuntu.com/download/desktop) (eg. a [usb flash drive](https://linuxhint.com/run-ubuntu-18-04-from-usb-stick/)) to run [nvidia's sdk manager](https://developer.nvidia.com/nvidia-sdk-manager) and install proper graphics drivers, kernel extensions etcetera from there[.](https://devtalk.nvidia.com/default/topic/1055416/request-install-linux-headers-on-jetson-nano/?offset=9)
 
+NVIDIA Jetson SDK Manager (JetPack)
+https://www.youtube.com/watch?v=s1QDsa6SzuQ
+
+
 To install kernel sources (on a fresh Ubuntu 18 install), see: 
 https://developer.nvidia.com/embedded/dlc/nv-sdk-manager
 find sources_sync.sh in the install path in a subfolder called 'Linux for tegra'
@@ -25,8 +29,5 @@ find sources_sync.sh in the install path in a subfolder called 'Linux for tegra'
 
 
 ---
-NVIDIA Jetson SDK Manager (JetPack)
-https://www.youtube.com/watch?v=s1QDsa6SzuQ
-
 nvidia-docker
 https://www.youtube.com/watch?v=-Y4T71UDcMY
