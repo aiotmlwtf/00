@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-14T18:23:52.373Z
+date: 2020-03-14T19:55:06.219Z
 tags: 
 ---
 
@@ -51,6 +51,11 @@ nvidia-docker
 
 https://www.youtube.com/watch?v=-Y4T71UDcMY
 
+```bash
+# update to 19.03
+curl -sSL https://get.docker.com/ | sh
+sudo usermod -aG docker ai
+```
 
 
 ---
