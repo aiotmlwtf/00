@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-14T17:12:44.916Z
+date: 2020-03-14T17:18:38.429Z
 tags: 
 ---
 
@@ -17,6 +17,7 @@ Goal is to obtain a (docker) setup to experiment with **nvidia-docker, tf, pytor
 
 ### NVIDIA SDK Manager
 
+https://www.jetsonhacks.com/2019/06/04/nvidia-sdk-manager-for-jetson-jetpack-4-2/
 video: [installing NVIDIA Jetson SDK Manager, JetPack 2.2](https://www.youtube.com/watch?v=s1QDsa6SzuQ)
 
 notes:
@@ -35,18 +36,11 @@ notes:
 - Multimedia API - high-level (gstreamer) and lower-level media apis
 - DeepStream SDK - streaming analytics toolkit for situational awareness through computer vision, intelligent video analysis (IVA) and multi-sensor processing
 
----
-
-```
-sudo apt-get install nano screen
-```
 
 ---
 
-nvidia-docker 
 
-https://www.youtube.com/watch?v=-Y4T71UDcMY
-
+nvidia-docker https://www.youtube.com/watch?v=-Y4T71UDcMY
 
 
 ---
