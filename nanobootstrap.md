@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-15T14:28:28.055Z
+date: 2020-03-15T14:40:11.852Z
 tags: 
 ---
 
@@ -15,6 +15,7 @@ obtain a (docker) setup to experiment with **nvidia-docker, tf, pytorch, cuda, o
 
 Nano SD image is a Ubuntu 18.04 port and has native x64 support for ARM8, the user space and Linux kernel architecture is aarch64 / arm64 (64-bit).
 
+### prep
 
 ---
 ```bash
@@ -28,6 +29,27 @@ curl -sSL https://get.docker.com/ | sh
 sudo usermod -aG docker ai
 ```
 
+### Archiconda:
+
+https://github.com/Archiconda/build-tools/releases
+https://github.com/Archiconda/build-tools/releases/tag/0.2.3
+click/download:
+Archiconda3-0.2.3-Linux-aarch64.sh
+$ bash Archiconda3-0.2.3-Linux-aarch64.sh
+
+install/use Archiconda on a Jetson Nano inside Docker:
+https://github.com/helmuthva/jetson/blob/master/workflow/deploy/ml-base/src/Dockerfile
+
+Overall "ml-base" project:
+https://github.com/helmuthva/jetson
+
+Docker Image including Jupyter notebooks in the "jupyter" image:
+https://github.com/helmuthva/jetson/blob/master/workflow/deploy/jupyter/src/Dockerfile
+The build instructions in the Dockerfiles can be easily replicated on the host in case you don't want to use Docker.
+
+
+
+### tf/keras docker
 
 https://github.com/Tony607/jetson_nvidia_dockers
 https://www.dlology.com/blog/how-to-run-keras-model-on-jetson-nano-in-nvidia-docker-container/
