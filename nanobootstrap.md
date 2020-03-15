@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-14T21:51:53.500Z
+date: 2020-03-15T14:28:28.055Z
 tags: 
 ---
 
@@ -12,6 +12,9 @@ sdk manager [installing NVIDIA Jetson SDK Manager, JetPack 2.2](https://www.yout
 
 ---
 obtain a (docker) setup to experiment with **nvidia-docker, tf, pytorch, cuda, opencl, nemo-asr, jupyter, python3 and other things DL**
+
+Nano SD image is a Ubuntu 18.04 port and has native x64 support for ARM8, the user space and Linux kernel architecture is aarch64 / arm64 (64-bit).
+
 
 ---
 ```bash
@@ -48,6 +51,7 @@ wget https://ngc.nvidia.com/catalog/models/nvidia:wsj_quartznet_15x5
 https://ngc.nvidia.com/catalog/containers/nvidia:nemo
 ```
 sudo docker pull nvcr.io/nvidia/nemo:v0.9
+
 sudo docker run --runtime=nvidia -it --rm -v --shm-size=8g -p 8888:8888 -p 6006:6006 --ulimit memlock=-1 --ulimit stack=67108864 nvcr.io/nvidia/nemo:v0.9
 
 sudo docker run --runtime=nvidia -it --rm -v <nemo_github_folder>:/NeMo --shm-size=8g -p 8888:8888 -p 6006:6006 --ulimit memlock=-1 --ulimit stack=67108864 nvcr.io/nvidia/nemo:v0.9
