@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-15T14:40:11.852Z
+date: 2020-03-15T14:42:40.723Z
 tags: 
 ---
 
@@ -15,9 +15,8 @@ obtain a (docker) setup to experiment with **nvidia-docker, tf, pytorch, cuda, o
 
 Nano SD image is a Ubuntu 18.04 port and has native x64 support for ARM8, the user space and Linux kernel architecture is aarch64 / arm64 (64-bit).
 
-### prep
+prep
 
----
 ```bash
 sudo apt-get update
 sudo apt-get install nano screen curl apt-utils
@@ -48,7 +47,6 @@ https://github.com/helmuthva/jetson/blob/master/workflow/deploy/jupyter/src/Dock
 The build instructions in the Dockerfiles can be easily replicated on the host in case you don't want to use Docker.
 
 
-
 ### tf/keras docker
 
 https://github.com/Tony607/jetson_nvidia_dockers
@@ -59,10 +57,14 @@ sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/
 ```
 
 
-**Neural Modules Toolkit**
+### **Neural Modules Toolkit**
 
-Neural Modules toolkit for conversational AI, speech and NLP networks, collections of ASR, NLP and TTS modules. Modules represent data layers, encoders, decoders, language models, loss functions, or methods of combining activations. NeMo provides the combinination and re-use of building blocks while providing a level of semantic correctness checking via its neural type system. 
-- pretrained models: **Jasper, Quartznet, Transformer(attention is all you need), Tacotron2, Waveglow**
+Neural Modules toolkit for conversational AI, speech and NLP networks.
+Collections of ASR, NLP and TTS modules representing data layers, encoders, decoders, language models, loss functions, or methods of combining activations. 
+
+NeMo allows the combination and re-use of those building blocks (while providing a level of semantic correctness checking via its neural type system). 
+
+Pretrained models: **Jasper, Quartznet, Transformer, Tacotron2, Waveglow**
 
 ```
 docker pull nvcr.io/nemo/nemo_asr_app_img:v1.0
