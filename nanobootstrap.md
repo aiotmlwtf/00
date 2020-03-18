@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-18T20:11:16.379Z
+date: 2020-03-18T20:16:47.956Z
 tags: 
 ---
 
@@ -24,10 +24,9 @@ prep
 ```bash
 sudo apt-get update
 sudo apt-get install nano screen curl apt-utils
-cp -r /usr/local/cuda/bin/cuda-install-samples-10.0.sh /home/ai
 ```
-check:
 
+#### deep learning SDK
 https://developer.nvidia.com/deep-learning-software
 The Deep Learning SDK requires [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
 
@@ -48,7 +47,10 @@ subroutines for sparse matrices, eg. for natural language processing
 - Automatic Mixed Precision speedup
 
 
-### update docker 18.09 to 19.03
+cp -r /usr/local/cuda/bin/cuda-install-samples-10.0.sh /home/ai
+
+
+### docker
 
 https://github.com/NVIDIA/nvidia-docker/wiki
 https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson
@@ -59,14 +61,15 @@ nvidia-docker  https://www.youtube.com/watch?v=-Y4T71UDcMY
 
 https://devblogs.nvidia.com/gpu-containers-runtime/
 ```bash
+# update docker 18.09 to 19.03
 curl -sSL https://get.docker.com/ | sh
+sudo docker version
 sudo usermod -aG docker ai
 ```
 
 
 
-### Archiconda:
-
+### conda
 https://github.com/Archiconda/build-tools/releases
 https://github.com/Archiconda/build-tools/releases/tag/0.2.3
 click/download:
