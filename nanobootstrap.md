@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-18T19:37:31.935Z
+date: 2020-03-18T19:40:33.480Z
 tags: 
 ---
 
@@ -31,14 +31,12 @@ The Deep Learning SDK requires [CUDA Toolkit](https://developer.nvidia.com/cuda-
 - cuDNN: DL primitives
 - DALI: input data processing
 - NCCL: multi-GPU communication routines
-- TensorRT
-DL Inference Engine, inference runtime for production deployment
+- TensorRT: DL Inference Engine, inference runtime for production deployment
 - DeepStream SDK: C++ API/runtime for transcoding, video analytics, inference
 - Optical Flow SDK
-Video Inference, also: stereo disparity calculation, depth estimation
-- Transfer Learning Toolkit
-High level SDK for tuning domain specific DNNs,
-AI enabled Annotation for Medical Imaging (AI-Assisted Annotation SDK
+Video Inference, stereo disparity calculation, depth estimation
+- Transfer Learning Toolkit: SDK for tuning domain specific DNNs
+- AI-Assisted Annotation SDK: for Medical Imaging
 - Deep Learning GPU Training System (DIGITS)
 train for image classification, segmentation and object detection tasks
 - cuBLAS: GPU-accelerated Linear Algebra functionality
