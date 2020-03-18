@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-18T20:16:47.956Z
+date: 2020-03-18T22:37:08.900Z
 tags: 
 ---
 
@@ -26,28 +26,7 @@ sudo apt-get update
 sudo apt-get install nano screen curl apt-utils
 ```
 
-#### deep learning SDK
-https://developer.nvidia.com/deep-learning-software
-The Deep Learning SDK requires [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
 
-- cuDNN: DL primitives
-- DALI: input data processing
-- NCCL: multi-GPU communication routines
-- TensorRT: DL Inference Engine, inference runtime for production deployment
-- DeepStream SDK: C++ API/runtime for transcoding, video analytics, inference
-- Optical Flow SDK
-Video Inference, stereo disparity calculation, depth estimation
-- Transfer Learning Toolkit: SDK for tuning domain specific DNNs
-- AI-Assisted Annotation SDK: for Medical Imaging
-- Deep Learning GPU Training System (DIGITS)
-train for image classification, segmentation and object detection tasks
-- cuBLAS: GPU-accelerated Linear Algebra functionality
-- cuSPARSE: 
-subroutines for sparse matrices, eg. for natural language processing
-- Automatic Mixed Precision speedup
-
-
-cp -r /usr/local/cuda/bin/cuda-install-samples-10.0.sh /home/ai
 
 
 ### docker
@@ -66,8 +45,6 @@ curl -sSL https://get.docker.com/ | sh
 sudo docker version
 sudo usermod -aG docker ai
 ```
-
-
 
 ### conda
 https://github.com/Archiconda/build-tools/releases
@@ -97,7 +74,10 @@ sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/
 ```
 
 
-### **Neural Modules Toolkit**
+
+
+
+### NeMo **Neural Modules Toolkit**
 
 Neural Modules toolkit for conversational AI, speech and NLP networks.
 Collections of ASR, NLP and TTS modules representing data layers, encoders, decoders, language models, loss functions, or methods of combining activations. 
@@ -131,9 +111,49 @@ sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/
 ```
 
 
+
+
 ---
 
-jetson headless: disable ubuntu desktop
+### deep learning SDK
+https://developer.nvidia.com/deep-learning-software
+The Deep Learning SDK requires [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
+
+NVIDIA SDK Manager
+- probably easier to just flash the sd card, then doing it through sdk manager
+
+notes:
+- a nvidia account is needed to download the sdk
+- a dedicated [ubuntu installation](https://ubuntu.com/download/desktop) (eg. a [usb flash drive](https://linuxhint.com/run-ubuntu-18-04-from-usb-stick/)) to run [nvidia's sdk manager](https://developer.nvidia.com/nvidia-sdk-manager) is recommended
+- 8 GB of memory (and a full-HD screen) are required according to NVIDIA, but if 8GB is not available, go to the settings tab (upper-right of sdk manager), lower the number of concurrent downloads and threads per downloads (slow but possible)
+
+**Installable:**
+- CUDA Toolkit for L4T - c/c++ gpu-acceleration libraries)
+- NVIDIA container runtime - docker integration 0.9.0
+- cuDNN - CUDA library with DL primitives
+- TensorRT
+fast inference engine, inference runtime for production deployment using INT8/FP16 optimized precision which reduces latency
+- OpenCV
+- Multimedia API: high-level (gstreamer) and lower-level media apis
+- DeepStream SD
+C++ API/runtime/toolkit for transcoding, streaming video analytics, inference (situational awareness) through computer vision, intelligent video analysis (IVA) and multi-sensor processing
+- VisionWorks
+- VPI
+- DALI: input data processing
+- NCCL: multi-GPU communication routines
+- Optical Flow SDK: video inference, stereo disparity calculation, depth estimation
+- Transfer Learning Toolkit: SDK for tuning domain specific DNNs
+- AI-Assisted Annotation SDK: for medical imaging
+- DIGITS: DL GPU training system for image classification, segmentation and object detection - = - cuBLAS: GPU-accelerated Linear Algebra functionality
+- cuSPARSE: subroutines for sparse matrices, eg. for natural language processing
+- Automatic Mixed Precision speedup
+
+
+```bash
+cp -r /usr/local/cuda/bin/cuda-install-samples-10.0.sh /home/ai
+```
+
+- jetson headless: disable ubuntu desktop
 
 ```bash
 # the screen will turn black
@@ -144,29 +164,7 @@ log in via ssh
 # if you like your nano this way you can make the change persist after reboot
 sudo systemctl set-default multi-user.target
 ```
-
----
-
-### NVIDIA SDK Manager
-
-notes:
-- a nvidia account is needed to download the sdk
-- a dedicated [ubuntu installation](https://ubuntu.com/download/desktop) (eg. a [usb flash drive](https://linuxhint.com/run-ubuntu-18-04-from-usb-stick/)) to run [nvidia's sdk manager](https://developer.nvidia.com/nvidia-sdk-manager) is recommended
-- 8 GB of memory (and a full-HD screen) are required according to NVIDIA, but if 8GB is not available, go to the settings tab (upper-right of sdk manager), lower the number of concurrent downloads and threads per downloads (slow but possible)
-
-**Installed are:**
-- CUDA Toolkit for L4T - c/c++ gpu-acceleration libraries)
-- cuDNN - CUDA Deep Neural Network library
-- TensorRT - fast inference using INT8/FP16 optimized precision which reduces latency
-- OpenCV
-- VisionWorks
-- VPI
-- NVIDIA container runtime - docker integration 0.9.0
-- Multimedia API - high-level (gstreamer) and lower-level media apis
-- DeepStream SDK - streaming analytics toolkit for situational awareness through computer vision, intelligent video analysis (IVA) and multi-sensor processing
-
----
-To install kernel sources (on a fresh Ubuntu 18 install), see: 
+- to install kernel sources (on a fresh Ubuntu 18 install), see: 
 https://developer.nvidia.com/embedded/dlc/nv-sdk-manager
 find sources_sync.sh in the install path in a subfolder called 'Linux for tegra'
 ./source_sync.sh -k tegra-l4t-r32.1
