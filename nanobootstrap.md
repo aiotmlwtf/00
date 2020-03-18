@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-18T19:40:33.480Z
+date: 2020-03-18T20:08:47.786Z
 tags: 
 ---
 
@@ -14,7 +14,8 @@ sdk manager [installing NVIDIA Jetson SDK Manager, JetPack 2.2](https://www.yout
 goal: obtain a (docker) setup to experiment with **nvidia-docker, tf, pytorch, cuda, opencl, nemo-asr, jupyter, python3 and other things DL**
 
 ---
-Nano SD image is a Ubuntu 18.04 port and has native x64 support for ARM8, the user space and Linux kernel architecture is aarch64 / arm64 (64-bit).
+
+Jetson Nano is ARMv8. Nano SD image is a Ubuntu 18.04 port and has native x64 support for ARM8, the user space and Linux kernel architecture is aarch64 / arm64 (64-bit).
 
 prep
 
@@ -46,7 +47,11 @@ subroutines for sparse matrices, eg. for natural language processing
 
 
 ### update docker 18.09 to 19.03
-19.03 a
+
+https://github.com/NVIDIA/nvidia-docker/wiki
+https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson
+https://github.com/collabnix/dockerlabs/tree/master/beginners/install/jetson-nano
+
 nvidia-docker  https://www.youtube.com/watch?v=-Y4T71UDcMY
 
 
