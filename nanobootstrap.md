@@ -2,17 +2,18 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-15T14:42:40.723Z
+date: 2020-03-18T19:37:31.935Z
 tags: 
 ---
 
+https://developer.nvidia.com/embedded/jetpack
 
-nvidia-docker  https://www.youtube.com/watch?v=-Y4T71UDcMY
 sdk manager [installing NVIDIA Jetson SDK Manager, JetPack 2.2](https://www.youtube.com/watch?v=s1QDsa6SzuQ)
 
 ---
-obtain a (docker) setup to experiment with **nvidia-docker, tf, pytorch, cuda, opencl, nemo-asr, jupyter, python3 and other things DL**
+goal: obtain a (docker) setup to experiment with **nvidia-docker, tf, pytorch, cuda, opencl, nemo-asr, jupyter, python3 and other things DL**
 
+---
 Nano SD image is a Ubuntu 18.04 port and has native x64 support for ARM8, the user space and Linux kernel architecture is aarch64 / arm64 (64-bit).
 
 prep
@@ -22,11 +23,42 @@ sudo apt-get update
 sudo apt-get install nano screen curl apt-utils
 cp -r /usr/local/cuda/bin/cuda-install-samples-10.0.sh /home/ai
 ```
-update docker 18.09 to 19.03
+check:
+
+https://developer.nvidia.com/deep-learning-software
+The Deep Learning SDK requires [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
+
+- cuDNN: DL primitives
+- DALI: input data processing
+- NCCL: multi-GPU communication routines
+- TensorRT
+DL Inference Engine, inference runtime for production deployment
+- DeepStream SDK: C++ API/runtime for transcoding, video analytics, inference
+- Optical Flow SDK
+Video Inference, also: stereo disparity calculation, depth estimation
+- Transfer Learning Toolkit
+High level SDK for tuning domain specific DNNs,
+AI enabled Annotation for Medical Imaging (AI-Assisted Annotation SDK
+- Deep Learning GPU Training System (DIGITS)
+train for image classification, segmentation and object detection tasks
+- cuBLAS: GPU-accelerated Linear Algebra functionality
+- cuSPARSE: 
+subroutines for sparse matrices, eg. for natural language processing
+- Automatic Mixed Precision speedup
+
+
+### update docker 18.09 to 19.03
+19.03 a
+nvidia-docker  https://www.youtube.com/watch?v=-Y4T71UDcMY
+
+
+https://devblogs.nvidia.com/gpu-containers-runtime/
 ```bash
 curl -sSL https://get.docker.com/ | sh
 sudo usermod -aG docker ai
 ```
+
+
 
 ### Archiconda:
 
