@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-18T20:10:53.746Z
+date: 2020-03-18T20:11:16.379Z
 tags: 
 ---
 
@@ -16,7 +16,7 @@ goal: obtain a (docker) setup to experiment with **nvidia-docker, tf, pytorch, c
 ---
 
 Jetson Nano cpu is ARMv8
-SD image is a Ubuntu 18.04 port, has native x64 support for ARM8
+SD image is an Ubuntu 18.04 LTS port, has native x64 support for ARM8
 user space and kernel arch are aarch64 / arm64 (64-bit)
 
 prep
