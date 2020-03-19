@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T18:14:15.449Z
+date: 2020-03-19T18:15:26.261Z
 tags: installation
 ---
 
@@ -54,11 +54,11 @@ http://www.ironspider.ca/format_text/fontstyles.htm
   </details>
   
   
-<div style="background-color:#0c0;">
+<div style="background-color:#0e0;">
 <details>
 <summary>Docker</summary>
 
-A container (running process) interacts with its own private filesystem provided by the Docker image, which has the resources required to run an application, eg. code/binary, runtimes, dependencies and other filesystem objects.
+A **container (=running process)** interacts with its own private filesystem provided by the docker image, which has the resources required to run an application, eg. code/binary, runtimes, dependencies and other filesystem objects.
 
   ```bash
 # update docker 18.09 to 19.03
