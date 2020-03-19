@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T20:19:10.677Z
+date: 2020-03-19T20:24:58.680Z
 tags: installation, jetson nano
 ---
 
@@ -71,6 +71,8 @@ This is just for reference, it's easier to just flash the sd card, instead of do
 
 </details>
 </div>
+
+https://docs.docker.com/config/pruning/
 
 <details>
 <summary>jetson headless</summary>
