@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T16:38:56.720Z
+date: 2020-03-19T17:12:59.960Z
 tags: installation
 ---
 
@@ -18,6 +18,7 @@ jupyter/conda, tf, pytorch, cuda, opencl, deepspeech, nemo-asr</span>, etc.
 ```bash
 sudo apt-get update
 sudo apt-get install nano screen curl apt-utils
+sudo apt-get install libffi-dev python-openssl
 
 sudo apt-get install libnvidia-container-tools nvidia-container-runtime
 sudo apt-get install cuda*
