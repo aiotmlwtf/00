@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T18:30:00.441Z
+date: 2020-03-19T18:37:23.298Z
 tags: installation
 ---
 
@@ -53,26 +53,8 @@ NVIDIA SDK Manager / JetPack
 https://developer.nvidia.com/embedded/jetpack
 
 **installs**
-
-- NVIDIA container runtime - docker integration 0.9.0
-- OpenCV
-- VisionWorks
-- VPI
-- DALI: input data processing
-- NCCL: multi-GPU communication routines  
-- CUDA Toolkit for L4T - c/c++ gpu-acceleration libraries)
-- cuDNN - CUDA library with DL primitives
-- TensorRT - fast inference enginefor production deployment using INT8/FP16 optimized precision (reduced latency)
-- Multimedia API: high-level (gstreamer) and lower-level media apis
-- DeepStream SDK
-  C++ API/runtime/toolkit for transcoding, streaming video analytics, inference (situational awareness) through computer vision, intelligent video analysis (IVA) and multi-sensor processing
-- Optical Flow SDK: video inference, stereo disparity calculation, depth estimation
-- Transfer Learning Toolkit: SDK for tuning domain specific DNNs
-- AI-Assisted Annotation SDK: for medical imaging
-- DIGITS: DL GPU training system for image classification, segmentation and object detection 
-- cuBLAS: GPU-accelerated Linear Algebra functionality
-- cuSPARSE: subroutines for sparse matrices, eg. for natural language processing
-- Automatic Mixed Precision speedup
+NVIDIA container runtime (docker integration 0.9.0), OpenCV, VisionWorks, VPI, DALI (input data processing),  NCCL (multi-GPU communication routines), CUDA Toolkit for L4T (c/c++ gpu-acceleration libraries), cuDNN (CUDA library with DL primitives), TensorRT (fast inference engine for production deployment using INT8/FP16 optimized precision with reduced latency), Multimedia API (high-level and lower-level media apis),
+Optical Flow SDK (video inference, stereo disparity calculation, depth estimation), Transfer Learning Toolkit SDK for tuning domain specific DNNs, AI-Assisted Annotation SDK for medical imaging), DIGITS (DL GPU training system for image classification, segmentation and object detection), cuBLAS (CPU-accelerated Linear Algebra functionality), cuSPARSE (subroutines for sparse matrices, eg. for natural language processing), Automatic Mixed Precision speedup, DeepStream SDK (C++ API/runtime/toolkit for transcoding, streaming video analytics, inference (situational awareness) through computer vision, intelligent video analysis (IVA) and multi-sensor processing)
 
   
 ---
