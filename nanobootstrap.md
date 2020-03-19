@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T20:15:11.849Z
+date: 2020-03-19T20:17:43.371Z
 tags: installation, jetson nano
 ---
 
@@ -63,9 +63,10 @@ Optical Flow SDK (video inference, stereo disparity calculation, depth estimatio
 **NB.**
 This is just for reference, it's easier to just flash the sd card, instead of doing it through the sdk manager.
 
-- a nvidia account is needed to download the sdk
+  needed:
+- a nvidia account to download the sdk
 - a dedicated [ubuntu installation](https://ubuntu.com/download/desktop) (eg. a [usb flash drive](https://linuxhint.com/run-ubuntu-18-04-from-usb-stick/)) to run [nvidia's sdk manager](https://developer.nvidia.com/nvidia-sdk-manager) is recommended
-- 8 GB of memory (and a full-HD screen) are required according to NVIDIA, but if 8GB is not available, go to the settings tab (upper-right of sdk manager), lower the number of concurrent downloads and threads per downloads (slow but possible)
+- 8 GB of memory (and a full-HD screen) according to NVIDIA,I managed with 4GB changing the settings tab in the upper-right of sdk manager: lower the number of concurrent downloads and threads per downloads (slower)
 - there's a bug in the partitioning, so after flashing (over usb-eth), the 13 l4t partitions need to be moved to the end of the sdcard (so root can be resized to use all space)
 
 
