@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T16:34:38.796Z
+date: 2020-03-19T16:38:56.720Z
 tags: installation
 ---
 
@@ -146,6 +146,7 @@ docker run -it --rm --net=host --runtime nvidia --gpus all -e DISPLAY=$DISPLAY -
 NO:
 docker run -it --gpus all -p 5000:5000 nvidia/digits
 
+NO:
 docker run --runtime=nvidia --rm -it gcr.io/tensorflow/tensorflow:latest-gpu bash
 # https://marmelab.com/blog/2018/03/21/using-nvidia-gpu-within-docker-container.html
 docker run --runtime=nvidia --rm -it -v "${PWD}:/app" gcr.io/tensorflow/tensorflow:latest-gpu python /app/benchmark.py cpu 10000
