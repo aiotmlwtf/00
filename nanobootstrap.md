@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T15:16:08.725Z
+date: 2020-03-19T15:16:21.947Z
 tags: 
 ---
 
@@ -14,6 +14,7 @@ jupyter/conda, tf, pytorch, cuda, opencl, deepspeech, nemo-asr</span>, etc.
 
 <details>
 <summary>prepare</summary>
+  
 ```bash
 sudo apt-get update
 sudo apt-get install nano screen curl apt-utils
