@@ -2,24 +2,23 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T14:43:50.624Z
+date: 2020-03-19T14:54:28.201Z
 tags: 
 ---
 
 *goal*
 
-GPU-accelerated docker setup(s) for
-jupyter/conda, tf, pytorch, cuda, opencl, deepspeech, nemo-asr, etc.
 
-http://www.ironspider.ca/format_text/fontstyles.htm
+GPU-accelerated docker setup(s) for <span style="color:#f00;font-weight:800;">
+jupyter/conda, tf, pytorch, cuda, opencl, deepspeech, nemo-asr</span>, etc.
+
 
 
 ---
-
+<div style="background-color:#faa;">
 <details>
 <summary>Jetson Nano Board</summary>
 
-<div style="background-color:#faa;">
   cpu: ARMv8
 SD image: Ubuntu 18.04 LTS port (with native x64 support)
 user space apps / kernel arch are aarch64 / arm64 (64-bit)
@@ -30,13 +29,12 @@ user space apps / kernel arch are aarch64 / arm64 (64-bit)
 [jetson board support architecture](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html) + module description
 [l4t packages](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fquick_start.html%23wwpID0EVHA)
 [nano software features](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fsoftware_features_jetson_nano.html%23wwconnect_header)
-</div>
 </details>
-
-<details>
-<summary>SDK's</summary>
+</div>
 
 <div style="background-color:#ddd;">
+<details>
+<summary>SDK's</summary>
 
 **deep learning SDK**
 requires [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
@@ -76,7 +74,6 @@ probably easier to just flash the sd card, instead of doing it through the sdk m
 - cuBLAS: GPU-accelerated Linear Algebra functionality
 - cuSPARSE: subroutines for sparse matrices, eg. for natural language processing
 - Automatic Mixed Precision speedup
-  </div>
 *prepare*
 ```bash
 sudo apt-get update
@@ -86,15 +83,13 @@ sudo apt-get install libnvidia-container-tools nvidia-container-runtime
 sudo apt-get install cuda*
 more ?
 ```
-
 </details>
+  </div>
 
-
-<details>
-<summary>Docker</summary>
 
 <div style="background-color:#0cf;">
-
+<details>
+<summary>Docker</summary>
 ```bash
 
 # update docker 18.09 to 19.03
@@ -156,18 +151,14 @@ docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-
 
 [building cuda in containers on jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson#building-cuda-in-containers-on-jetson)
   NVIDIA Container Runtime by default supports use of a limited set of device nodes and associated functionality within the l4t-base containers as documented here
-User can mount additional devices using the --device command option provided by docker. Directories and files can be bind mounted using the -v option.
-    
-  
+User can mount additional devices using the --device command option provided by docker. Directories and files can be bind mounted using the -v option
+</details>
 </div>
 
-</details>
-
-<details>
-  <summary>Jupyter & Conda</summary>
 
 <div style="background-color:#fac;">
-
+<details>
+  <summary>Jupyter & Conda</summary>
 
 **install/use Archiconda on a Jetson Nano inside Docker**
 https://forums.developer.nvidia.com/t/anaconda-for-jetson-nano/74286
@@ -185,33 +176,26 @@ The build instructions in the Dockerfiles can be easily replicated on the host i
 https://github.com/helmuthva/jetson/blob/master/workflow/deploy/ml-base/src/Dockerfile
 Overall "ml-base" project:
 https://github.com/helmuthva/jetson
-
-  </div>
-
  </details>
+</div>
 
+
+<div style="background-color:#000;">
 <details>
   <summary>tensorflow, keras, docker</summary>
-
-  <div style="background-color:#bbb;">
-
 https://github.com/Tony607/jetson_nvidia_dockers
 https://www.dlology.com/blog/how-to-run-keras-model-on-jetson-nano-in-nvidia-docker-container/
 ```
 sudo docker pull docker.io/zcw607/jetson:r1.0.1
 sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix zcw607/jetson:r1.0.1
 ```
-
-
+</details>
 </div>
 
-</details>
-
+<div style="background-color:#000;">
 <details>
   <summary>NeMo - Neural Modules Toolkit</summary>
-  
-<div style="background-color:#888;">
-Neural Modules toolkit for conversational AI, speech and NLP networks.
+  Neural Modules toolkit for conversational AI, speech and NLP networks.
 Collections of ASR, NLP and TTS modules representing data layers, encoders, decoders, language models, loss functions, or methods of combining activations. 
 
 NeMo allows the combination and re-use of those building blocks (while providing a level of semantic correctness checking via its neural type system). 
@@ -232,15 +216,13 @@ sudo docker run --runtime=nvidia -it --rm -v --shm-size=8g -p 8888:8888 -p 6006:
 
 sudo docker run --runtime=nvidia -it --rm -v <nemo_github_folder>:/NeMo --shm-size=8g -p 8888:8888 -p 6006:6006 --ulimit memlock=-1 --ulimit stack=67108864 nvcr.io/nvidia/nemo:v0.9
 ```
-
-  </div>
   </details>
+  </div>  
   
-  
+<div style="background-color:#000;">
 <details>
-  <summary>Pytorch</summary>
+  <summary>pytorch</summary>
   
-<div style="background-color:#555;">
   apex extension: https://github.com/NVIDIA/apex
 
 ```
@@ -252,9 +234,7 @@ sudo docker pull nvcr.io/nvidia/pytorch:20.02-py3
   </details>
   
   
-### various
-<div style="background-color:#ccc;">
-
+  <details><summary>various</summary>
   
 ```bash
 cp -r /usr/local/cuda/bin/cuda-install-samples-10.0.sh /home/ai
@@ -279,4 +259,7 @@ find sources_sync.sh in the install path in a subfolder called 'Linux for tegra'
 ```
 ./source_sync.sh -k tegra-l4t-r32.1
 ```
-  </div>
+  
+http://www.ironspider.ca/format_text/fontstyles.htm
+  </details>
+  
