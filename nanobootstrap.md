@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T12:15:18.911Z
+date: 2020-03-19T12:20:20.290Z
 tags: 
 ---
 
@@ -19,7 +19,6 @@ SD image: Ubuntu 18.04 LTS port (with native x64 support)
 user space apps / kernel arch are aarch64 / arm64 (64-bit)
 
 
-
 ### prep
 
 ```bash
@@ -28,20 +27,24 @@ sudo apt-get install nano screen curl apt-utils
 ```
 
 ### l4t (linux for tegra)
+<div style="background-color:#faa;">
 
 ![jetson_bsp_architecture.png](/jetson_bsp_architecture.png){.align-center}
 [jetson board support architecture](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html) + module description
 [l4t packages](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fquick_start.html%23wwpID0EVHA)
 [nano software features](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fsoftware_features_jetson_nano.html%23wwconnect_header)
 
+</div>
+
+    
 ### docker
 
+<div style="background-color:#afa;">
 https://github.com/NVIDIA/nvidia-docker/wiki
 https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson
 https://github.com/collabnix/dockerlabs/tree/master/beginners/install/jetson-nano
 
 nvidia-docker  https://www.youtube.com/watch?v=-Y4T71UDcMY
-
 
 https://devblogs.nvidia.com/gpu-containers-runtime/
 ```bash
@@ -50,8 +53,10 @@ curl -sSL https://get.docker.com/ | sh
 sudo docker version
 sudo usermod -aG docker ai
 ```
+</div>
 
-### conda
+### jupyter/conda
+<div style="background-color:#aaf;">
 https://github.com/Archiconda/build-tools/releases
 https://github.com/Archiconda/build-tools/releases/tag/0.2.3
 click/download:
@@ -68,8 +73,14 @@ Docker Image including Jupyter notebooks in the "jupyter" image:
 https://github.com/helmuthva/jetson/blob/master/workflow/deploy/jupyter/src/Dockerfile
 The build instructions in the Dockerfiles can be easily replicated on the host in case you don't want to use Docker.
 
+  </div>
 
-### tf/keras docker
+
+
+  ### tf/keras docker
+  
+  <div style="background-color:#555;">
+
 
 https://github.com/Tony607/jetson_nvidia_dockers
 https://www.dlology.com/blog/how-to-run-keras-model-on-jetson-nano-in-nvidia-docker-container/
@@ -79,11 +90,12 @@ sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/
 ```
 
 
-
+</div>
 
 
 ### NeMo **Neural Modules Toolkit**
 
+<div style="background-color:#555;">
 Neural Modules toolkit for conversational AI, speech and NLP networks.
 Collections of ASR, NLP and TTS modules representing data layers, encoders, decoders, language models, loss functions, or methods of combining activations. 
 
@@ -106,9 +118,12 @@ sudo docker run --runtime=nvidia -it --rm -v --shm-size=8g -p 8888:8888 -p 6006:
 sudo docker run --runtime=nvidia -it --rm -v <nemo_github_folder>:/NeMo --shm-size=8g -p 8888:8888 -p 6006:6006 --ulimit memlock=-1 --ulimit stack=67108864 nvcr.io/nvidia/nemo:v0.9
 ```
 
-
+  </div>
+  
 **Pytorch**
-apex extension: https://github.com/NVIDIA/apex
+  
+<div style="background-color:#555;">
+  apex extension: https://github.com/NVIDIA/apex
 
 ```
 sudo docker pull nvcr.io/nvidia/pytorch:20.02-py3
@@ -116,7 +131,7 @@ sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/
 ```
 
 
-
+  </div>
 
 ---
 
