@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T15:16:21.947Z
+date: 2020-03-19T15:17:05.881Z
 tags: 
 ---
 
@@ -26,7 +26,7 @@ more ?
 </details>
 
 
-<div style="background-color:#faa;">
+<div style="background-color:#eee;">
 
  <details>
 <summary>Jetson Nano Board</summary>
@@ -44,7 +44,7 @@ user space apps / kernel arch are aarch64 / arm64 (64-bit)
 </details>
 </div>
 
-<div style="background-color:#ddd;">
+<div style="background-color:#eee;">
 <details>
 <summary>SDK's</summary>
 
