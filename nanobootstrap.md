@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T18:03:02.412Z
+date: 2020-03-19T18:04:37.336Z
 tags: installation
 ---
 
@@ -102,19 +102,6 @@ docker pull nvcr.io/nvidia/l4t-base:r32.3.1
 OK:
 docker run -it --rm --net=host --runtime nvidia --gpus all -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix nvcr.io/nvidia/l4t-base:r32.3.1
 
-NO:
-docker run -it --gpus all -p 5000:5000 nvidia/digits
-
-NO:
-docker run --runtime=nvidia --rm -it gcr.io/tensorflow/tensorflow:latest-gpu bash
-# https://marmelab.com/blog/2018/03/21/using-nvidia-gpu-within-docker-container.html
-docker run --runtime=nvidia --rm -it -v "${PWD}:/app" gcr.io/tensorflow/tensorflow:latest-gpu python /app/benchmark.py cpu 10000
-  
-  
-# docker run -it --rm --net=host --runtime=nvidia --shm-size=1g -e NVIDIA_VISIBLE_DEVICES=0 --rm nvcr.io/nvidia/pytorch:18.05-py3
-  
-  
-  
   
 # -it				run in interactive mode
 # --rm			delete the container when finished
@@ -126,12 +113,23 @@ docker run --runtime=nvidia --rm -it -v "${PWD}:/app" gcr.io/tensorflow/tensorfl
 # r32.3.1 	tag for the image corresponding to the l4t release 32.3.1
 # -d				daemonize
 
+
+NO:
+docker run -it --gpus all -p 5000:5000 nvidia/digits
+
+NO:
+docker run --runtime=nvidia --rm -it gcr.io/tensorflow/tensorflow:latest-gpu bash
+# https://marmelab.com/blog/2018/03/21/using-nvidia-gpu-within-docker-container.html
+docker run --runtime=nvidia --rm -it -v "${PWD}:/app" gcr.io/tensorflow/tensorflow:latest-gpu python /app/benchmark.py cpu 10000
+  
+  
+# docker run -it --rm --net=host --runtime=nvidia --shm-size=1g -e NVIDIA_VISIBLE_DEVICES=0 --rm nvcr.io/nvidia/pytorch:18.05-py3
+
 ```
 
   
 [building cuda in containers on jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson#building-cuda-in-containers-on-jetson)
-NVIDIA Container Runtime by default supports use of a limited set of device nodes and associated functionality within the l4t-base containers.
-https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson
+NVIDIA Container Runtime by default supports use of a limited set of device nodes and associated functionality within the l4t-base containers. https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson
 </details>
 
 <details>
@@ -149,7 +147,7 @@ RUN pip install -r requirements.txt
 COPY . .
 CMD ["flask", "run"]  
 
-# docker-compose.yml  
+# docker-compose.yml: 
 version: '3'
 services:
   web:
@@ -159,7 +157,7 @@ services:
   redis:
     image: "redis:alpine"
 
-# requirements.txt
+# requirements.txt:
 flask
 redis
   
@@ -168,7 +166,6 @@ docker-compose up
 docker-compose up -d
 docker-compose down
 ```
-  
 </details>
 
   
