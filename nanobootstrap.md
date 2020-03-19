@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T20:45:07.878Z
+date: 2020-03-19T20:51:53.282Z
 tags: installation, jetson nano
 ---
 
@@ -113,13 +113,12 @@ http://www.ironspider.ca/format_text/fontstyles.htm
 
   
   
-  
-<div style="background-color:#0d0;">
+<div style="background-color:#0c0;"><br />
 <details>
 <summary>Docker</summary>
 A **container (=running process)** interacts with its own private filesystem provided by the docker image, which has the resources required to run an application, eg. code/binary, runtimes, dependencies and other filesystem objects.
 
-  ```bash
+```bash
 # update docker 18.09 to 19.03
 curl -sSL https://get.docker.com/ | sh
 sudo docker version
@@ -228,12 +227,11 @@ docker-compose down
 ```
 </details>
 </details>
-  
+ links:
 <div style="font-weight:800; background-color:#0c0;">
-  
-[d1](https://docs.docker.com/get-started/) [d2](https://docs.docker.com/get-started/part2/) [image](https://docs.docker.com/engine/reference/commandline/image/) [container](https://docs.docker.com/engine/reference/commandline/container/) [Dockerfile reference](https://docs.docker.com/engine/reference/builder/) [docker-compose](https://docs.docker.com/compose/) [prune](https://docs.docker.com/config/pruning/)
 
-  </div>
+  [d1](https://docs.docker.com/get-started/) [d2](https://docs.docker.com/get-started/part2/) [image](https://docs.docker.com/engine/reference/commandline/image/) [container](https://docs.docker.com/engine/reference/commandline/container/) [Dockerfile reference](https://docs.docker.com/engine/reference/builder/) [docker-compose](https://docs.docker.com/compose/) [prune](https://docs.docker.com/config/pruning/)
+</div>
   
 
 </div>
