@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T21:14:47.163Z
+date: 2020-03-19T21:24:11.890Z
 tags: installation, jetson nano
 ---
 
@@ -175,18 +175,21 @@ docker run --runtime=nvidia --rm -it gcr.io/tensorflow/tensorflow:latest-gpu bas
 # https://marmelab.com/blog/2018/03/21/using-nvidia-gpu-within-docker-container.html
 docker run --runtime=nvidia --rm -it -v "${PWD}:/app" gcr.io/tensorflow/tensorflow:latest-gpu python /app/benchmark.py cpu 10000
   
-  
 # docker run -it --rm --net=host --runtime=nvidia --shm-size=1g -e NVIDIA_VISIBLE_DEVICES=0 --rm nvcr.io/nvidia/pytorch:18.05-py3
 ```
 
-  
 [building cuda in containers on jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson#building-cuda-in-containers-on-jetson)
 NVIDIA Container Runtime by default supports use of a limited set of device nodes and associated functionality within the l4t-base containers. https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson
 </details>
 
-[d1](https://docs.docker.com/get-started/) [d2](https://docs.docker.com/get-started/part2/) [image](https://docs.docker.com/engine/reference/commandline/image/) [container](https://docs.docker.com/engine/reference/commandline/container/)  [prune](https://docs.docker.com/config/pruning/)
+<span style="font-weight:800;">
+
+[d1](https://docs.docker.com/get-started/) [d2](https://docs.docker.com/get-started/part2/)
+[image](https://docs.docker.com/engine/reference/commandline/image/) [container](https://docs.docker.com/engine/reference/commandline/container/) [prune](https://docs.docker.com/config/pruning/)
 Dockerfile [best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) [reference](https://docs.docker.com/engine/reference/builder/)
-[docker-compose](https://docs.docker.com/compose/)   
+</span>
+
+  [docker-compose](https://docs.docker.com/compose/)   
   
 <details>
 <summary>docker-compose</summary>
