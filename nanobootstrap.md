@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T18:37:23.298Z
+date: 2020-03-19T18:37:42.193Z
 tags: installation
 ---
 
