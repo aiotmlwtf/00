@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T12:20:20.290Z
+date: 2020-03-19T12:25:52.098Z
 tags: 
 ---
 
@@ -26,17 +26,6 @@ sudo apt-get update
 sudo apt-get install nano screen curl apt-utils
 ```
 
-### l4t (linux for tegra)
-<div style="background-color:#faa;">
-
-![jetson_bsp_architecture.png](/jetson_bsp_architecture.png){.align-center}
-[jetson board support architecture](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html) + module description
-[l4t packages](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fquick_start.html%23wwpID0EVHA)
-[nano software features](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fsoftware_features_jetson_nano.html%23wwconnect_header)
-
-</div>
-
-    
 ### docker
 
 <div style="background-color:#afa;">
@@ -52,6 +41,9 @@ https://devblogs.nvidia.com/gpu-containers-runtime/
 curl -sSL https://get.docker.com/ | sh
 sudo docker version
 sudo usermod -aG docker ai
+```
+```
+docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix nvcr.io/nvidia/l4t-base:r32.3.1
 ```
 </div>
 
@@ -120,22 +112,39 @@ sudo docker run --runtime=nvidia -it --rm -v <nemo_github_folder>:/NeMo --shm-si
 
   </div>
   
-**Pytorch**
+### Pytorch
   
 <div style="background-color:#555;">
   apex extension: https://github.com/NVIDIA/apex
 
 ```
 sudo docker pull nvcr.io/nvidia/pytorch:20.02-py3
-sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix nvcr.io/nvidia/l4t-base:r32.3.1
 ```
 
 
   </div>
 
----
 
+## board / sdk / various
+
+
+<div style="background-color:#999;">
+
+### l4t (linux for tegra)
+<div style="background-color:#faa;">
+
+![jetson_bsp_architecture.png](/jetson_bsp_architecture.png){.align-center}
+[jetson board support architecture](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html) + module description
+[l4t packages](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fquick_start.html%23wwpID0EVHA)
+[nano software features](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fsoftware_features_jetson_nano.html%23wwconnect_header)
+
+</div>
+
+        
+    
+    
 ### deep learning SDK
+
 https://developer.nvidia.com/deep-learning-software
 The Deep Learning SDK requires [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
 
@@ -171,9 +180,12 @@ C++ API/runtime/toolkit for transcoding, streaming video analytics, inference (s
 - DIGITS: DL GPU training system for image classification, segmentation and object detection - = - cuBLAS: GPU-accelerated Linear Algebra functionality
 - cuSPARSE: subroutines for sparse matrices, eg. for natural language processing
 - Automatic Mixed Precision speedup
-
+  </div>
+  
 ### various
+<div style="background-color:#ccc;">
 
+  
 ```bash
 cp -r /usr/local/cuda/bin/cuda-install-samples-10.0.sh /home/ai
 ```
@@ -197,3 +209,4 @@ find sources_sync.sh in the install path in a subfolder called 'Linux for tegra'
 ```
 ./source_sync.sh -k tegra-l4t-r32.1
 ```
+  </div>
