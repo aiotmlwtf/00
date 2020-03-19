@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T15:41:51.378Z
+date: 2020-03-19T15:44:49.391Z
 tags: 
 ---
 
@@ -90,12 +90,16 @@ This is just for reference, it's easier to just flash the sd card, instead of do
 
 
 
+
+
+
+
+
 <div style="background-color:#0cf;">
 <details>
 <summary>Docker</summary>
 
   ```bash
-
 # update docker 18.09 to 19.03
 curl -sSL https://get.docker.com/ | sh
 sudo docker version
@@ -111,26 +115,17 @@ docker container run alpine echo "Hello World"
 docker container run arm64v8/alpine echo "Hello World"
 ```
 
----
-
-  
 **nvidia-docker**
   
 *l4t*: use container l4t-base:r32.2 for nvidia docker on Jetson ('exec format error' upon running an image indicates usage of unsupported image(x86) on the ARM system)
- 
 the **l4t-base** docker image enables l4t applications to be run in a container. It has the necessary contents of the l4t rootfs included within. The platform specific libraries and select device nodes for a particular device are mounted by the NVIDIA container runtime into the l4t-base container from the underlying host, thereby providing necessary dependencies for l4t applications to execute within the container. This approach enables the l4t-base container to be shared between various Jetson devices. **CUDA and TensorRT are ready to use within the l4t-base container** as they are made available from the host by the NVIDIA container runtime.  
-
 
 [nvidia-docker wiki](https://github.com/NVIDIA/nvidia-docker/wiki)
 https://docs.nvidia.com/jetson/l4t/index.html
 [l4t-base docker container](https://ngc.nvidia.com/catalog/containers/nvidia:l4t-base)
-
- 
 https://devblogs.nvidia.com/gpu-containers-runtime
 [nvidia-docker setup](https://www.youtube.com/watch?v=-Y4T71UDcMY) - access GPU within Docker containers (youtube)
-
 [jetson nano install](https://github.com/collabnix/dockerlabs/tree/master/beginners/install/jetson-nano)
-
 [NVIDIA Container Runtime on Jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson)
   
 ```bash
@@ -146,6 +141,8 @@ docker pull nvcr.io/nvidia/l4t-base:r32.3.1
 # docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix nvcr.io/nvidia/l4t-base:r32.3.1
 
 docker run -it --rm --net=host --runtime nvidia --gpus all -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix nvcr.io/nvidia/l4t-base:r32.3.1
+
+docker run -itd --gpus all -p 5000:5000 nvidia/digits
 
 # docker run -it --rm --net=host --runtime=nvidia --shm-size=1g -e NVIDIA_VISIBLE_DEVICES=0 --rm nvcr.io/nvidia/pytorch:18.05-py3
   
