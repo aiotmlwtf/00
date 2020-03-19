@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T13:52:45.583Z
+date: 2020-03-19T14:04:37.492Z
 tags: 
 ---
 
@@ -26,10 +26,10 @@ more ?
 ```
 
 
-### docker
+<div style="background-color:#0cf;">
 
-<div style="background-color:#0b0;">
- 
+### Docker
+
 
 ```bash
 
@@ -72,57 +72,61 @@ https://devblogs.nvidia.com/gpu-containers-runtime
 https://docs.nvidia.com/jetson/l4t/index.html
 [l4t-base docker container](https://ngc.nvidia.com/catalog/containers/nvidia:l4t-base)
 
-
 [jetson nano install](https://github.com/collabnix/dockerlabs/tree/master/beginners/install/jetson-nano)
 
-  [NVIDIA Container Runtime on Jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson)  
-[building cuda in containers](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson#building-cuda-in-containers-on-jetson) - NVIDIA Container Runtime by default supports use of a limited set of device nodes and associated functionality within the l4t-base containers as documented here
-User can mount additional devices using the --device command option provided by docker. Directories and files can be bind mounted using the -v option.
-    
+  [NVIDIA Container Runtime on Jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson)
+  
+  
+**start a GPU-enabled container**
 ```bash
-# starting a GPU enabled container
 docker pull nvcr.io/nvidia/l4t-base:r32.3.1
 docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix nvcr.io/nvidia/l4t-base:r32.3.1
-
 # -it 			run in interactive mode
 # --rm 			delete the container when finished
 # --runtime nvidia 	use the NVIDIA container runtime while running the l4t-base container
-# -v 				mounting directory, and used to mount host’s X11 display in the container filesystem to render output videos
+# -v 				mounting directory, 
+# also used to mount host’s X11 display in the container filesystem to render video output
 # r32.3.1 	tag for the image corresponding to the l4t release 32.3.1
-
 # -d				daemonize
-
 ```
+
+[building cuda in containers on jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson#building-cuda-in-containers-on-jetson)
+  NVIDIA Container Runtime by default supports use of a limited set of device nodes and associated functionality within the l4t-base containers as documented here
+User can mount additional devices using the --device command option provided by docker. Directories and files can be bind mounted using the -v option.
+    
   
 </div>
 
 
-### jupyter/conda
-<div style="background-color:#aaf;">
+<div style="background-color:#fac;">
+
+### Jupyter & Conda
+
+**install/use Archiconda on a Jetson Nano inside Docker**
+https://forums.developer.nvidia.com/t/anaconda-for-jetson-nano/74286
 https://github.com/Archiconda/build-tools/releases
 https://github.com/Archiconda/build-tools/releases/tag/0.2.3
-click/download:
+
+  click/download:
 Archiconda3-0.2.3-Linux-aarch64.sh
 $ bash Archiconda3-0.2.3-Linux-aarch64.sh
-
-install/use Archiconda on a Jetson Nano inside Docker:
-https://github.com/helmuthva/jetson/blob/master/workflow/deploy/ml-base/src/Dockerfile
-
-Overall "ml-base" project:
-https://github.com/helmuthva/jetson
-
+  
 Docker Image including Jupyter notebooks in the "jupyter" image:
 https://github.com/helmuthva/jetson/blob/master/workflow/deploy/jupyter/src/Dockerfile
 The build instructions in the Dockerfiles can be easily replicated on the host in case you don't want to use Docker.
 
+https://github.com/helmuthva/jetson/blob/master/workflow/deploy/ml-base/src/Dockerfile
+Overall "ml-base" project:
+https://github.com/helmuthva/jetson
+
   </div>
 
+
+  <div style="background-color:#bbb;">
 
 
   ### tf/keras docker
   
-  <div style="background-color:#555;">
-
 
 https://github.com/Tony607/jetson_nvidia_dockers
 https://www.dlology.com/blog/how-to-run-keras-model-on-jetson-nano-in-nvidia-docker-container/
@@ -135,9 +139,10 @@ sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/
 </div>
 
 
+<div style="background-color:#888;">
+
 ### NeMo **Neural Modules Toolkit**
 
-<div style="background-color:#555;">
 Neural Modules toolkit for conversational AI, speech and NLP networks.
 Collections of ASR, NLP and TTS modules representing data layers, encoders, decoders, language models, loss functions, or methods of combining activations. 
 
