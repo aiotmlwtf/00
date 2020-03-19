@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T15:57:34.242Z
+date: 2020-03-19T15:58:37.391Z
 tags: 
 ---
 
@@ -12,10 +12,7 @@ tags:
 <details>
 <summary>GPU-accelerated docker setup(s)</summary>
 <details>
-<summary>for <span style="color:#f00;font-weight:800;">jupyter/conda, tf, pytorch, cuda, opencl, deepspeech, nemo-asr, etc.</span>
-</summary>
-</details>
-</details>
+for <span style="color:#f00;font-weight:800;">jupyter/conda, tf, pytorch, cuda, opencl, deepspeech, nemo-asr, etc.</span>
 </details>
 
 <details>
