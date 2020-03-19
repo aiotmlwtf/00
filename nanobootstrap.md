@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T18:29:38.033Z
+date: 2020-03-19T18:30:00.441Z
 tags: installation
 ---
 
@@ -75,7 +75,7 @@ https://developer.nvidia.com/embedded/jetpack
 - Automatic Mixed Precision speedup
 
   
-
+---
 
 [installing NVIDIA Jetson SDK Manager](https://www.youtube.com/watch?v=s1QDsa6SzuQ)
 **NB.**
