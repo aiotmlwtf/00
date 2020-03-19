@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T14:04:37.492Z
+date: 2020-03-19T14:28:43.811Z
 tags: 
 ---
 
@@ -15,6 +15,62 @@ SD image: Ubuntu 18.04 LTS port (with native x64 support)
 user space apps / kernel arch are aarch64 / arm64 (64-bit)
 
 
+
+## board / sdk
+
+<div style="background-color:#faa;">
+
+### l4t (linux for tegra)
+
+![jetson_bsp_architecture.png](/jetson_bsp_architecture.png){.align-center}
+[jetson board support architecture](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html) + module description
+[l4t packages](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fquick_start.html%23wwpID0EVHA)
+[nano software features](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fsoftware_features_jetson_nano.html%23wwconnect_header)
+
+</div>
+
+
+<div style="background-color:#ddd;">
+
+**deep learning SDK**
+requires [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
+https://developer.nvidia.com/deep-learning-software
+
+
+** NVIDIA SDK Manager / JetPack**
+
+https://developer.nvidia.com/embedded/jetpack
+
+[installing NVIDIA Jetson SDK Manager](https://www.youtube.com/watch?v=s1QDsa6SzuQ)
+**notes**
+probably easier to just flash the sd card, instead of doing it through the sdk manager
+- a nvidia account is needed to download the sdk
+- a dedicated [ubuntu installation](https://ubuntu.com/download/desktop) (eg. a [usb flash drive](https://linuxhint.com/run-ubuntu-18-04-from-usb-stick/)) to run [nvidia's sdk manager](https://developer.nvidia.com/nvidia-sdk-manager) is recommended
+- 8 GB of memory (and a full-HD screen) are required according to NVIDIA, but if 8GB is not available, go to the settings tab (upper-right of sdk manager), lower the number of concurrent downloads and threads per downloads (slow but possible)
+- make sure to move the 13 l4t partitions to the ens of the card (so root canbe resized to use all space)
+
+**installs**
+
+- NVIDIA container runtime - docker integration 0.9.0
+- OpenCV
+- VisionWorks
+- VPI
+- DALI: input data processing
+- NCCL: multi-GPU communication routines  
+- CUDA Toolkit for L4T - c/c++ gpu-acceleration libraries)
+- cuDNN - CUDA library with DL primitives
+- TensorRT - fast inference enginefor production deployment using INT8/FP16 optimized precision (reduced latency)
+- Multimedia API: high-level (gstreamer) and lower-level media apis
+- DeepStream SDK
+  C++ API/runtime/toolkit for transcoding, streaming video analytics, inference (situational awareness) through computer vision, intelligent video analysis (IVA) and multi-sensor processing
+- Optical Flow SDK: video inference, stereo disparity calculation, depth estimation
+- Transfer Learning Toolkit: SDK for tuning domain specific DNNs
+- AI-Assisted Annotation SDK: for medical imaging
+- DIGITS: DL GPU training system for image classification, segmentation and object detection 
+- cuBLAS: GPU-accelerated Linear Algebra functionality
+- cuSPARSE: subroutines for sparse matrices, eg. for natural language processing
+- Automatic Mixed Precision speedup
+  </div>
 *prepare*
 ```bash
 sudo apt-get update
@@ -179,63 +235,6 @@ sudo docker pull nvcr.io/nvidia/pytorch:20.02-py3
 
   </div>
 
-
-## board / sdk / various
-
-
-<div style="background-color:#999;">
-
-### l4t (linux for tegra)
-<div style="background-color:#faa;">
-
-![jetson_bsp_architecture.png](/jetson_bsp_architecture.png){.align-center}
-[jetson board support architecture](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html) + module description
-[l4t packages](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fquick_start.html%23wwpID0EVHA)
-[nano software features](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fsoftware_features_jetson_nano.html%23wwconnect_header)
-
-</div>
-
-        
-    
-    
-### deep learning SDK
-
-https://developer.nvidia.com/deep-learning-software
-The Deep Learning SDK requires [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
-
-
-### NVIDIA SDK Manager / JetPack
-
-https://developer.nvidia.com/embedded/jetpack
-sdk manager [installing NVIDIA Jetson SDK Manager](https://www.youtube.com/watch?v=s1QDsa6SzuQ)
-
-**notes**
-- probably easier to just flash the sd card, instead of doing it through the sdk manager
-- a nvidia account is needed to download the sdk
-- a dedicated [ubuntu installation](https://ubuntu.com/download/desktop) (eg. a [usb flash drive](https://linuxhint.com/run-ubuntu-18-04-from-usb-stick/)) to run [nvidia's sdk manager](https://developer.nvidia.com/nvidia-sdk-manager) is recommended
-- 8 GB of memory (and a full-HD screen) are required according to NVIDIA, but if 8GB is not available, go to the settings tab (upper-right of sdk manager), lower the number of concurrent downloads and threads per downloads (slow but possible)
-
-**installs**
-- CUDA Toolkit for L4T - c/c++ gpu-acceleration libraries)
-- NVIDIA container runtime - docker integration 0.9.0
-- cuDNN - CUDA library with DL primitives
-- TensorRT
-fast inference engine, inference runtime for production deployment using INT8/FP16 optimized precision which reduces latency
-- OpenCV
-- Multimedia API: high-level (gstreamer) and lower-level media apis
-- DeepStream SD
-C++ API/runtime/toolkit for transcoding, streaming video analytics, inference (situational awareness) through computer vision, intelligent video analysis (IVA) and multi-sensor processing
-- VisionWorks
-- VPI
-- DALI: input data processing
-- NCCL: multi-GPU communication routines
-- Optical Flow SDK: video inference, stereo disparity calculation, depth estimation
-- Transfer Learning Toolkit: SDK for tuning domain specific DNNs
-- AI-Assisted Annotation SDK: for medical imaging
-- DIGITS: DL GPU training system for image classification, segmentation and object detection - = - cuBLAS: GPU-accelerated Linear Algebra functionality
-- cuSPARSE: subroutines for sparse matrices, eg. for natural language processing
-- Automatic Mixed Precision speedup
-  </div>
   
 ### various
 <div style="background-color:#ccc;">
