@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T20:39:26.811Z
+date: 2020-03-19T20:45:07.878Z
 tags: installation, jetson nano
 ---
 
@@ -192,12 +192,6 @@ docker run --runtime=nvidia --rm -it -v "${PWD}:/app" gcr.io/tensorflow/tensorfl
 NVIDIA Container Runtime by default supports use of a limited set of device nodes and associated functionality within the l4t-base containers. https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson
 </details>
 
-<span style="background-color:#f00;">
- 
-[1](https://docs.docker.com/get-started/) [2](https://docs.docker.com/get-started/part2/) [image](https://docs.docker.com/engine/reference/commandline/image/) [container](https://docs.docker.com/engine/reference/commandline/container/) [Dockerfile reference](https://docs.docker.com/engine/reference/builder/) [docker-compose](https://docs.docker.com/compose/) [prune](https://docs.docker.com/config/pruning/)
-
-</span>
-  
 <details>
 <summary>docker-compose</summary>
 
@@ -235,6 +229,13 @@ docker-compose down
 </details>
 </details>
   
+<div style="font-weight:800; background-color:#0c0;">
+  
+[d1](https://docs.docker.com/get-started/) [d2](https://docs.docker.com/get-started/part2/) [image](https://docs.docker.com/engine/reference/commandline/image/) [container](https://docs.docker.com/engine/reference/commandline/container/) [Dockerfile reference](https://docs.docker.com/engine/reference/builder/) [docker-compose](https://docs.docker.com/compose/) [prune](https://docs.docker.com/config/pruning/)
+
+  </div>
+  
+
 </div>
 
 <div style="background-color:#0cf;">
