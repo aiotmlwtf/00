@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T15:34:19.442Z
+date: 2020-03-19T15:35:59.842Z
 tags: 
 ---
 
