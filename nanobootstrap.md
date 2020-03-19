@@ -2,25 +2,27 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T14:34:13.254Z
+date: 2020-03-19T14:43:50.624Z
 tags: 
 ---
 
 *goal*
-GPU-accelerated docker setup(s) for *jupyter/conda, tf, pytorch, cuda, opencl, deepspeech, nemo-asr*, etc.
 
-*Jetson Nano*
-cpu: ARMv8
-SD image: Ubuntu 18.04 LTS port (with native x64 support)
-user space apps / kernel arch are aarch64 / arm64 (64-bit)
+GPU-accelerated docker setup(s) for
+jupyter/conda, tf, pytorch, cuda, opencl, deepspeech, nemo-asr, etc.
 
 http://www.ironspider.ca/format_text/fontstyles.htm
 
+
+---
+
 <details>
-<summary>
-<i>Board / SDK </i>
-</summary>
+<summary>Jetson Nano Board</summary>
+
 <div style="background-color:#faa;">
+  cpu: ARMv8
+SD image: Ubuntu 18.04 LTS port (with native x64 support)
+user space apps / kernel arch are aarch64 / arm64 (64-bit)
 
 ### l4t (linux for tegra)
 
@@ -28,9 +30,11 @@ http://www.ironspider.ca/format_text/fontstyles.htm
 [jetson board support architecture](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html) + module description
 [l4t packages](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fquick_start.html%23wwpID0EVHA)
 [nano software features](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fsoftware_features_jetson_nano.html%23wwconnect_header)
-
 </div>
+</details>
 
+<details>
+<summary>SDK's</summary>
 
 <div style="background-color:#ddd;">
 
@@ -86,10 +90,10 @@ more ?
 </details>
 
 
+<details>
+<summary>Docker</summary>
+
 <div style="background-color:#0cf;">
-
-### Docker
-
 
 ```bash
 
@@ -157,10 +161,13 @@ User can mount additional devices using the --device command option provided by 
   
 </div>
 
+</details>
+
+<details>
+  <summary>Jupyter & Conda</summary>
 
 <div style="background-color:#fac;">
 
-### Jupyter & Conda
 
 **install/use Archiconda on a Jetson Nano inside Docker**
 https://forums.developer.nvidia.com/t/anaconda-for-jetson-nano/74286
@@ -181,12 +188,12 @@ https://github.com/helmuthva/jetson
 
   </div>
 
+ </details>
+
+<details>
+  <summary>tensorflow, keras, docker</summary>
 
   <div style="background-color:#bbb;">
-
-
-  ### tf/keras docker
-  
 
 https://github.com/Tony607/jetson_nvidia_dockers
 https://www.dlology.com/blog/how-to-run-keras-model-on-jetson-nano-in-nvidia-docker-container/
@@ -198,11 +205,12 @@ sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/
 
 </div>
 
+</details>
 
+<details>
+  <summary>NeMo - Neural Modules Toolkit</summary>
+  
 <div style="background-color:#888;">
-
-### NeMo **Neural Modules Toolkit**
-
 Neural Modules toolkit for conversational AI, speech and NLP networks.
 Collections of ASR, NLP and TTS modules representing data layers, encoders, decoders, language models, loss functions, or methods of combining activations. 
 
@@ -226,8 +234,11 @@ sudo docker run --runtime=nvidia -it --rm -v <nemo_github_folder>:/NeMo --shm-si
 ```
 
   </div>
+  </details>
   
-### Pytorch
+  
+<details>
+  <summary>Pytorch</summary>
   
 <div style="background-color:#555;">
   apex extension: https://github.com/NVIDIA/apex
@@ -238,7 +249,8 @@ sudo docker pull nvcr.io/nvidia/pytorch:20.02-py3
 
 
   </div>
-
+  </details>
+  
   
 ### various
 <div style="background-color:#ccc;">
