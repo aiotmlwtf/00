@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T18:21:30.553Z
+date: 2020-03-19T18:29:38.033Z
 tags: installation
 ---
 
@@ -52,15 +52,6 @@ https://developer.nvidia.com/deep-learning-software
 NVIDIA SDK Manager / JetPack
 https://developer.nvidia.com/embedded/jetpack
 
-[installing NVIDIA Jetson SDK Manager](https://www.youtube.com/watch?v=s1QDsa6SzuQ)
-**notes**
-This is just for reference, it's easier to just flash the sd card, instead of doing it through the sdk manager.
-
-- a nvidia account is needed to download the sdk
-- a dedicated [ubuntu installation](https://ubuntu.com/download/desktop) (eg. a [usb flash drive](https://linuxhint.com/run-ubuntu-18-04-from-usb-stick/)) to run [nvidia's sdk manager](https://developer.nvidia.com/nvidia-sdk-manager) is recommended
-- 8 GB of memory (and a full-HD screen) are required according to NVIDIA, but if 8GB is not available, go to the settings tab (upper-right of sdk manager), lower the number of concurrent downloads and threads per downloads (slow but possible)
-- there's a bug in the partitioning, so after flashing (over usb-eth), the 13 l4t partitions need to be moved to the end of the sdcard (so root can be resized to use all space)
-
 **installs**
 
 - NVIDIA container runtime - docker integration 0.9.0
@@ -82,6 +73,20 @@ This is just for reference, it's easier to just flash the sd card, instead of do
 - cuBLAS: GPU-accelerated Linear Algebra functionality
 - cuSPARSE: subroutines for sparse matrices, eg. for natural language processing
 - Automatic Mixed Precision speedup
+
+  
+
+
+[installing NVIDIA Jetson SDK Manager](https://www.youtube.com/watch?v=s1QDsa6SzuQ)
+**NB.**
+This is just for reference, it's easier to just flash the sd card, instead of doing it through the sdk manager.
+
+- a nvidia account is needed to download the sdk
+- a dedicated [ubuntu installation](https://ubuntu.com/download/desktop) (eg. a [usb flash drive](https://linuxhint.com/run-ubuntu-18-04-from-usb-stick/)) to run [nvidia's sdk manager](https://developer.nvidia.com/nvidia-sdk-manager) is recommended
+- 8 GB of memory (and a full-HD screen) are required according to NVIDIA, but if 8GB is not available, go to the settings tab (upper-right of sdk manager), lower the number of concurrent downloads and threads per downloads (slow but possible)
+- there's a bug in the partitioning, so after flashing (over usb-eth), the 13 l4t partitions need to be moved to the end of the sdcard (so root can be resized to use all space)
+
+
 </details>
 </div>
 
