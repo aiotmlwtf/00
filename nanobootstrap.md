@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T20:52:46.631Z
+date: 2020-03-19T21:08:43.916Z
 tags: installation, jetson nano
 ---
 
@@ -56,7 +56,6 @@ https://developer.nvidia.com/embedded/jetpack
 NVIDIA container runtime (docker integration 0.9.0), OpenCV, VisionWorks, VPI, DALI (input data processing),  NCCL (multi-GPU communication routines), CUDA Toolkit for L4T (c/c++ gpu-acceleration libraries), cuDNN (CUDA library with DL primitives), TensorRT (fast inference engine for production deployment using INT8/FP16 optimized precision with reduced latency), Multimedia API (high-level and lower-level media apis),
 Optical Flow SDK (video inference, stereo disparity calculation, depth estimation), Transfer Learning Toolkit SDK for tuning domain specific DNNs, AI-Assisted Annotation SDK for medical imaging), DIGITS (DL GPU training system for image classification, segmentation and object detection), cuBLAS (CPU-accelerated Linear Algebra functionality), cuSPARSE (subroutines for sparse matrices, eg. for natural language processing), Automatic Mixed Precision speedup, DeepStream SDK (C++ API/runtime/toolkit for transcoding, streaming video analytics, inference (situational awareness) through computer vision, intelligent video analysis (IVA) and multi-sensor processing)
 
-  
 ---
 
 [installing NVIDIA Jetson SDK Manager](https://www.youtube.com/watch?v=s1QDsa6SzuQ)
@@ -228,7 +227,9 @@ docker-compose down
 </details>
 </details>
  
-[d1](https://docs.docker.com/get-started/) [d2](https://docs.docker.com/get-started/part2/) [image](https://docs.docker.com/engine/reference/commandline/image/) [container](https://docs.docker.com/engine/reference/commandline/container/) [Dockerfile reference](https://docs.docker.com/engine/reference/builder/) [docker-compose](https://docs.docker.com/compose/) [prune](https://docs.docker.com/config/pruning/)
+[d1](https://docs.docker.com/get-started/) [d2](https://docs.docker.com/get-started/part2/) [image](https://docs.docker.com/engine/reference/commandline/image/) [container](https://docs.docker.com/engine/reference/commandline/container/)  [prune](https://docs.docker.com/config/pruning/)
+Dockerfile [best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) [reference](https://docs.docker.com/engine/reference/builder/)
+[docker-compose](https://docs.docker.com/compose/) 
 </div>
   
 
