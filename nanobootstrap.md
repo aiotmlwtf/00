@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T20:17:43.371Z
+date: 2020-03-19T20:19:10.677Z
 tags: installation, jetson nano
 ---
 
@@ -67,8 +67,7 @@ This is just for reference, it's easier to just flash the sd card, instead of do
 - a nvidia account to download the sdk
 - a dedicated [ubuntu installation](https://ubuntu.com/download/desktop) (eg. a [usb flash drive](https://linuxhint.com/run-ubuntu-18-04-from-usb-stick/)) to run [nvidia's sdk manager](https://developer.nvidia.com/nvidia-sdk-manager) is recommended
 - 8 GB of memory (and a full-HD screen) according to NVIDIA,I managed with 4GB changing the settings tab in the upper-right of sdk manager: lower the number of concurrent downloads and threads per downloads (slower)
-- there's a bug in the partitioning, so after flashing (over usb-eth), the 13 l4t partitions need to be moved to the end of the sdcard (so root can be resized to use all space)
-
+- there's a bug in the partitioning, so after flashing (over usb-eth), the 13 l4t partitions need to be moved to the end of the sdcard (so root partition aligns with free space and so can be resized to use it)
 
 </details>
 </div>
