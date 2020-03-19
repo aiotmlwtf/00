@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T14:58:12.427Z
+date: 2020-03-19T15:13:10.349Z
 tags: 
 ---
 
@@ -89,7 +89,8 @@ more ?
 <div style="background-color:#0cf;">
 <details>
 <summary>Docker</summary>
-```bash
+
+  ```bash
 
 # update docker 18.09 to 19.03
 curl -sSL https://get.docker.com/ | sh
@@ -182,8 +183,10 @@ https://github.com/helmuthva/jetson
 <div style="background-color:#000;">
 <details>
   <summary>tensorflow, keras, docker</summary>
+  
 https://github.com/Tony607/jetson_nvidia_dockers
 https://www.dlology.com/blog/how-to-run-keras-model-on-jetson-nano-in-nvidia-docker-container/
+  
 ```
 sudo docker pull docker.io/zcw607/jetson:r1.0.1
 sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix zcw607/jetson:r1.0.1
