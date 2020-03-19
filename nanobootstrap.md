@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T18:17:21.848Z
+date: 2020-03-19T18:21:30.553Z
 tags: installation
 ---
 
@@ -22,12 +22,10 @@ more ?
 ```
 </details>
 
+<details>
+<summary>var</summary>
 
 
-<details><summary>various</summary>
-
-
-<div style="background-color:#ddd;">
 <details>
 <summary>Jetson Nano Board</summary>
 
@@ -87,8 +85,10 @@ This is just for reference, it's easier to just flash the sd card, instead of do
 </details>
 </div>
 
-  
-- jetson headless: disable ubuntu desktop
+<details>
+<summary>jetson headless</summary>
+
+disable ubuntu desktop
 
 ```bash
 # the screen will turn black
@@ -99,7 +99,9 @@ log in via ssh
 # if you like your nano this way you can make the change persist after reboot
 sudo systemctl set-default multi-user.target
 ```
-### install kernel sources 
+  </details>
+  
+  <details><summary>install kernel sources</summary>
 
 [link](https://devtalk.nvidia.com/default/topic/1055416/request-install-linux-headers-on-jetson-nano/?offset=9)
 https://developer.nvidia.com/embedded/dlc/nv-sdk-manager
@@ -107,6 +109,7 @@ find sources_sync.sh in the install path in a subfolder called 'Linux for tegra'
 ```
 ./source_sync.sh -k tegra-l4t-r32.1
 ```
+</details>
   
 ```bash
 cp -r /usr/local/cuda/bin/cuda-install-samples-10.0.sh /home/ai
