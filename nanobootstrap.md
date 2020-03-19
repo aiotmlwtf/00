@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T15:20:41.956Z
+date: 2020-03-19T15:31:37.320Z
 tags: 
 ---
 
@@ -111,6 +111,25 @@ docker container run alpine echo "Hello World"
 docker container run arm64v8/alpine echo "Hello World"
 ```
 
+---
+
+  
+**nvidia-docker**
+  
+*l4t*: use container l4t-base:r32.2 for nvidia docker on Jetson ('exec format error' upon running an image indicates usage of unsupported image(x86) on the ARM system)
+ 
+the **l4t-base** docker image enables l4t applications to be run in a container. It has the necessary contents of the l4t rootfs included within. The platform specific libraries and select device nodes for a particular device are mounted by the NVIDIA container runtime into the l4t-base container from the underlying host, thereby providing necessary dependencies for l4t applications to execute within the container. This approach enables the l4t-base container to be shared between various Jetson devices. **CUDA and TensorRT are ready to use within the l4t-base container** as they are made available from the host by the NVIDIA container runtime.  
+
+
+[nvidia-docker wiki](https://github.com/NVIDIA/nvidia-docker/wiki)
+https://devblogs.nvidia.com/gpu-containers-runtime
+[nvidia-docker setup](https://www.youtube.com/watch?v=-Y4T71UDcMY) - access GPU within Docker containers (youtube)
+  
+https://docs.nvidia.com/jetson/l4t/index.html
+[l4t-base docker container](https://ngc.nvidia.com/catalog/containers/nvidia:l4t-base)
+ 
+[jetson nano install](https://github.com/collabnix/dockerlabs/tree/master/beginners/install/jetson-nano)
+[NVIDIA Container Runtime on Jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson)
   
 ```bash
 # allow external applications to connect to the host's X display
@@ -118,33 +137,12 @@ xhost +
 # allow root user access to running X server
 #xhost +si:localuser:root
 xhost +si:ai:root  
-```
 
-  
-**nvidia-docker**
-  
-*l4t*: use container l4t-base:r32.2 for nvidia docker on Jetson
-('exec format error' upon running an image indicates usage of unsupported image(x86) on the ARM system)
- 
-the **l4t-base** docker image enables l4t applications to be run in a container. It has the necessary contents of the l4t rootfs included within. The platform specific libraries and select device nodes for a particular device are mounted by the NVIDIA container runtime into the l4t-base container from the underlying host, thereby providing necessary dependencies for l4t applications to execute within the container. This approach enables the l4t-base container to be shared between various Jetson devices. **CUDA and TensorRT are ready to use within the l4t-base container** as they are made available from the host by the NVIDIA container runtime.  
-
----
-
-[nvidia-docker wiki](https://github.com/NVIDIA/nvidia-docker/wiki)
-https://devblogs.nvidia.com/gpu-containers-runtime
-[nvidia-docker setup](https://www.youtube.com/watch?v=-Y4T71UDcMY) - access GPU within Docker containers (youtube)
-https://docs.nvidia.com/jetson/l4t/index.html
-[l4t-base docker container](https://ngc.nvidia.com/catalog/containers/nvidia:l4t-base)
-
-[jetson nano install](https://github.com/collabnix/dockerlabs/tree/master/beginners/install/jetson-nano)
-
-  [NVIDIA Container Runtime on Jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson)
-  
-  
-**start a GPU-enabled container**
-```bash
 docker pull nvcr.io/nvidia/l4t-base:r32.3.1
+
+# start a GPU-enabled container  
 docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix nvcr.io/nvidia/l4t-base:r32.3.1
+
 # -it 			run in interactive mode
 # --rm 			delete the container when finished
 # --runtime nvidia 	use the NVIDIA container runtime while running the l4t-base container
@@ -152,11 +150,16 @@ docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-
 # also used to mount host’s X11 display in the container filesystem to render video output
 # r32.3.1 	tag for the image corresponding to the l4t release 32.3.1
 # -d				daemonize
+# --device  mount additional devices
+# -v 				bind mount directories and files
 ```
 
+  
 [building cuda in containers on jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson#building-cuda-in-containers-on-jetson)
-  NVIDIA Container Runtime by default supports use of a limited set of device nodes and associated functionality within the l4t-base containers as documented here
-User can mount additional devices using the --device command option provided by docker. Directories and files can be bind mounted using the -v option
+NVIDIA Container Runtime by default supports use of a limited set of device nodes and associated functionality within the l4t-base containers.
+https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson
+  
+
 </details>
 </div>
 
