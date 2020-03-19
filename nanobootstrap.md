@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T20:37:12.661Z
+date: 2020-03-19T20:39:26.811Z
 tags: installation, jetson nano
 ---
 
@@ -191,9 +191,13 @@ docker run --runtime=nvidia --rm -it -v "${PWD}:/app" gcr.io/tensorflow/tensorfl
 [building cuda in containers on jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson#building-cuda-in-containers-on-jetson)
 NVIDIA Container Runtime by default supports use of a limited set of device nodes and associated functionality within the l4t-base containers. https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson
 </details>
-  
+
+<span style="background-color:#f00;">
+ 
 [1](https://docs.docker.com/get-started/) [2](https://docs.docker.com/get-started/part2/) [image](https://docs.docker.com/engine/reference/commandline/image/) [container](https://docs.docker.com/engine/reference/commandline/container/) [Dockerfile reference](https://docs.docker.com/engine/reference/builder/) [docker-compose](https://docs.docker.com/compose/) [prune](https://docs.docker.com/config/pruning/)
 
+</span>
+  
 <details>
 <summary>docker-compose</summary>
 
