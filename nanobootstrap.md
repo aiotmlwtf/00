@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T17:59:53.734Z
+date: 2020-03-19T18:03:02.412Z
 tags: installation
 ---
 
@@ -137,9 +137,8 @@ https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson
 <details>
 <summary>docker-compose</summary>
 
-**Dockerfile**
-
 ```bash
+# Dockerfile:
 FROM python:3.7-alpine
 WORKDIR /code
 ENV FLASK_APP app.py
@@ -149,11 +148,8 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 COPY . .
 CMD ["flask", "run"]  
-```
-    
-**docker-compose.yml**
-  
-```yaml
+
+# docker-compose.yml  
 version: '3'
 services:
   web:
@@ -162,18 +158,12 @@ services:
       - "5000:5000"
   redis:
     image: "redis:alpine"
-``` 
 
-**requirements.txt**
-
-```bash
+# requirements.txt
 flask
 redis
-```
   
-**run*
-
-```bash
+# run
 docker-compose up
 docker-compose up -d
 docker-compose down
