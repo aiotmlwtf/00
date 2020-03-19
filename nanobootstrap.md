@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T20:51:53.282Z
+date: 2020-03-19T20:52:46.631Z
 tags: installation, jetson nano
 ---
 
@@ -227,10 +227,8 @@ docker-compose down
 ```
 </details>
 </details>
- links:
-<div style="font-weight:800; background-color:#0c0;">
-
-  [d1](https://docs.docker.com/get-started/) [d2](https://docs.docker.com/get-started/part2/) [image](https://docs.docker.com/engine/reference/commandline/image/) [container](https://docs.docker.com/engine/reference/commandline/container/) [Dockerfile reference](https://docs.docker.com/engine/reference/builder/) [docker-compose](https://docs.docker.com/compose/) [prune](https://docs.docker.com/config/pruning/)
+ 
+[d1](https://docs.docker.com/get-started/) [d2](https://docs.docker.com/get-started/part2/) [image](https://docs.docker.com/engine/reference/commandline/image/) [container](https://docs.docker.com/engine/reference/commandline/container/) [Dockerfile reference](https://docs.docker.com/engine/reference/builder/) [docker-compose](https://docs.docker.com/compose/) [prune](https://docs.docker.com/config/pruning/)
 </div>
   
 
