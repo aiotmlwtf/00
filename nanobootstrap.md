@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T15:20:05.696Z
+date: 2020-03-19T15:20:41.956Z
 tags: 
 ---
 
@@ -62,7 +62,7 @@ This is just for reference, it's easier to just flash the sd card, instead of do
 - a nvidia account is needed to download the sdk
 - a dedicated [ubuntu installation](https://ubuntu.com/download/desktop) (eg. a [usb flash drive](https://linuxhint.com/run-ubuntu-18-04-from-usb-stick/)) to run [nvidia's sdk manager](https://developer.nvidia.com/nvidia-sdk-manager) is recommended
 - 8 GB of memory (and a full-HD screen) are required according to NVIDIA, but if 8GB is not available, go to the settings tab (upper-right of sdk manager), lower the number of concurrent downloads and threads per downloads (slow but possible)
-- there's a bug in the partitioning scheme, so after flash (over usb-eth), you need to move the 13 l4t partitions to the end of the sdcard (so root can be resized to use all space)
+- there's a bug in the partitioning, so after flashing (over usb-eth), the 13 l4t partitions need to be moved to the end of the sdcard (so root can be resized to use all space)
 
 **installs**
 
