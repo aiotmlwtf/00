@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T15:32:41.814Z
+date: 2020-03-19T15:33:23.834Z
 tags: 
 ---
 
@@ -143,8 +143,8 @@ docker pull nvcr.io/nvidia/l4t-base:r32.3.1
 # start a GPU-enabled container  
 docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix nvcr.io/nvidia/l4t-base:r32.3.1
 
-# -it 			run in interactive mode
-# --rm 			delete the container when finished
+# -it				run in interactive mode
+# --rm			delete the container when finished
 # --runtime nvidia 	use the NVIDIA container runtime while running the l4t-base container
 # -v 				mounting directory, also used to mount host’s X11 display in the container filesystem to render video output
 # r32.3.1 	tag for the image corresponding to the l4t release 32.3.1
