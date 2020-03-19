@@ -2,11 +2,12 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T18:37:42.193Z
+date: 2020-03-19T20:12:00.203Z
 tags: installation
 ---
 
-**Goal**: GPU-accelerated docker setup(s) for <span style="color:#f00;font-weight:800;"> jupyter/conda, tf, pytorch, cuda, opencl, deepspeech, nemo-asr</span>, etc.
+**Goal**: 
+GPU-accelerated docker setup(s) for <span style="color:#f00;font-weight:800;"> jupyter/conda, tf, pytorch, cuda, opencl, deepspeech, nemo-asr</span>, etc.
 
 <details>
 <summary>prepare</summary>
@@ -23,7 +24,7 @@ more ?
 </details>
 
 <details>
-<summary>var</summary>
+<summary>various</summary>
 
 
 <details>
@@ -32,16 +33,15 @@ more ?
   cpu: ARMv8
 SD image: Ubuntu 18.04 LTS port (with native x64 support)
 user space apps / kernel arch are aarch64 / arm64 (64-bit)
-
-### l4t (linux for tegra)
-
-![jetson_bsp_architecture.png](/jetson_bsp_architecture.png){.align-center}
-[jetson board support architecture](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html) + module description
+l4t - linux for tegra
+  
+ [jetson board support architecture](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html) + module description
 [l4t packages](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fquick_start.html%23wwpID0EVHA)
 [nano software features](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fsoftware_features_jetson_nano.html%23wwconnect_header)
+
+![jetson_bsp_architecture.png](/jetson_bsp_architecture.png){.align-center}
 </details>
 
-  
 <details>
 <summary>SDK's</summary>
 
