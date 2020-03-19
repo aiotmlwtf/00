@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T20:24:58.680Z
+date: 2020-03-19T20:37:12.661Z
 tags: installation, jetson nano
 ---
 
@@ -72,7 +72,6 @@ This is just for reference, it's easier to just flash the sd card, instead of do
 </details>
 </div>
 
-https://docs.docker.com/config/pruning/
 
 <details>
 <summary>jetson headless</summary>
@@ -106,15 +105,18 @@ cp -r /usr/local/cuda/bin/cuda-install-samples-10.0.sh /home/ai
 
 http://www.ironspider.ca/format_text/fontstyles.htm
 
-
-
 </details>
   
   
-<div style="background-color:#0e0;">
+  
+  
+
+  
+  
+  
+<div style="background-color:#0d0;">
 <details>
 <summary>Docker</summary>
-
 A **container (=running process)** interacts with its own private filesystem provided by the docker image, which has the resources required to run an application, eg. code/binary, runtimes, dependencies and other filesystem objects.
 
   ```bash
@@ -183,13 +185,14 @@ docker run --runtime=nvidia --rm -it -v "${PWD}:/app" gcr.io/tensorflow/tensorfl
   
   
 # docker run -it --rm --net=host --runtime=nvidia --shm-size=1g -e NVIDIA_VISIBLE_DEVICES=0 --rm nvcr.io/nvidia/pytorch:18.05-py3
-
 ```
 
   
 [building cuda in containers on jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson#building-cuda-in-containers-on-jetson)
 NVIDIA Container Runtime by default supports use of a limited set of device nodes and associated functionality within the l4t-base containers. https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson
 </details>
+  
+[1](https://docs.docker.com/get-started/) [2](https://docs.docker.com/get-started/part2/) [image](https://docs.docker.com/engine/reference/commandline/image/) [container](https://docs.docker.com/engine/reference/commandline/container/) [Dockerfile reference](https://docs.docker.com/engine/reference/builder/) [docker-compose](https://docs.docker.com/compose/) [prune](https://docs.docker.com/config/pruning/)
 
 <details>
 <summary>docker-compose</summary>
@@ -226,12 +229,6 @@ docker-compose up -d
 docker-compose down
 ```
 </details>
-
-  
-  
-  
-  
-  
 </details>
   
 </div>
