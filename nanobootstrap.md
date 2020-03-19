@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T21:08:43.916Z
+date: 2020-03-19T21:11:35.960Z
 tags: installation, jetson nano
 ---
 
@@ -105,14 +105,9 @@ cp -r /usr/local/cuda/bin/cuda-install-samples-10.0.sh /home/ai
 http://www.ironspider.ca/format_text/fontstyles.htm
 
 </details>
-  
-  
-  
-  
 
+<div style="background-color:#0c0;">
   
-  
-<div style="background-color:#0c0;"><br />
 <details>
 <summary>Docker</summary>
 A **container (=running process)** interacts with its own private filesystem provided by the docker image, which has the resources required to run an application, eg. code/binary, runtimes, dependencies and other filesystem objects.
@@ -122,10 +117,8 @@ A **container (=running process)** interacts with its own private filesystem pro
 curl -sSL https://get.docker.com/ | sh
 sudo docker version
 sudo usermod -aG docker ai
-```
 
-```
-  # tests
+# tests
 docker run hello-world
 docker run arm64v8/hello-world
 docker run -it ubuntu bash
@@ -190,6 +183,10 @@ docker run --runtime=nvidia --rm -it -v "${PWD}:/app" gcr.io/tensorflow/tensorfl
 NVIDIA Container Runtime by default supports use of a limited set of device nodes and associated functionality within the l4t-base containers. https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson
 </details>
 
+[d1](https://docs.docker.com/get-started/) [d2](https://docs.docker.com/get-started/part2/) [image](https://docs.docker.com/engine/reference/commandline/image/) [container](https://docs.docker.com/engine/reference/commandline/container/)  [prune](https://docs.docker.com/config/pruning/)
+Dockerfile [best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) [reference](https://docs.docker.com/engine/reference/builder/)
+[docker-compose](https://docs.docker.com/compose/)   
+  
 <details>
 <summary>docker-compose</summary>
 
@@ -227,9 +224,7 @@ docker-compose down
 </details>
 </details>
  
-[d1](https://docs.docker.com/get-started/) [d2](https://docs.docker.com/get-started/part2/) [image](https://docs.docker.com/engine/reference/commandline/image/) [container](https://docs.docker.com/engine/reference/commandline/container/)  [prune](https://docs.docker.com/config/pruning/)
-Dockerfile [best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) [reference](https://docs.docker.com/engine/reference/builder/)
-[docker-compose](https://docs.docker.com/compose/) 
+
 </div>
   
 
