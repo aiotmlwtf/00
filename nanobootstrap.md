@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T12:25:52.098Z
+date: 2020-03-19T13:14:53.568Z
 tags: 
 ---
 
@@ -28,20 +28,34 @@ sudo apt-get install nano screen curl apt-utils
 
 ### docker
 
-<div style="background-color:#afa;">
-https://github.com/NVIDIA/nvidia-docker/wiki
-https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson
-https://github.com/collabnix/dockerlabs/tree/master/beginners/install/jetson-nano
-
-nvidia-docker  https://www.youtube.com/watch?v=-Y4T71UDcMY
-
-https://devblogs.nvidia.com/gpu-containers-runtime/
+<div style="background-color:#0b0;">
+ 
+  
 ```bash
 # update docker 18.09 to 19.03
 curl -sSL https://get.docker.com/ | sh
 sudo docker version
 sudo usermod -aG docker ai
 ```
+**nvidia-docker**
+
+https://github.com/NVIDIA/nvidia-docker/wiki
+https://devblogs.nvidia.com/gpu-containers-runtime
+[yt: Nvidia-Docker Setup - Accessing GPU within Docker containers](https://www.youtube.com/watch?v=-Y4T71UDcMY)
+[NVIDIA-Container-Runtime-on-Jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA](Container-Runtime-on-Jetson) 
+[nano install](https://github.com/collabnix/dockerlabs/tree/master/beginners/install/jetson-nano)
+
+  
+**l4t**
+
+l4t-base docker image enables l4t applications to be run in a container. It has the necessary contents of the l4t rootfs included within. The platform specific libraries and select device nodes for a particular device are mounted by the NVIDIA container runtime into the l4t-base container from the underlying host, thereby providing necessary dependencies for l4t applications to execute within the container. 
+This approach enables the l4t-base container to be shared between various Jetson devices.
+
+CUDA and TensorRT are ready to use within the l4t-base container as they are made available from the host by the NVIDIA container runtime.
+
+  
+  
+
 ```
 docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix nvcr.io/nvidia/l4t-base:r32.3.1
 ```
