@@ -2,32 +2,37 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-18T23:06:41.913Z
+date: 2020-03-19T12:15:18.911Z
 tags: 
 ---
 
-https://developer.nvidia.com/embedded/jetpack
-
-sdk manager [installing NVIDIA Jetson SDK Manager, JetPack 2.2](https://www.youtube.com/watch?v=s1QDsa6SzuQ)
-
----
-goal: obtain a (docker) setup to experiment with **nvidia-docker, tf, pytorch, cuda, opencl, nemo-asr, jupyter, python3 and other things DL**
-
 ---
 
-Jetson Nano cpu is ARMv8
-SD image is an Ubuntu 18.04 LTS port, has native x64 support for ARM8
-user space and kernel arch are aarch64 / arm64 (64-bit)
+**goal**: GPU-accelerated docker setup
+experiment with
+nvidia-docker, jupyter, conda, tf, pytorch, cuda, opencl, deepspeech, nemo-asr
 
-prep
+
+**Jetson Nano**
+cpu: ARMv8
+SD image: Ubuntu 18.04 LTS port (with native x64 support)
+user space apps / kernel arch are aarch64 / arm64 (64-bit)
+
+
+
+### prep
 
 ```bash
 sudo apt-get update
 sudo apt-get install nano screen curl apt-utils
 ```
 
+### l4t (linux for tegra)
 
-
+![jetson_bsp_architecture.png](/jetson_bsp_architecture.png){.align-center}
+[jetson board support architecture](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html) + module description
+[l4t packages](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fquick_start.html%23wwpID0EVHA)
+[nano software features](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fsoftware_features_jetson_nano.html%23wwconnect_header)
 
 ### docker
 
@@ -119,15 +124,19 @@ sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/
 https://developer.nvidia.com/deep-learning-software
 The Deep Learning SDK requires [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
 
-NVIDIA SDK Manager
-- probably easier to just flash the sd card, then doing it through sdk manager
 
-notes:
+### NVIDIA SDK Manager / JetPack
+
+https://developer.nvidia.com/embedded/jetpack
+sdk manager [installing NVIDIA Jetson SDK Manager](https://www.youtube.com/watch?v=s1QDsa6SzuQ)
+
+**notes**
+- probably easier to just flash the sd card, instead of doing it through the sdk manager
 - a nvidia account is needed to download the sdk
 - a dedicated [ubuntu installation](https://ubuntu.com/download/desktop) (eg. a [usb flash drive](https://linuxhint.com/run-ubuntu-18-04-from-usb-stick/)) to run [nvidia's sdk manager](https://developer.nvidia.com/nvidia-sdk-manager) is recommended
 - 8 GB of memory (and a full-HD screen) are required according to NVIDIA, but if 8GB is not available, go to the settings tab (upper-right of sdk manager), lower the number of concurrent downloads and threads per downloads (slow but possible)
 
-**Installable:**
+**installs**
 - CUDA Toolkit for L4T - c/c++ gpu-acceleration libraries)
 - NVIDIA container runtime - docker integration 0.9.0
 - cuDNN - CUDA library with DL primitives
@@ -148,6 +157,7 @@ C++ API/runtime/toolkit for transcoding, streaming video analytics, inference (s
 - cuSPARSE: subroutines for sparse matrices, eg. for natural language processing
 - Automatic Mixed Precision speedup
 
+### various
 
 ```bash
 cp -r /usr/local/cuda/bin/cuda-install-samples-10.0.sh /home/ai
@@ -164,9 +174,11 @@ log in via ssh
 # if you like your nano this way you can make the change persist after reboot
 sudo systemctl set-default multi-user.target
 ```
-- to install kernel sources (on a fresh Ubuntu 18 install), see: 
-https://developer.nvidia.com/embedded/dlc/nv-sdk-manager
-find sources_sync.sh in the install path in a subfolder called 'Linux for tegra'
-./source_sync.sh -k tegra-l4t-r32.1
+### install kernel sources 
 
 [link](https://devtalk.nvidia.com/default/topic/1055416/request-install-linux-headers-on-jetson-nano/?offset=9)
+https://developer.nvidia.com/embedded/dlc/nv-sdk-manager
+find sources_sync.sh in the install path in a subfolder called 'Linux for tegra'
+```
+./source_sync.sh -k tegra-l4t-r32.1
+```
