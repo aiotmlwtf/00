@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T13:30:38.779Z
+date: 2020-03-19T13:34:54.933Z
 tags: 
 ---
 
@@ -79,17 +79,14 @@ docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-
 
 ```
 
-
-[wiki](https://github.com/NVIDIA/nvidia-docker/wiki)
-
-  [Nvidia-Docker setup](https://www.youtube.com/watch?v=-Y4T71UDcMY) - access GPU within Docker containers (youtube)
-
-  [NVIDIA-Container-Runtime-on-Jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson) 
- 
+[nvidia-docker wiki](https://github.com/NVIDIA/nvidia-docker/wiki)
 https://devblogs.nvidia.com/gpu-containers-runtime
+[nvidia-docker setup](https://www.youtube.com/watch?v=-Y4T71UDcMY) - access GPU within Docker containers (youtube)
 
 [jetson nano install](https://github.com/collabnix/dockerlabs/tree/master/beginners/install/jetson-nano)
-
+[NVIDIA Container Runtime on Jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson) 
+[building cuda in containers](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson#building-cuda-in-containers-on-jetson)
+ 
 </div>
 
 
