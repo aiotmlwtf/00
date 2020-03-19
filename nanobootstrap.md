@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T14:28:43.811Z
+date: 2020-03-19T14:34:13.254Z
 tags: 
 ---
 
@@ -14,10 +14,12 @@ cpu: ARMv8
 SD image: Ubuntu 18.04 LTS port (with native x64 support)
 user space apps / kernel arch are aarch64 / arm64 (64-bit)
 
+http://www.ironspider.ca/format_text/fontstyles.htm
 
-
-## board / sdk
-
+<details>
+<summary>
+<i>Board / SDK </i>
+</summary>
 <div style="background-color:#faa;">
 
 ### l4t (linux for tegra)
@@ -80,6 +82,8 @@ sudo apt-get install libnvidia-container-tools nvidia-container-runtime
 sudo apt-get install cuda*
 more ?
 ```
+
+</details>
 
 
 <div style="background-color:#0cf;">
