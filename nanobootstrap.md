@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T17:12:59.960Z
+date: 2020-03-19T17:54:16.679Z
 tags: installation
 ---
 
@@ -174,11 +174,63 @@ docker run --runtime=nvidia --rm -it -v "${PWD}:/app" gcr.io/tensorflow/tensorfl
 [building cuda in containers on jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson#building-cuda-in-containers-on-jetson)
 NVIDIA Container Runtime by default supports use of a limited set of device nodes and associated functionality within the l4t-base containers.
 https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson
+</details>
+
+<details>
+<summary>docker-compose</summary>
+
+**Dockerfile**
+
+```bash
+FROM python:3.7-alpine
+WORKDIR /code
+ENV FLASK_APP app.py
+ENV FLASK_RUN_HOST 0.0.0.0
+RUN apk add --no-cache gcc musl-dev linux-headers
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+COPY . .
+CMD ["flask", "run"]  
+```
+    
+**docker-compose.yml**
+  
+```yaml
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+  redis:
+    image: "redis:alpine"
+``` 
+
+**requirements.txt**
+
+```bash
+flask
+redis
+```
   
 
-</details>
-</div>
 
+```bash
+docker-compose up
+docker-compose up -d
+docker-compose down
+```
+  
+</details>
+
+  
+  
+  
+  
+  
+</details>
+  
+</div>
 
 <div style="background-color:#fac;">
 <details>
