@@ -2,36 +2,37 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T13:38:24.787Z
+date: 2020-03-19T13:52:45.583Z
 tags: 
 ---
 
----
+*goal*
+GPU-accelerated docker setup(s) for *jupyter/conda, tf, pytorch, cuda, opencl, deepspeech, nemo-asr*, etc.
 
-**goal**: GPU-accelerated docker setup
-experiment with
-nvidia-docker, jupyter, conda, tf, pytorch, cuda, opencl, deepspeech, nemo-asr
-
-
-**Jetson Nano**
+*Jetson Nano*
 cpu: ARMv8
 SD image: Ubuntu 18.04 LTS port (with native x64 support)
 user space apps / kernel arch are aarch64 / arm64 (64-bit)
 
 
-### prep
-
+*prepare*
 ```bash
 sudo apt-get update
 sudo apt-get install nano screen curl apt-utils
+
+sudo apt-get install libnvidia-container-tools nvidia-container-runtime
+sudo apt-get install cuda*
+more ?
 ```
+
 
 ### docker
 
 <div style="background-color:#0b0;">
  
-  
+
 ```bash
+
 # update docker 18.09 to 19.03
 curl -sSL https://get.docker.com/ | sh
 sudo docker version
@@ -61,22 +62,23 @@ xhost +si:ai:root
 *l4t*: use container l4t-base:r32.2 for nvidia docker on Jetson
 ('exec format error' upon running an image indicates usage of unsupported image(x86) on the ARM system)
  
-l4t-base docker image enables l4t applications to be run in a container. It has the necessary contents of the l4t rootfs included within. The platform specific libraries and select device nodes for a particular device are mounted by the NVIDIA container runtime into the l4t-base container from the underlying host, thereby providing necessary dependencies for l4t applications to execute within the container. 
-This approach enables the l4t-base container to be shared between various Jetson devices.
-
-CUDA and TensorRT are ready to use within the l4t-base container as they are made available from the host by the NVIDIA container runtime.  
+the **l4t-base** docker image enables l4t applications to be run in a container. It has the necessary contents of the l4t rootfs included within. The platform specific libraries and select device nodes for a particular device are mounted by the NVIDIA container runtime into the l4t-base container from the underlying host, thereby providing necessary dependencies for l4t applications to execute within the container. This approach enables the l4t-base container to be shared between various Jetson devices. **CUDA and TensorRT are ready to use within the l4t-base container** as they are made available from the host by the NVIDIA container runtime.  
 
 ---
 
 [nvidia-docker wiki](https://github.com/NVIDIA/nvidia-docker/wiki)
 https://devblogs.nvidia.com/gpu-containers-runtime
 [nvidia-docker setup](https://www.youtube.com/watch?v=-Y4T71UDcMY) - access GPU within Docker containers (youtube)
-[l4t-base](https://ngc.nvidia.com/catalog/containers/nvidia:l4t-base)
+https://docs.nvidia.com/jetson/l4t/index.html
+[l4t-base docker container](https://ngc.nvidia.com/catalog/containers/nvidia:l4t-base)
+
 
 [jetson nano install](https://github.com/collabnix/dockerlabs/tree/master/beginners/install/jetson-nano)
-[NVIDIA Container Runtime on Jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson) 
-[building cuda in containers](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson#building-cuda-in-containers-on-jetson)
 
+  [NVIDIA Container Runtime on Jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson)  
+[building cuda in containers](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson#building-cuda-in-containers-on-jetson) - NVIDIA Container Runtime by default supports use of a limited set of device nodes and associated functionality within the l4t-base containers as documented here
+User can mount additional devices using the --device command option provided by docker. Directories and files can be bind mounted using the -v option.
+    
 ```bash
 # starting a GPU enabled container
 docker pull nvcr.io/nvidia/l4t-base:r32.3.1
@@ -91,8 +93,6 @@ docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-
 # -d				daemonize
 
 ```
-
-
   
 </div>
 
