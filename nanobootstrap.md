@@ -2,12 +2,13 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T21:11:35.960Z
+date: 2020-03-19T21:14:47.163Z
 tags: installation, jetson nano
 ---
 
 **Goal**: 
-GPU-accelerated docker setup(s) for <span style="color:#f00;font-weight:800;"> jupyter/conda, tf, pytorch, cuda, opencl, deepspeech, nemo-asr</span>, etc.
+GPU-accelerated docker setup for Jetson Nano
+<span style="color:#f00;font-weight:800;">jupyter/conda, tf, pytorch, cuda, opencl, deepspeech, nemo-asr</span>
 
 <details>
 <summary>prepare</summary>
