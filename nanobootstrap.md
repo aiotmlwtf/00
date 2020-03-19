@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T17:54:43.506Z
+date: 2020-03-19T17:56:29.090Z
 tags: installation
 ---
 
@@ -96,7 +96,7 @@ This is just for reference, it's easier to just flash the sd card, instead of do
 
 
 
-<div style="background-color:#0cf;">
+<div style="background-color:#0c0;">
 <details>
 <summary>Docker</summary>
 
@@ -232,7 +232,7 @@ docker-compose down
   
 </div>
 
-<div style="background-color:#fac;">
+<div style="background-color:#0cf;">
 <details>
   <summary>Jupyter & Conda</summary>
 
@@ -268,9 +268,6 @@ sudo docker pull docker.io/zcw607/jetson:r1.0.1
 sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix zcw607/jetson:r1.0.1
 ```
 </details>
-</div>
-
-<div style="background-color:#000;">
 <details>
   <summary>NeMo - Neural Modules Toolkit</summary>
   Neural Modules toolkit for conversational AI, speech and NLP networks.
@@ -295,9 +292,8 @@ sudo docker run --runtime=nvidia -it --rm -v --shm-size=8g -p 8888:8888 -p 6006:
 sudo docker run --runtime=nvidia -it --rm -v <nemo_github_folder>:/NeMo --shm-size=8g -p 8888:8888 -p 6006:6006 --ulimit memlock=-1 --ulimit stack=67108864 nvcr.io/nvidia/nemo:v0.9
 ```
   </details>
-  </div>  
+
   
-<div style="background-color:#000;">
 <details>
   <summary>pytorch</summary>
   
