@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T13:34:54.933Z
+date: 2020-03-19T13:38:09.339Z
 tags: 
 ---
 
@@ -66,7 +66,20 @@ This approach enables the l4t-base container to be shared between various Jetson
 
 CUDA and TensorRT are ready to use within the l4t-base container as they are made available from the host by the NVIDIA container runtime.  
 
-```
+---
+
+[nvidia-docker wiki](https://github.com/NVIDIA/nvidia-docker/wiki)
+https://devblogs.nvidia.com/gpu-containers-runtime
+[nvidia-docker setup](https://www.youtube.com/watch?v=-Y4T71UDcMY) - access GPU within Docker containers (youtube)
+[l4t-base](https://ngc.nvidia.com/catalog/containers/nvidia:l4t-base)
+
+[jetson nano install](https://github.com/collabnix/dockerlabs/tree/master/beginners/install/jetson-nano)
+[NVIDIA Container Runtime on Jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson) 
+[building cuda in containers](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson#building-cuda-in-containers-on-jetson)
+
+```bash
+# starting a GPU enabled container
+docker pull nvcr.io/nvidia/l4t-base:r32.3.1
 docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix nvcr.io/nvidia/l4t-base:r32.3.1
 
 # -it 			run in interactive mode
@@ -79,14 +92,8 @@ docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-
 
 ```
 
-[nvidia-docker wiki](https://github.com/NVIDIA/nvidia-docker/wiki)
-https://devblogs.nvidia.com/gpu-containers-runtime
-[nvidia-docker setup](https://www.youtube.com/watch?v=-Y4T71UDcMY) - access GPU within Docker containers (youtube)
 
-[jetson nano install](https://github.com/collabnix/dockerlabs/tree/master/beginners/install/jetson-nano)
-[NVIDIA Container Runtime on Jetson](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson) 
-[building cuda in containers](https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson#building-cuda-in-containers-on-jetson)
- 
+  
 </div>
 
 
