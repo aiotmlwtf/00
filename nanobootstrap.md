@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T18:15:26.261Z
+date: 2020-03-19T18:17:21.848Z
 tags: installation
 ---
 
@@ -25,11 +25,69 @@ more ?
 
 
 <details><summary>various</summary>
-  
-```bash
-cp -r /usr/local/cuda/bin/cuda-install-samples-10.0.sh /home/ai
-```
 
+
+<div style="background-color:#ddd;">
+<details>
+<summary>Jetson Nano Board</summary>
+
+  cpu: ARMv8
+SD image: Ubuntu 18.04 LTS port (with native x64 support)
+user space apps / kernel arch are aarch64 / arm64 (64-bit)
+
+### l4t (linux for tegra)
+
+![jetson_bsp_architecture.png](/jetson_bsp_architecture.png){.align-center}
+[jetson board support architecture](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html) + module description
+[l4t packages](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fquick_start.html%23wwpID0EVHA)
+[nano software features](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fsoftware_features_jetson_nano.html%23wwconnect_header)
+</details>
+
+  
+<details>
+<summary>SDK's</summary>
+
+Deep Learning SDK requires [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
+https://developer.nvidia.com/deep-learning-software
+
+
+NVIDIA SDK Manager / JetPack
+https://developer.nvidia.com/embedded/jetpack
+
+[installing NVIDIA Jetson SDK Manager](https://www.youtube.com/watch?v=s1QDsa6SzuQ)
+**notes**
+This is just for reference, it's easier to just flash the sd card, instead of doing it through the sdk manager.
+
+- a nvidia account is needed to download the sdk
+- a dedicated [ubuntu installation](https://ubuntu.com/download/desktop) (eg. a [usb flash drive](https://linuxhint.com/run-ubuntu-18-04-from-usb-stick/)) to run [nvidia's sdk manager](https://developer.nvidia.com/nvidia-sdk-manager) is recommended
+- 8 GB of memory (and a full-HD screen) are required according to NVIDIA, but if 8GB is not available, go to the settings tab (upper-right of sdk manager), lower the number of concurrent downloads and threads per downloads (slow but possible)
+- there's a bug in the partitioning, so after flashing (over usb-eth), the 13 l4t partitions need to be moved to the end of the sdcard (so root can be resized to use all space)
+
+**installs**
+
+- NVIDIA container runtime - docker integration 0.9.0
+- OpenCV
+- VisionWorks
+- VPI
+- DALI: input data processing
+- NCCL: multi-GPU communication routines  
+- CUDA Toolkit for L4T - c/c++ gpu-acceleration libraries)
+- cuDNN - CUDA library with DL primitives
+- TensorRT - fast inference enginefor production deployment using INT8/FP16 optimized precision (reduced latency)
+- Multimedia API: high-level (gstreamer) and lower-level media apis
+- DeepStream SDK
+  C++ API/runtime/toolkit for transcoding, streaming video analytics, inference (situational awareness) through computer vision, intelligent video analysis (IVA) and multi-sensor processing
+- Optical Flow SDK: video inference, stereo disparity calculation, depth estimation
+- Transfer Learning Toolkit: SDK for tuning domain specific DNNs
+- AI-Assisted Annotation SDK: for medical imaging
+- DIGITS: DL GPU training system for image classification, segmentation and object detection 
+- cuBLAS: GPU-accelerated Linear Algebra functionality
+- cuSPARSE: subroutines for sparse matrices, eg. for natural language processing
+- Automatic Mixed Precision speedup
+</details>
+</div>
+
+  
 - jetson headless: disable ubuntu desktop
 
 ```bash
@@ -50,8 +108,15 @@ find sources_sync.sh in the install path in a subfolder called 'Linux for tegra'
 ./source_sync.sh -k tegra-l4t-r32.1
 ```
   
+```bash
+cp -r /usr/local/cuda/bin/cuda-install-samples-10.0.sh /home/ai
+```
+
 http://www.ironspider.ca/format_text/fontstyles.htm
-  </details>
+
+
+
+</details>
   
   
 <div style="background-color:#0e0;">
@@ -251,66 +316,6 @@ sudo docker pull nvcr.io/nvidia/pytorch:20.02-py3
 ```
 </div></details>
   
-
-<div style="background-color:#ddd;">
-<details>
-<summary>Jetson Nano Board</summary>
-
-  cpu: ARMv8
-SD image: Ubuntu 18.04 LTS port (with native x64 support)
-user space apps / kernel arch are aarch64 / arm64 (64-bit)
-
-### l4t (linux for tegra)
-
-![jetson_bsp_architecture.png](/jetson_bsp_architecture.png){.align-center}
-[jetson board support architecture](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html) + module description
-[l4t packages](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fquick_start.html%23wwpID0EVHA)
-[nano software features](https://docs.nvidia.com/jetson/archives/l4t-archived/l4t-3231/index.html#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fsoftware_features_jetson_nano.html%23wwconnect_header)
-</details>
-
-  
-<details>
-<summary>SDK's</summary>
-
-Deep Learning SDK requires [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
-https://developer.nvidia.com/deep-learning-software
-
-
-NVIDIA SDK Manager / JetPack
-https://developer.nvidia.com/embedded/jetpack
-
-[installing NVIDIA Jetson SDK Manager](https://www.youtube.com/watch?v=s1QDsa6SzuQ)
-**notes**
-This is just for reference, it's easier to just flash the sd card, instead of doing it through the sdk manager.
-
-- a nvidia account is needed to download the sdk
-- a dedicated [ubuntu installation](https://ubuntu.com/download/desktop) (eg. a [usb flash drive](https://linuxhint.com/run-ubuntu-18-04-from-usb-stick/)) to run [nvidia's sdk manager](https://developer.nvidia.com/nvidia-sdk-manager) is recommended
-- 8 GB of memory (and a full-HD screen) are required according to NVIDIA, but if 8GB is not available, go to the settings tab (upper-right of sdk manager), lower the number of concurrent downloads and threads per downloads (slow but possible)
-- there's a bug in the partitioning, so after flashing (over usb-eth), the 13 l4t partitions need to be moved to the end of the sdcard (so root can be resized to use all space)
-
-**installs**
-
-- NVIDIA container runtime - docker integration 0.9.0
-- OpenCV
-- VisionWorks
-- VPI
-- DALI: input data processing
-- NCCL: multi-GPU communication routines  
-- CUDA Toolkit for L4T - c/c++ gpu-acceleration libraries)
-- cuDNN - CUDA library with DL primitives
-- TensorRT - fast inference enginefor production deployment using INT8/FP16 optimized precision (reduced latency)
-- Multimedia API: high-level (gstreamer) and lower-level media apis
-- DeepStream SDK
-  C++ API/runtime/toolkit for transcoding, streaming video analytics, inference (situational awareness) through computer vision, intelligent video analysis (IVA) and multi-sensor processing
-- Optical Flow SDK: video inference, stereo disparity calculation, depth estimation
-- Transfer Learning Toolkit: SDK for tuning domain specific DNNs
-- AI-Assisted Annotation SDK: for medical imaging
-- DIGITS: DL GPU training system for image classification, segmentation and object detection 
-- cuBLAS: GPU-accelerated Linear Algebra functionality
-- cuSPARSE: subroutines for sparse matrices, eg. for natural language processing
-- Automatic Mixed Precision speedup
-</details>
-</div>
 
 
 
