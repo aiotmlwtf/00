@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T15:13:10.349Z
+date: 2020-03-19T15:16:08.725Z
 tags: 
 ---
 
@@ -12,11 +12,22 @@ tags:
 GPU-accelerated docker setup(s) for <span style="color:#f00;font-weight:800;">
 jupyter/conda, tf, pytorch, cuda, opencl, deepspeech, nemo-asr</span>, etc.
 
-
-
----
-<div style="background-color:#faa;">
 <details>
+<summary>prepare</summary>
+```bash
+sudo apt-get update
+sudo apt-get install nano screen curl apt-utils
+
+sudo apt-get install libnvidia-container-tools nvidia-container-runtime
+sudo apt-get install cuda*
+more ?
+```
+</details>
+
+
+<div style="background-color:#faa;">
+
+ <details>
 <summary>Jetson Nano Board</summary>
 
   cpu: ARMv8
@@ -75,15 +86,6 @@ probably easier to just flash the sd card, instead of doing it through the sdk m
 </details>
   </div>
 
-  *prepare*
-```bash
-sudo apt-get update
-sudo apt-get install nano screen curl apt-utils
-
-sudo apt-get install libnvidia-container-tools nvidia-container-runtime
-sudo apt-get install cuda*
-more ?
-```
 
 
 <div style="background-color:#0cf;">
@@ -99,6 +101,7 @@ sudo usermod -aG docker ai
 ```
 
 ```
+  # tests
 docker run hello-world
 docker run arm64v8/hello-world
 docker run -it ubuntu bash
