@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T17:54:16.679Z
+date: 2020-03-19T17:54:43.506Z
 tags: installation
 ---
 
@@ -213,7 +213,7 @@ flask
 redis
 ```
   
-
+**run*
 
 ```bash
 docker-compose up
