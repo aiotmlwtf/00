@@ -2,7 +2,7 @@
 title: bootstrap
 description: starting from scratch with the nvidia nano jetson
 published: 1
-date: 2020-03-19T14:54:28.201Z
+date: 2020-03-19T14:58:12.427Z
 tags: 
 ---
 
@@ -36,13 +36,11 @@ user space apps / kernel arch are aarch64 / arm64 (64-bit)
 <details>
 <summary>SDK's</summary>
 
-**deep learning SDK**
-requires [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
+Deep Learning SDK requires [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
 https://developer.nvidia.com/deep-learning-software
 
 
-** NVIDIA SDK Manager / JetPack**
-
+NVIDIA SDK Manager / JetPack
 https://developer.nvidia.com/embedded/jetpack
 
 [installing NVIDIA Jetson SDK Manager](https://www.youtube.com/watch?v=s1QDsa6SzuQ)
@@ -74,7 +72,10 @@ probably easier to just flash the sd card, instead of doing it through the sdk m
 - cuBLAS: GPU-accelerated Linear Algebra functionality
 - cuSPARSE: subroutines for sparse matrices, eg. for natural language processing
 - Automatic Mixed Precision speedup
-*prepare*
+</details>
+  </div>
+
+  *prepare*
 ```bash
 sudo apt-get update
 sudo apt-get install nano screen curl apt-utils
@@ -83,8 +84,6 @@ sudo apt-get install libnvidia-container-tools nvidia-container-runtime
 sudo apt-get install cuda*
 more ?
 ```
-</details>
-  </div>
 
 
 <div style="background-color:#0cf;">
