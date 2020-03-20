@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-20T10:53:02.681Z
+date: 2020-03-20T10:54:12.325Z
 tags: installation, jetson nano
 ---
 
@@ -251,16 +251,17 @@ docker-compose down
 
   <details><summary>nano-dl</summary>
 
-new Dockerfile
-```bash
-FROM azmfaridee/nano-dl
-```
-
 ```bash  
 docker pull azmfaridee/nano-dl
 ```
 
-Dockerfile
+= new Dockerfile (test)?
+```bash
+FROM azmfaridee/nano-dl
+```
+    
+    
+orig Dockerfile
 ```
 FROM nvcr.io/nvidia/l4t-base:r32.2.1
 
