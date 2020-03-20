@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-20T09:45:16.247Z
+date: 2020-03-20T09:45:44.346Z
 tags: installation, jetson nano
 ---
 
@@ -205,7 +205,8 @@ FROM creates a layer from the ubuntu:18.04 Docker image.
 COPY adds files from your Docker client’s current directory.
 RUN  builds your application with make.
 CMD  specifies what command to run within the container.
-
+```
+```bash
 # Dockerfile:
 FROM python:3.7-alpine
 WORKDIR /code
