@@ -2,12 +2,16 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-20T11:06:56.901Z
+date: 2020-03-20T11:11:05.320Z
 tags: installation, jetson nano
 ---
 
-working on GPU-accelerated docker setups for Jetson Nano
+GPU-accelerated docker setups for Jetson Nano
 <span style="color:#f00;font-weight:800;">jupyter/conda, tf, pytorch, cuda, opencl, deepspeech, nemo-asr</span>
+
+
+<br />
+<div style="background-color:#ddd;padding:8px;">
 
 <details>
 <summary>prepare</summary>
@@ -68,7 +72,6 @@ This is just for reference, it's easier to just flash the sd card, instead of do
 - there's a bug in the partitioning, so after flashing (over usb-eth), the 13 l4t partitions need to be moved to the end of the sdcard (so root partition aligns with free space and so can be resized to use it)
 
 </details>
-</div>
 
 
 <details>
@@ -105,7 +108,6 @@ http://www.ironspider.ca/format_text/fontstyles.htm
 
 </details>
 
-<div style="background-color:#ddd;padding:8px;">
   
 <details>
 <summary>Docker</summary>
@@ -183,14 +185,6 @@ docker run --runtime=nvidia --rm -it -v "${PWD}:/app" gcr.io/tensorflow/tensorfl
 NVIDIA Container Runtime by default supports use of a limited set of device nodes and associated functionality within the l4t-base containers. https://github.com/NVIDIA/nvidia-docker/wiki/NVIDIA-Container-Runtime-on-Jetson
 </details>
 
-<span style="font-weight:800;">
-
-[d1](https://docs.docker.com/get-started/) [d2](https://docs.docker.com/get-started/part2/)
-[image](https://docs.docker.com/engine/reference/commandline/image/) [container](https://docs.docker.com/engine/reference/commandline/container/) [prune](https://docs.docker.com/config/pruning/)
-Dockerfile [best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) [reference](https://docs.docker.com/engine/reference/builder/)
-</span>
-
-  
   
   
 <details><summary>docker-compose</summary>
@@ -249,11 +243,18 @@ docker-compose down
   
 </details>
 
-</details>
- 
+<span style="font-weight:100;">
+
+[d1](https://docs.docker.com/get-started/) [d2](https://docs.docker.com/get-started/part2/) [image](https://docs.docker.com/engine/reference/commandline/image/) [container](https://docs.docker.com/engine/reference/commandline/container/) [prune](https://docs.docker.com/config/pruning/)
+Dockerfile: [best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) [reference](https://docs.docker.com/engine/reference/builder/)
+</span>
+
+
+</details> 
 
 </div>
 
+<br />
 
 <div style="background-color:#aaa;padding:10px;">
 
