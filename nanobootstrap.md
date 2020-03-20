@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-20T09:45:44.346Z
+date: 2020-03-20T09:47:25.498Z
 tags: installation, jetson nano
 ---
 
@@ -217,7 +217,8 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 COPY . .
 CMD ["flask", "run"]  
-
+```
+```bash
 # docker-compose.yml: 
 version: '3'
 services:
@@ -227,16 +228,34 @@ services:
       - "5000:5000"
   redis:
     image: "redis:alpine"
-
+```
+```bash
 # requirements.txt:
 flask
 redis
-  
+```
+```bash  
 # run
 docker-compose up
 docker-compose up -d
 docker-compose down
 ```
+  
+```bash  
+# run
+docker pull azmfaridee/nano-dl
+
+docker build .
+
+# docker run -it -p 8888:8888 -v /dcode:/notebooks --name nano-dl-container azmfaridee/nano-dl
+# docker run -it -p 8888:8888 -v /dcode:/notebooks --name nano-dl-container 8ad58b35404d
+docker run -it -p 8888:8888 -v /dcode:/notebooks 8ad58b35404d
+
+
+
+
+```
+  
 </details>
 </details>
  
