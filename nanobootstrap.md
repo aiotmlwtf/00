@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-20T15:10:16.181Z
+date: 2020-03-20T16:54:35.042Z
 tags: installation, jetson nano
 ---
 
@@ -437,15 +437,30 @@ sudo docker pull docker.io/zcw607/jetson:r1.0.1
 sudo docker run --runtime nvidia --network host -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix zcw607/jetson:r1.0.1
 ```
 </details>
+  
+  
+  
+  
+  
+
 <details>
   <summary>NeMo - Neural Modules Toolkit</summary>
   Neural Modules toolkit for conversational AI, speech and NLP networks.
-Collections of ASR, NLP and TTS modules representing data layers, encoders, decoders, language models, loss functions, or methods of combining activations. 
+Collections of ASR, NLP and TTS modules representing data layers, encoders, decoders, language models, loss functions, or methods of combining activations. NeMo allows the combination and re-use of those building blocks (while providing a level of semantic correctness checking via its neural type system). Pretrained models: 
+ 
+  **Jasper, Quartznet, Transformer, Tacotron2, Waveglow**
 
-NeMo allows the combination and re-use of those building blocks (while providing a level of semantic correctness checking via its neural type system). 
+  
+**Requirements**
+Python >= 3.6
+CUDA >= 10.0
+cuDNN >= 7.6
+[APEX](https://github.com/NVIDIA/apex)
+PyTorch >=1.2
+NCCL >= 2.4 (recomended for distr. training)
+ 
 
-Pretrained models: **Jasper, Quartznet, Transformer, Tacotron2, Waveglow**
-
+NOPE (all for x86):  
 ```
 docker pull nvcr.io/nemo/nemo_asr_app_img:v1.0
 wget https://ngc.nvidia.com/catalog/models/nvidia:quartznet15x5
@@ -460,7 +475,8 @@ sudo docker run --runtime=nvidia -it --rm -v --shm-size=8g -p 8888:8888 -p 6006:
 
 sudo docker run --runtime=nvidia -it --rm -v <nemo_github_folder>:/NeMo --shm-size=8g -p 8888:8888 -p 6006:6006 --ulimit memlock=-1 --ulimit stack=67108864 nvcr.io/nvidia/nemo:v0.9
 ```
-  </details>
+
+</details>
 
   
 <details>
