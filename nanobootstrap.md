@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-20T10:46:06.386Z
+date: 2020-03-20T10:52:16.243Z
 tags: installation, jetson nano
 ---
 
@@ -247,8 +247,17 @@ docker-compose down
   
 <div style="background-color:#0a0;padding:8px;">
 
+  
+Dockerfile
+```bash
+FROM azmfaridee/nano-dl
+```
+
   <details><summary>nano-dl</summary>
 
+```bash  
+docker pull azmfaridee/nano-dl
+```
 
 Dockerfile
 ```
@@ -317,13 +326,12 @@ RUN mkdir -p /notebooks
 
 CMD ["jupyter", "notebook", "--no-browser", "--ip=0.0.0.0", "--allow-root", "--notebook-dir='/notebooks'"]
 ```
-  
-```bash  
-# run
-docker pull azmfaridee/nano-dl
-
+```bash
 docker build .
+```
 
+ ```bash  
+# run
 # docker run -it -p 8888:8888 -v /dcode:/notebooks --name nano-dl-container azmfaridee/nano-dl
 # docker run -it -p 8888:8888 -v /dcode:/notebooks --name nano-dl-container 8ad58b35404d
 docker run -it -p 8888:8888 -v /dcode:/notebooks 8ad58b35404d
