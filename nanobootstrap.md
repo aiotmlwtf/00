@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-19T21:25:07.078Z
+date: 2020-03-20T09:43:44.193Z
 tags: installation, jetson nano
 ---
 
@@ -25,7 +25,6 @@ more ?
 
 <details>
 <summary>various</summary>
-
 
 <details>
 <summary>Jetson Nano Board</summary>
@@ -110,7 +109,9 @@ http://www.ironspider.ca/format_text/fontstyles.htm
   
 <details>
 <summary>Docker</summary>
-A **container (=running process)** interacts with its own private filesystem provided by the docker image, which has the resources required to run an application, eg. code/binary, runtimes, dependencies and other filesystem objects.
+A container (=running process) interacts with its own private filesystem provided by the docker image, which has the resources required to run an application, eg. code/binary, runtimes, dependencies and other filesystem objects.
+When running image and generating a container, a new writable“container layer" is created on top of the underlying layers.
+All changes made to the running container, such as writing new files, modifying existing files, and deleting files, are written to this thin container layer.
 
 ```bash
 # update docker 18.09 to 19.03
