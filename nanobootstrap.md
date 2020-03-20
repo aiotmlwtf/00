@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-20T11:16:46.832Z
+date: 2020-03-20T11:17:19.588Z
 tags: installation, jetson nano
 ---
 
@@ -359,7 +359,7 @@ docker run -it -p 8888:8888 -p 6006:6006 -v /dcode:/notebooks 8ad58b35404d
 <div style="background-color:#0cf;padding:2px;">
 
 <details>
-  <summary>Jupyter & Conda</summary>
+  <summary>jupyter/conda</summary>
 
 **install/use Archiconda on a Jetson Nano inside Docker**
 https://forums.developer.nvidia.com/t/anaconda-for-jetson-nano/74286
