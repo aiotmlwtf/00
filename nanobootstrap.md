@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-20T10:41:24.236Z
+date: 2020-03-20T10:42:52.393Z
 tags: installation, jetson nano
 ---
 
@@ -105,7 +105,7 @@ http://www.ironspider.ca/format_text/fontstyles.htm
 
 </details>
 
-<div style="background-color:#0c0;">
+<div style="background-color:#ddd;margin:20px;">
   
 <details>
 <summary>Docker</summary>
