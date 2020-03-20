@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-20T09:43:44.193Z
+date: 2020-03-20T09:45:16.247Z
 tags: installation, jetson nano
 ---
 
@@ -110,6 +110,7 @@ http://www.ironspider.ca/format_text/fontstyles.htm
 <details>
 <summary>Docker</summary>
 A container (=running process) interacts with its own private filesystem provided by the docker image, which has the resources required to run an application, eg. code/binary, runtimes, dependencies and other filesystem objects.
+  
 When running image and generating a container, a new writable“container layer" is created on top of the underlying layers.
 All changes made to the running container, such as writing new files, modifying existing files, and deleting files, are written to this thin container layer.
 
@@ -189,12 +190,22 @@ NVIDIA Container Runtime by default supports use of a limited set of device node
 Dockerfile [best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) [reference](https://docs.docker.com/engine/reference/builder/)
 </span>
 
+  
+  
+  
+  
   [docker-compose](https://docs.docker.com/compose/)   
   
 <details>
 <summary>docker-compose</summary>
 
+
 ```bash
+FROM creates a layer from the ubuntu:18.04 Docker image.
+COPY adds files from your Docker client’s current directory.
+RUN  builds your application with make.
+CMD  specifies what command to run within the container.
+
 # Dockerfile:
 FROM python:3.7-alpine
 WORKDIR /code
