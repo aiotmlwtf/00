@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-20T16:55:41.109Z
+date: 2020-03-20T16:59:09.508Z
 tags: installation, jetson nano
 ---
 
@@ -450,6 +450,7 @@ Collections of ASR, NLP and TTS modules representing data layers, encoders, deco
  
   **Jasper, Quartznet, Transformer, Tacotron2, Waveglow**
 
+  https://nvidia.github.io/NeMo/installation.html
   
 **Requirements**
 Python >= 3.6
@@ -486,6 +487,9 @@ sudo docker run --runtime=nvidia -it --rm -v <nemo_github_folder>:/NeMo --shm-si
 
   [apex extension](https://github.com/NVIDIA/apex)
 
+
+  
+NOPE (x86):
 ```
 sudo docker pull nvcr.io/nvidia/pytorch:20.02-py3
 ```
