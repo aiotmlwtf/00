@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-20T15:04:07.659Z
+date: 2020-03-20T15:10:16.181Z
 tags: installation, jetson nano
 ---
 
@@ -253,11 +253,10 @@ Dockerfile: [best practices](https://docs.docker.com/develop/develop-images/dock
 
 
 
-<details><summary>ctop</summary>
+<details><summary>ctop - for container metrics</summary>
 
-https://github.com/bcicen/ctop
+  https://github.com/bcicen/ctop
 https://ctop.sh
-top-like interface for container metrics
 
 ```bash
 sudo wget https://github.com/bcicen/ctop/releases/download/v0.7.3/ctop-0.7.3-linux-amd64 -O /usr/local/bin/ctop
@@ -265,27 +264,25 @@ sudo chmod +x /usr/local/bin/ctop
 
 Options:
 -a					show active containers only
--f <string>	set an initial filter string
--h					display help dialog
--i					invert default colors
--r					reverse container sort order
--s					select initial container sort field
 -scale-cpu	show cpu as % of system total
--v					output version information and exit
--shell			specify shell (default: sh)
+-f <string>	set an initial filter string
+-s					select initial container sort field
+-r					reverse container sort order
+-i					invert default colors
+-h					display help dialog
 
 Keybindings
 <enter>			open container menu
 a						toggle display of all (running and non-running) containers
 f						filter displayed containers (esc to clear when open)
-H						toggle ctop header
-h						open help dialog
 s						select container sort field
 r						reverse container sort order
 o						open single view
 l						view container logs (t to toggle timestamp when open)
 e						exec shell
 S						save current configuration to file
+H						toggle ctop header
+h						open help dialog
 q						quit
 ```
   
