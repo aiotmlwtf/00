@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-20T09:47:25.498Z
+date: 2020-03-20T10:31:01.598Z
 tags: installation, jetson nano
 ---
 
@@ -196,9 +196,7 @@ Dockerfile [best practices](https://docs.docker.com/develop/develop-images/docke
   
   [docker-compose](https://docs.docker.com/compose/)   
   
-<details>
-<summary>docker-compose</summary>
-
+<details><summary>docker-compose</summary>
 
 ```bash
 FROM creates a layer from the ubuntu:18.04 Docker image.
@@ -206,8 +204,10 @@ COPY adds files from your Docker client’s current directory.
 RUN  builds your application with make.
 CMD  specifies what command to run within the container.
 ```
+  
+<details><summary>Dockerfile:</summary>
+
 ```bash
-# Dockerfile:
 FROM python:3.7-alpine
 WORKDIR /code
 ENV FLASK_APP app.py
@@ -217,7 +217,10 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 COPY . .
 CMD ["flask", "run"]  
+
 ```
+  </details>
+  
 ```bash
 # docker-compose.yml: 
 version: '3'
