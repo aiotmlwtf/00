@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-20T10:45:08.504Z
+date: 2020-03-20T10:46:06.386Z
 tags: installation, jetson nano
 ---
 
@@ -207,6 +207,7 @@ CMD  specifies what command to run within the container.
 ```
 
 <details><summary>example</summary>
+
 ```bash
 # Dockerfile
 FROM python:3.7-alpine
@@ -244,7 +245,7 @@ docker-compose down
   </details>
 
   
-<div style="background-color:#ddd;padding:8px;">
+<div style="background-color:#0a0;padding:8px;">
 
   <details><summary>nano-dl</summary>
 
