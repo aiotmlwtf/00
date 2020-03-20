@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-20T16:55:09.636Z
+date: 2020-03-20T16:55:41.109Z
 tags: installation, jetson nano
 ---
 
@@ -481,8 +481,10 @@ sudo docker run --runtime=nvidia -it --rm -v <nemo_github_folder>:/NeMo --shm-si
   
 <details>
   <summary>pytorch</summary>
+  
   https://bharathgs.github.io/Awesome-pytorch-list/
-  apex extension: https://github.com/NVIDIA/apex
+
+  [apex extension](https://github.com/NVIDIA/apex)
 
 ```
 sudo docker pull nvcr.io/nvidia/pytorch:20.02-py3
