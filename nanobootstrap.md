@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-20T10:56:54.474Z
+date: 2020-03-20T11:06:56.901Z
 tags: installation, jetson nano
 ---
 
@@ -193,12 +193,12 @@ Dockerfile [best practices](https://docs.docker.com/develop/develop-images/docke
   
   
   
-  
-  [docker-compose](https://docs.docker.com/compose/)   
-  
 <details><summary>docker-compose</summary>
 
 
+  
+  [docker-compose](https://docs.docker.com/compose/)   
+  
 ```bash
 FROM creates a layer from the ubuntu:18.04 Docker image.
 COPY adds files from your Docker client’s current directory.
@@ -252,12 +252,12 @@ docker-compose down
 </details>
  
 
-
 </div>
-  
 
 
-<div style="background-color:#0a0;padding:8px;">
+<div style="background-color:#aaa;padding:10px;">
+
+<div style="background-color:#0a0;padding:2px;">
 
   
 
@@ -350,13 +350,12 @@ docker build .
 # docker run -it -p 8888:8888 -v /dcode:/notebooks --name nano-dl-container 8ad58b35404d
 docker run -it -p 8888:8888 -v /dcode:/notebooks 8ad58b35404d
 ```
-
-  
 </details>  
 
 </div>
 
-<div style="background-color:#0cf;">
+<div style="background-color:#0cf;padding:2px;">
+
 <details>
   <summary>Jupyter & Conda</summary>
 
@@ -379,10 +378,8 @@ https://github.com/helmuthva/jetson
  </details>
 </div>
 
-</div>
 
-
-<div style="background-color:#000;">
+<div style="background-color:#000;padding:2px;">
 <details>
   <summary>tensorflow, keras, docker</summary>
   
@@ -432,6 +429,8 @@ sudo docker pull nvcr.io/nvidia/pytorch:20.02-py3
   
 
 
+</div>
+  
 
 
 
