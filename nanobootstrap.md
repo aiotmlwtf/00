@@ -2,7 +2,7 @@
 title: nanobootstrap
 description: nvidia nano jetson / docker installation notes
 published: 1
-date: 2020-03-20T10:54:12.325Z
+date: 2020-03-20T10:56:54.474Z
 tags: installation, jetson nano
 ---
 
@@ -245,6 +245,18 @@ docker-compose down
   </details>
 
   
+
+  
+</details>
+
+</details>
+ 
+
+
+</div>
+  
+
+
 <div style="background-color:#0a0;padding:8px;">
 
   
@@ -261,7 +273,7 @@ FROM azmfaridee/nano-dl
 ```
     
     
-orig Dockerfile
+Dockerfile
 ```
 FROM nvcr.io/nvidia/l4t-base:r32.2.1
 
@@ -344,16 +356,6 @@ docker run -it -p 8888:8888 -v /dcode:/notebooks 8ad58b35404d
 
 </div>
 
-  
-</details>
-</details>
- 
-
-</div>
-  
-
-</div>
-
 <div style="background-color:#0cf;">
 <details>
   <summary>Jupyter & Conda</summary>
@@ -375,6 +377,8 @@ https://github.com/helmuthva/jetson/blob/master/workflow/deploy/ml-base/src/Dock
 Overall "ml-base" project:
 https://github.com/helmuthva/jetson
  </details>
+</div>
+
 </div>
 
 
