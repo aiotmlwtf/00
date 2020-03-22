@@ -2,7 +2,7 @@
 title: notes2
 description: 
 published: 1
-date: 2020-03-22T23:57:47.102Z
+date: 2020-03-22T23:59:04.631Z
 tags: 
 ---
 
@@ -15,18 +15,15 @@ Optimization algorithms are the ‘backbone algorithms’ of Machine Learning.
 An **optimization algorithm** is executed a predefined number of times and is used to find optimal solutions to problems, in mathematical terms, these ‘problems’ are referred to as functions. An optimizer within a neural network is an algorithmic implementation that facilitates the process of gradient descent within a neural network by minimizing the loss values provided via the loss function. To reduce the loss, the values of the weights within the network need to be selected appropriately.
 
   
-**Gradient Descent** is an optimization algorithm used to find values that reduce the cost function.  This is done through the calculation of a gradient value, that is utilized to select values at each step that finds the local minimum of a cost function. The negative of the gradient is used to find the local minimum.
+**Gradient descent** is an optimization algorithm used to find values that reduce the cost function.  This is done through the calculation of a gradient value, that is utilized to select values at each step that finds the local minimum of a cost function. The negative of the gradient is used to find the local minimum.
 
-The **Cost function** quantifies ‘how well’ a machine learning model performs. The quantification is an output(cost) based on a set of inputs, which are referred to as parameter values. The parameter values are used to estimate a prediction, and the ‘cost’ is the difference between the prediction and the actual values.
+The **cost function** quantifies ‘how well’ a machine learning model performs. The quantification is an output(cost) based on a set of inputs, which are referred to as parameter values. The parameter values are used to estimate a prediction, and the ‘cost’ is the difference between the prediction and the actual values.
 
-The smallest parameter values that lie within the entire domain of a cost function
-is called a **Global Minimum**. A **local minimum** refers to the lowest parameter values that lie within a set range of the cost function.
+The smallest parameter values that lie within the entire domain of a cost function is called a **Global Minimum**. A **local minimum** refers to the lowest parameter values that lie within a set range of the cost function.
 
 **Convergence** describes the notion of movement towards optimal parameter values or global minimum when used in the context of machine learning.
-
   
-**Loss Function**
-The loss function is a method that quantifies ‘how well’ a machine learning model performs. The quantification is an output(cost) based on a set of inputs, which are referred to as parameter values. The parameter values are used to estimate a prediction, and the ‘loss’ is the difference between the predictions and the actual values.
+The **loss function** quantifies ‘how well’ a machine learning model performs. The quantification is an output(cost) based on a set of inputs, which are referred to as parameter values. The parameter values are used to estimate a prediction, and the ‘loss’ is the difference between the predictions and the actual values.
 
 An **activation function** (also: ‘squashing function’) is a mathematical operation that transforms the result or signals of neurons into a normalized output. The purpose of an activation function as a component of a neural network is to introduce non-linearity within the network. The inclusion of an activation function enables the neural network to have greater representational power and solve complex functions.
 
