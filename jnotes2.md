@@ -2,7 +2,7 @@
 title: notes2
 description: 
 published: 1
-date: 2020-03-22T12:24:00.834Z
+date: 2020-03-22T19:37:26.400Z
 tags: 
 ---
 
@@ -58,26 +58,27 @@ Image of a cost function curvature
 The minimum (singular)/minima(plural) is a point within the slope where the optimum value that minimizes the cost function exists, and gradient descent is the algorithm that guides our ball towards the minimum at several steps (iterations).
 To solve the cost function, we are looking for the lowest point of the curve, and this is the point where the gradient is zero or close to zero.
 Quick note: Cost function curve aren’t always necessarily a nice bowl shape with one local minima. In the example used in the image above there is only one input paramter(1 dimensional paramter space) to the cost fucntion, but in practice, the parameter space tends to have more dimensions.
-Batch Gradient Descent
+
+**Batch Gradient Descent**
+  
 We understand how gradient descent works and can now apply it to our training data. The application of the gradient descent algorithm to training data comes in various forms. One form is called Batch Gradient Descent (BGD).
 In the image above, we take steps towards a local minimum. In BGD, we actually utilize every training data at our disposal to decide as to which direction and by how much we move towards a minimum. We use all our training data at each step.
 For extensive training data, the training process can be prolonged but can be computationally efficient as we do not make any changes to our model parameters as often as other variants of gradient descent.
 Although BGD is not memory efficient, as you can imagine that we require all our datasets available in memory when training a model.
-Stochastic Gradient Descent
+
+**Stochastic Gradient Descent**
+  
 On the other side of the coin to BGD, we have Stochastic Gradient Descent (SGD).
 As opposed to iterating through every data within our training set and then making a step towards a local minimum, SGD works by actually picking a single data point from the training set and computing the gradient, based on this single data point.
 You can probably tell that between BGD and SGD, SGD is the faster algorithm since you are computing the gradient based on a single instance of the data as opposed to the entire dataset, but at what cost.
-Updates made within the parameter space during gradient descent can be noisy when using SGD. The noisiness characteristic of SGD is a result of its random nature that occurs when selecting data points from the training set to compute gradients from at each step.
-To accommodate for the noisiness nature of SGD and ensure we reach an optimum parameter value, we have to iterate over the training data a certain number of times and ensure that at the beginning of the gradient descent process, the training data is shuffled.
-Noise leads to ambiguous parameter values to solve the cost function, although given enough time, SGD will approach a local minimum. The noisiness and random nature of SGD are also beneficial. It’s useful for when the algorithm gets ‘stuck’ in a local minimum that isn’t the global minimum.
-In comparison to BGD, SGD has the benefit of escaping local minimums and finding the global minimum due to its random and erratic nature when allocating parameter values at each step.
+
+Updates made within the parameter space during gradient descent can be noisy when using SGD. The noisiness characteristic of SGD is a result of its random nature that occurs when selecting data points from the training set to compute gradients from at each step. To accommodate for the noisiness nature of SGD and ensure we reach an optimum parameter value, we have to iterate over the training data a certain number of times and ensure that at the beginning of the gradient descent process, the training data is shuffled. Noise leads to ambiguous parameter values to solve the cost function, although given enough time, SGD will approach a local minimum. The noisiness and random nature of SGD are also beneficial. It’s useful for when the algorithm gets ‘stuck’ in a local minimum that isn’t the global minimum. In comparison to BGD, SGD has the benefit of escaping local minimums and finding the global minimum due to its random and erratic nature when allocating parameter values at each step.
 
 But BGD parameter values are closer to the global minimum and optimal in comparison to SGD. There is a trade-off between speed and optimality when faced with selecting between both variants of the gradient descent algorithms.
 
-Mini Batch Gradient Descent
+**Mini Batch Gradient Descent**
 
 How about an approach that leverages the good characteristics of both SGD and BGD.
 Mini Batch Gradient Descent computes the gradient based on randomly selected data within the training set just like SGD but does not include the entire dataset when computing gradients, so it’s also not quite BGD. You could say it’s a hybrid.
-Mini Batch GD uses a small number of data when computing gradients; in comparison to BGD, it’s faster, but when compared to SGD, it’s still slower.
-The advantage of Mini Batch GD to SGD is the reduction in noise within the parameter space. This means that utilizing Mini Batch GD, means optimum parameter values are more reachable.
+Mini Batch GD uses a small number of data when computing gradients; in comparison to BGD, it’s faster, but when compared to SGD, it’s still slower. The advantage of Mini Batch GD to SGD is the reduction in noise within the parameter space. This means that utilizing Mini Batch GD, means optimum parameter values are more reachable.
 </details>
