@@ -2,7 +2,7 @@
 title: notes2
 description: 
 published: 1
-date: 2020-03-22T19:39:37.067Z
+date: 2020-03-22T23:57:47.102Z
 tags: 
 ---
 
@@ -43,14 +43,18 @@ The transformation imposed by ReLU on values from a neuron is represented by the
 A type of activation function that is utilized to derive the probability distribution of a set of numbers within an input vector. The output of a softmax activation function is a vector in which its set of values represents the probability of an occurrence of a class or event. The values within the vector all add up to 1.
 
 
-**Glorot uniform initializer** is a neural network’s weight initialization method utilized as a solution to solve unsteady gradients within a neural network. It initializes the weights of a network from a distribution of values over a certain range, with the mean of the value evaluating to zero and a constant variance. The maximum of the distribution is the positive value of the range, and the minimum is the negative value of the range.
+[Glorot uniform initializer](http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf) is a neural network’s weight initialization method utilized as a solution to solve unsteady gradients within a neural network. It initializes the weights of a network from a distribution of values over a certain range, with the mean of the value evaluating to zero and a constant variance. The maximum of the distribution is the positive value of the range, and the minimum is the negative value of the range.
 
-`range = [value, -value]`
+```python
+range = [value, -value]
+```
 
-The value used to determine the distribution range is derived from the formula,
-fan_in is the number input to layer, and fan_out is the number of neurons within the layer ([the paper](http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf)):
+The value used to determine the distribution range is derived from the formula, fan_in is the number input to layer, and fan_out is the number of neurons within the layer:
 
-`value = sqrt(6 / fan_in + fan_out)`
+```python
+value = sqrt(6 / fan_in + fan_out)
+```
+
 
 
 
