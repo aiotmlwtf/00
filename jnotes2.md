@@ -2,7 +2,7 @@
 title: notes2
 description: 
 published: 1
-date: 2020-03-23T00:03:00.074Z
+date: 2020-03-23T07:46:07.631Z
 tags: 
 ---
 
