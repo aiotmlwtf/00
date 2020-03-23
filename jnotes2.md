@@ -2,7 +2,7 @@
 title: notes2
 description: 
 published: 1
-date: 2020-03-23T00:02:34.863Z
+date: 2020-03-23T00:03:00.074Z
 tags: 
 ---
 
@@ -61,8 +61,7 @@ Gradient descent is an algorithm that works by making changes to the values of t
 
 Gradient descent works by finding the direction to take towards a local minimum based on the calculated gradient obtained from the error function with respect to the parameters at a particular data point.
 
-Let’s use a graph that contains a bowl-shaped curve, and a ball, placed on the top left side of the curve. The ball represents a certain point (value) in the parameter space that is initially randomly chosen, and the curve represents the cost values plotted against a range of parameter values. The goal is to reach the parameter value that provides the lowest cost value.
-On the x-axis of the plot is a value representing the cost, and on the y-axis is a value denoted by ‘X’ that represents the range of parameter values that we are utilizing to solve the cost function.
+Let’s use a graph that contains a bowl-shaped curve, and a ball, placed on the top left side of the curve. The ball represents a certain point (value) in the parameter space that is initially randomly chosen, and the curve represents the cost values plotted against a range of parameter values. The goal is to reach the parameter value that provides the lowest cost value. On the x-axis of the plot is a value representing the cost, and on the y-axis is a value denoted by ‘X’ that represents the range of parameter values that we are utilizing to solve the cost function.
 
 Image of a cost function curvature
 
