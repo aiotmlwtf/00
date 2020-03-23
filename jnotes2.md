@@ -2,7 +2,7 @@
 title: notes2
 description: 
 published: 1
-date: 2020-03-23T00:01:41.143Z
+date: 2020-03-23T00:02:34.863Z
 tags: 
 ---
 
@@ -32,8 +32,7 @@ An **activation function** (also: ‘squashing function’) is a mathematical op
 **Sigmoid**
   
 **ReLU (Rectified Linear Unit)**
-A type of activation function that transforms the value results of a neuron.
-The transformation imposed by ReLU on values from a neuron is represented by the formula y=max(0,x). The ReLU activation function clamps down any negative values from the neuron to 0, and positive values remain unchanged. The result of this mathematical transformation is utilized as the output of the current layer and used as input to a consecutive layer within a neural network. In the matter of Vanishing gradient, ReLU is a standard solution to limiting or avoiding the effect of vanishing gradient on a neural network.
+A type of activation function that transforms the value results of a neuron. The transformation imposed by ReLU on values from a neuron is represented by the formula y=max(0,x). The ReLU activation function clamps down any negative values from the neuron to 0, and positive values remain unchanged. The result of this mathematical transformation is utilized as the output of the current layer and used as input to a consecutive layer within a neural network. In the matter of Vanishing gradient, ReLU is a standard solution to limiting or avoiding the effect of vanishing gradient on a neural network.
 
 **Softmax**
 A type of activation function that is utilized to derive the probability distribution of a set of numbers within an input vector. The output of a softmax activation function is a vector in which its set of values represents the probability of an occurrence of a class or event. The values within the vector all add up to 1.
@@ -50,9 +49,6 @@ The value used to determine the distribution range is derived from the formula, 
 ```python
 value = sqrt(6 / fan_in + fan_out)
 ```
-
-
-
 
 </details>
   
