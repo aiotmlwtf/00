@@ -2,7 +2,7 @@
 title: notebooks
 description: 
 published: 1
-date: 2020-03-11T17:00:49.426Z
+date: 2020-03-29T01:26:05.604Z
 tags: 
 ---
 
@@ -12,6 +12,12 @@ tags:
   
   [aiotmlwtf collab file](https://colab.research.google.com/drive/1sGN0DJSlKNzfi7-FYYwG42rcDu0PgaYN) 
 </span>
+
+[nano](https://aiotmlwtf.xyz/nanobootstrap)
+
+
+[older](https://aiotmlwtf.xyz/collab_links)
+
 
 ---
 
