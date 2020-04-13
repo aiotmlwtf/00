@@ -2,7 +2,7 @@
 title: Various links
 description: link collection
 published: 1
-date: 2020-03-14T11:03:16.457Z
+date: 2020-04-13T14:26:46.357Z
 tags: 
 ---
 
@@ -14,3 +14,5 @@ Jetson Nano:
 [boot from USB 3.0 SATA SSD](https://github.com/helmut-hoffer-von-ankershoffen/jetson#optional-jetson-nanos-only-boot-from-usb-30-sata-ssd---for-advanced-users-only)
 
 [ML algo's math](https://stanford.edu/~shervine/teaching/cs-229/)
+
+[Game of Life](https://conwaylife.com/wiki/John_Conway)
