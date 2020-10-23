@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-10-23T21:24:46.773Z
+date: 2020-10-23T21:29:23.730Z
 tags: books, references
 ---
 
@@ -28,8 +28,8 @@ A long good collection of critical, philosophical texts on AI/ML can be found at
 - [Simon, Herbert A. (1996) The Sciences of the Artificial](#simon-herbert-a-1996-the-sciences-of-the-artificial)
 - [Toffoli, Tommaso; Margolus, Norman (1987) Cellular Automata Machines - A New Environment for Modeling](#toffoli-tommaso-margolus-norman-1987-cellular-automata-machines-a-new-environment-for-modeling)
 - [Whitelaw, Mitchell (2004) Metacreation: Art and Artificial Life](#whitelaw-mitchell-2004-metacreation-art-and-artificial-life)
+- [Whitney, John (1980) Digital Harmony: On the Complementarity of Music and Visual Art](#go_here)
 
-- [Whitney, John (1980) Digital Harmony: On the Complementarity of Music and Visual Art](#)
 
 ---
 ### Benthall, Jonathan (1972) Science and Technology in Art Today
@@ -306,9 +306,8 @@ Appendix: On-line Resources
 Notes
 
 ### Whitney, John (1980) Digital Harmony: On the Complementarity of Music and Visual Art
-<a class="getLink" href="/sorry_nothing_here">get</a>
-A classic going for more than 200eu online, but can be read/downloaded on the ever great [Archive.org]
-(https://archive.org/details/DigitalHarmony_201611).
+<a class="getLink" href="/go_here">get</a>
+A classic going for more than 200eu online, but can be read/downloaded on the ever great [Archive.org](https://archive.org/details/DigitalHarmony_201611).
 
 Love his intro:
 
