@@ -2,7 +2,7 @@
 title: bibliography
 description: books and articles we recommend
 published: 1
-date: 2020-03-09T14:25:43.113Z
+date: 2020-10-23T21:24:46.773Z
 tags: books, references
 ---
 
@@ -29,7 +29,7 @@ A long good collection of critical, philosophical texts on AI/ML can be found at
 - [Toffoli, Tommaso; Margolus, Norman (1987) Cellular Automata Machines - A New Environment for Modeling](#toffoli-tommaso-margolus-norman-1987-cellular-automata-machines-a-new-environment-for-modeling)
 - [Whitelaw, Mitchell (2004) Metacreation: Art and Artificial Life](#whitelaw-mitchell-2004-metacreation-art-and-artificial-life)
 
-
+- [Whitney, John (1980) Digital Harmony: On the Complementarity of Music and Visual Art](#)
 
 ---
 ### Benthall, Jonathan (1972) Science and Technology in Art Today
@@ -67,7 +67,6 @@ There are various forms of what’s sometimes called generative art, or computer
 ### Capra, Fritjof (1996) The Web of Life: A New Scientific Understanding of Living Systems
 
 <a class="getLink" href="/capra_fritjof_-_the_web_of_life_-_a_new_scientific_understanding_of_living_systems_(1996).pdf">get</a>
-
 
 ### Carvalhais, Miguel (2016) Artificial Aesthetics - Creative Practices in Computational Art and Design
 
@@ -306,8 +305,18 @@ This book, then, is an introductory harmony and orchestration manual for "compos
 Appendix: On-line Resources
 Notes
 
-### Capra, Fritjof (1994) Web of Life: A New Scientific Understanding of Living Systems
+### Whitney, John (1980) Digital Harmony: On the Complementarity of Music and Visual Art
+<a class="getLink" href="/sorry_nothing_here">get</a>
+A classic going for more than 200eu online, but can be read/downloaded on the ever great [Archive.org]
+(https://archive.org/details/DigitalHarmony_201611).
 
+Love his intro:
+
+"Computer technology has been available to a few artists for less than two decades. At the same time that computers are becoming household utensils, a mixture of high expectation and stubborn opposition surrounds the tentative use of these instruments for art. About the computer’s applicability in art there will be much more to say throughout the book.
+
+The purpose of this book, then, is to define, as much as I understand them, the principles of harmony as they apply to graphic manipulation of dynamic motion-pattern by computer. Whether my efforts constitute a final valid grammar is irrelevant. The purpose is to document my own approach and to propose the seminal idea of making an approach."
+
+- John Whitney
 
 ### Code Bending: A New Creative Coding Practice
 
