@@ -2,7 +2,7 @@
 title: chance
 description: randomness and related concepts
 published: 1
-date: 2020-03-05T13:39:47.232Z
+date: 2020-11-17T19:04:26.833Z
 tags: 
 ---
 
@@ -26,8 +26,7 @@ The higher the probability of an event, the more likely it is that the event wil
 
 ## pseudo-random
 Long but finite string of random numbers.
-100% deterministic in principal, but, depending on application, passes as random (used by computers) when reading of the string starts at a random position. When reading from the same position however,
-a pseudo-random generator will output an identical string. 
+100% deterministic in principal, but, depending on application, passes as random (used by computers) when reading of the string starts at a random position. When reading from the same position however, a pseudo-random generator will output an identical string. 
 see also: random seeding
 
   
