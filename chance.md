@@ -2,7 +2,7 @@
 title: chance
 description: randomness and related concepts
 published: 1
-date: 2020-11-17T19:04:26.833Z
+date: 2020-12-02T08:54:36.961Z
 tags: 
 ---
 
@@ -46,3 +46,6 @@ eg. from a textbook on evolution:
 </div>
 
 [Check Carvalhais](/bibliography), he has a good chapter on randomness.
+
+## stochastic
+One might come across the term stochastic in relation to the creation of music for example (Iannis Xenakis). It simply means a process having a random parameter.  
