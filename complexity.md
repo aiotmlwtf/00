@@ -2,14 +2,17 @@
 title: complexity
 description: 
 published: 1
-date: 2020-10-15T08:49:09.242Z
+date: 2020-12-15T14:20:33.561Z
 tags: complexity
 ---
 
 # what is
 complexity
-Think Complexity
-book 
+
+Wikipedia has a nice overview on [complex systems](https://en.wikipedia.org/wiki/Complex_system).
+
+Think Complexity by Allen Downey
+has a focus on coding and algorithms.
 
 ## Kolmogorov complexity
 ![Kolmogorov](https://enacademic.com/pictures/enwiki/75/Kolmogorov-m.jpg =100x)
