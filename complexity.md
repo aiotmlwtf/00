@@ -2,12 +2,11 @@
 title: complexity
 description: 
 published: 1
-date: 2020-12-16T08:46:33.569Z
+date: 2020-12-16T08:48:34.641Z
 tags: complexity
 ---
 
-# what is
-complexity
+# what is complexity
 
 Wikipedia has a nice overview on [complex systems](https://en.wikipedia.org/wiki/Complex_system).
 
