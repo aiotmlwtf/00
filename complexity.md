@@ -2,11 +2,15 @@
 title: complexity
 description: 
 published: 1
-date: 2020-12-16T08:48:34.641Z
+date: 2020-12-18T18:18:50.783Z
 tags: complexity
 ---
 
 # what is complexity
+
+complexity theory [dictionary definition]
+- the study of complex and chaotic systems and how order, pattern, and structure can arise from them.
+- the theory that processes having a large number of seemingly independent agents can spontaneously order themselves into a coherent system.
 
 Wikipedia has a nice overview on [complex systems](https://en.wikipedia.org/wiki/Complex_system).
 
